@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>A55T5R</key>
+    <string>$(ASSETS_URL)</string>
+    <key>HPFK3Y</key>
+    <string>$(HUGO_PAY_FULL_KEY)</string>
+    <key>HPFUR1</key>
+    <string>$(HUGO_PAY_FULL_URL)</string>
+    <key>HPFURCI</key>
+    <string>$(CASHBACK_COMMERCE_INFO)</string>
+    <key>P4YR</key>
+    <string>$(PAYMENT_URL)</string>
+    <key>PRS1D</key>
+    <string>$(PARSE_APPLICATION_ID)</string>
+    <key>PRSR</key>
+    <string>$(PARSE_URL)</string>
+    <key>USERUR1</key>
+    <string>$(USER_API_URL)</string>
+    <key>USERUR1KEY</key>
+    <string>$(USER_API_KEY)</string>
+    <key>VGSTKN</key>
+    <string>$(VGS_TKN)</string>
+    <key>VGSURL</key>
+    <string>$(VGS_URL)</string>
+    <key>NSContactsUsageDescription</key>
+    <string>Hugo necesita permisos para acceder a tus contactos para enviar o recibir dinero en hugoPay</string>
+</dict>
+</plist>

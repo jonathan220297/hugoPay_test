@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamHTF-Bold.otf">
+            <string>GothamHTF-Bold</string>
+        </array>
+        <array key="GothamHTF-Medium.otf">
+            <string>GothamHTF-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendMoneyView" customModule="Hugo" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLbl" destination="lcy-zE-Wim" id="3T2-Yi-x2v"/>
+                <outlet property="contentView" destination="ysR-c9-1xP" id="INH-pL-paJ"/>
+                <outlet property="emailTextfield" destination="und-Cj-onh" id="RI3-I6-H1p"/>
+                <outlet property="paymentAmountLbl" destination="9Ze-vJ-c3Q" id="6yC-76-2IA"/>
+                <outlet property="phoneView" destination="jlI-zQ-lFm" id="Xhh-eO-DQo"/>
+                <outlet property="recipientLbl" destination="8gm-eB-yqo" id="kcg-Uy-qf7"/>
+                <outlet property="sendPaymentLbl" destination="zgX-t2-fLj" id="3dy-tF-g50"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="411"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysR-c9-1xP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="411"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENVIAR PAGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgX-t2-fLj">
+                            <rect key="frame" x="20" y="40" width="374" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="7Wc-GX-PEa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="12"/>
+                            <color key="textColor" name="headerPurple"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿A quién haremos el envío?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gm-eB-yqo">
+                            <rect key="frame" x="20" y="84" width="374" height="15.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15.5" id="xJp-KM-DRq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                            <color key="textColor" name="headlineGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlI-zQ-lFm" customClass="HugoPayPhoneView" customModule="Hugo" customModuleProvider="target">
+                            <rect key="frame" x="30" y="123.5" width="354" height="44"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="HWe-0w-7Jg"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="O ingresar correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="und-Cj-onh">
+                            <rect key="frame" x="30" y="182.5" width="354" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="PrF-2q-1Uh"/>
+                            </constraints>
+                            <color key="textColor" name="StrongPurple1"/>
+                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad a enviar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ze-vJ-c3Q">
+                            <rect key="frame" x="20" y="236.5" width="374" height="15.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15.5" id="cB5-pq-opT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                            <color key="textColor" name="headlineGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-zE-Wim">
+                            <rect key="frame" x="147" y="259" width="120.5" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="6Qd-gZ-T3F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="48"/>
+                            <color key="textColor" name="headlineGray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-Dz-N6H">
+                            <rect key="frame" x="31" y="342" width="352" height="50"/>
+                            <color key="backgroundColor" name="DarkPurple"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="KhA-Ro-iUB"/>
+                            </constraints>
+                            <state key="normal" title="SIGUIENTE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapNextButton:" destination="-1" eventType="touchUpInside" id="xrs-gQ-S2s"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="und-Cj-onh" secondAttribute="trailing" constant="30" id="5NC-L4-Qzy"/>
+                        <constraint firstItem="jlI-zQ-lFm" firstAttribute="top" secondItem="8gm-eB-yqo" secondAttribute="bottom" constant="24" id="6QF-Br-eMa"/>
+                        <constraint firstItem="8gm-eB-yqo" firstAttribute="leading" secondItem="ysR-c9-1xP" secondAttribute="leading" constant="20" symbolic="YES" id="7lH-My-VYM"/>
+                        <constraint firstItem="JV1-Dz-N6H" firstAttribute="centerX" secondItem="ysR-c9-1xP" secondAttribute="centerX" id="Avz-bg-pJY"/>
+                        <constraint firstAttribute="trailing" secondItem="8gm-eB-yqo" secondAttribute="trailing" constant="20" symbolic="YES" id="GzO-aL-rhd"/>
+                        <constraint firstItem="jlI-zQ-lFm" firstAttribute="leading" secondItem="ysR-c9-1xP" secondAttribute="leading" constant="30" id="KtW-eF-0F4"/>
+                        <constraint firstItem="zgX-t2-fLj" firstAttribute="leading" secondItem="ysR-c9-1xP" secondAttribute="leading" constant="20" symbolic="YES" id="M6g-iL-Lab"/>
+                        <constraint firstItem="9Ze-vJ-c3Q" firstAttribute="top" secondItem="und-Cj-onh" secondAttribute="bottom" constant="20" id="QvM-Wz-dUa"/>
+                        <constraint firstItem="lcy-zE-Wim" firstAttribute="centerX" secondItem="ysR-c9-1xP" secondAttribute="centerX" id="Tjl-zD-BQC"/>
+                        <constraint firstAttribute="trailing" secondItem="zgX-t2-fLj" secondAttribute="trailing" constant="20" symbolic="YES" id="UXE-RX-G1Y"/>
+                        <constraint firstItem="lcy-zE-Wim" firstAttribute="top" secondItem="9Ze-vJ-c3Q" secondAttribute="bottom" constant="7" id="V0l-up-7Yd"/>
+                        <constraint firstItem="JV1-Dz-N6H" firstAttribute="top" secondItem="lcy-zE-Wim" secondAttribute="bottom" constant="27" id="dCt-Cl-cFg"/>
+                        <constraint firstItem="9Ze-vJ-c3Q" firstAttribute="leading" secondItem="ysR-c9-1xP" secondAttribute="leading" constant="20" symbolic="YES" id="ebn-j6-UrN"/>
+                        <constraint firstAttribute="trailing" secondItem="jlI-zQ-lFm" secondAttribute="trailing" constant="30" id="gfu-0X-rMn"/>
+                        <constraint firstItem="und-Cj-onh" firstAttribute="leading" secondItem="ysR-c9-1xP" secondAttribute="leading" constant="30" id="jFj-lr-d5T"/>
+                        <constraint firstItem="und-Cj-onh" firstAttribute="top" secondItem="jlI-zQ-lFm" secondAttribute="bottom" constant="15" id="kbx-XR-Sqq"/>
+                        <constraint firstItem="8gm-eB-yqo" firstAttribute="top" secondItem="zgX-t2-fLj" secondAttribute="bottom" constant="30" id="niH-1R-GFp"/>
+                        <constraint firstItem="JV1-Dz-N6H" firstAttribute="width" secondItem="ysR-c9-1xP" secondAttribute="width" multiplier="0.85" id="rmF-bE-VEc"/>
+                        <constraint firstAttribute="trailing" secondItem="9Ze-vJ-c3Q" secondAttribute="trailing" constant="20" symbolic="YES" id="ufl-Ie-v9g"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sendMoneyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kBM-3Q-Cgh">
+                    <rect key="frame" x="177" y="-30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kBM-3Q-Cgh" secondAttribute="height" multiplier="1:1" id="M0X-0Z-bUZ"/>
+                        <constraint firstAttribute="width" constant="60" id="q2w-ib-5jt"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ysR-c9-1xP" secondAttribute="trailing" id="TYc-6m-vz7"/>
+                <constraint firstItem="ysR-c9-1xP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UT4-3F-Zda"/>
+                <constraint firstItem="ysR-c9-1xP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vnn-YP-UwJ"/>
+                <constraint firstItem="kBM-3Q-Cgh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="c4k-5S-kOU"/>
+                <constraint firstItem="zgX-t2-fLj" firstAttribute="top" secondItem="kBM-3Q-Cgh" secondAttribute="bottom" constant="10" id="cgY-BA-ALX"/>
+                <constraint firstItem="kBM-3Q-Cgh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-30" id="ifF-O8-GBm"/>
+                <constraint firstAttribute="bottom" secondItem="ysR-c9-1xP" secondAttribute="bottom" id="khw-Qy-fHN"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-278.26086956521743" y="-11.049107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sendMoneyIcon" width="62.5" height="63.5"/>
+        <namedColor name="DarkPurple">
+            <color red="0.2196078431372549" green="0.12549019607843137" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="StrongPurple1">
+            <color red="0.34901960784313724" green="0.10196078431372549" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="headerPurple">
+            <color red="0.1803921568627451" green="0.062745098039215685" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="headlineGray">
+            <color red="0.50196078431372548" green="0.47058823529411764" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

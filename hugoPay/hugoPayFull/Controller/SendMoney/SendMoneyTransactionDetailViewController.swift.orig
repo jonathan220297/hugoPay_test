@@ -1,0 +1,150 @@
+//
+//  SendMoneyTransactionDetailViewController.swift
+//  Hugo
+//
+//  Created by Ali Gutierrez on 4/8/21.
+//  Copyright © 2021 Clever Mobile Apps. All rights reserved.
+//
+
+import RxSwift
+import UIKit
+
+class SendMoneyTransactionDetailViewController: UIViewController {
+    
+    
+    // MARK - IBOutlets
+    
+    // Transaction Data IBOutlets
+    @IBOutlet weak var transactionNoteLbl: UILabel!
+    @IBOutlet weak var transactionIdLbl: UILabel!
+    @IBOutlet weak var transactionDate: UILabel!
+    @IBOutlet weak var transactionSeviceType: UILabel!
+    @IBOutlet weak var transactionContactLb: UILabel!
+    @IBOutlet weak var transactionPhoneNumberLbl: UILabel!
+    @IBOutlet weak var transactionAmount: UILabel!
+    @IBOutlet weak var transactionLocalCurrencyAmount: UILabel!
+    @IBOutlet weak var transactionSentAmount: UILabel!
+    @IBOutlet weak var cardLogoImage: UIImageView!
+    
+    // View structure IBOutlets
+    @IBOutlet weak var downView: UIView!
+    @IBOutlet weak var upView: UIView!
+    
+    @IBOutlet weak var lblResume: UILabel!
+    @IBOutlet weak var lblTitleSended: UILabel!
+    @IBOutlet weak var lblSuccess: UILabel!
+    @IBOutlet weak var lblTitleNote: UILabel!
+    @IBOutlet weak var lblTitleDetail: UILabel!
+    
+    @IBOutlet weak var lblTrxId: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblServiceType: UILabel!
+    @IBOutlet weak var lblEmisor: UILabel!
+    @IBOutlet weak var lblPhone: UILabel!
+    @IBOutlet weak var lblAmountSent: UILabel!
+    
+    
+    // MARK: - Properties
+    var someScreen = false
+    private let disposeBag = DisposeBag()
+    
+    lazy var viewModel: DetailTransactionHPFullViewModel = {
+        return DetailTransactionHPFullViewModel()
+    }()
+    
+    var delegate: SendMoneyDelegate?
+    var comesFromTransactionList = false
+    // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureViewModel()
+        getTransactionDetails()
+    }
+    
+    private func prepareView(with transactionDetails: DataDetailTransactionHPFull) {
+        
+        lblTrxId.text       = "hp_lbl_request_detail_trx_id".localizedString
+        lblDate.text        = "hp_lbl_request_detail_date".localizedString
+        lblServiceType.text = "hp_lbl_request_detail_service".localizedString
+        lblEmisor.text      = "hp_lbl_request_detail_user_sender".localizedString
+        lblPhone.text       = "hp_lbl_request_detail_phone".localizedString
+        lblAmountSent.text  = "hp_lbl_request_detail_sent".localizedString
+        
+        lblResume.text          = "hp_lbl_request_detail_resume".localizedString
+        lblTitleSended.text   = "hp_transaction_detail_have_sent".localizedString
+        lblSuccess.text         = "hp_lbl_request_detail_successfully".localizedString
+        lblTitleNote.text       = "hp_lbl_request_detail_note".localizedString
+        lblTitleDetail.text     = "hp_lbl_request_detail_detail".localizedString
+        
+        transactionSentAmount.text = transactionDetails.totalAmountLabel
+        transactionNoteLbl.text = transactionDetails.note
+        transactionIdLbl.text = transactionDetails.hugoId
+        transactionDate.text = transactionDetails.date
+        transactionSeviceType.text = transactionDetails.service
+        transactionContactLb.text = transactionDetails.clientName
+        transactionPhoneNumberLbl.text = transactionDetails.clientPhone
+        transactionAmount.text = transactionDetails.totalAmountLabel
+        transactionLocalCurrencyAmount.text = transactionDetails.totalAmountLabel
+        
+        
+    }
+    
+    private func configureViewModel(){
+        viewModel.hideLoading = { [weak self] () in
+            self?.hideLoading()
+        }
+        viewModel.showLoading = { [weak self] () in
+            self?.showLoading()
+        }
+    }
+    
+    private func getTransactionDetails() {
+        showLoading()
+        viewModel
+            .getHPFTransactionDetails()
+            .asObservable()
+            .subscribe(onNext: { [weak self] response in
+                guard let self = self,
+                      let response = response else { return }
+                DispatchQueue.main.async {
+                    self.hideLoading()
+                    if let success = response.success, success,
+                       let transactionDetails = response.data {
+                        self.prepareView(with: transactionDetails)
+                    } else {
+                        self.simpleAlert(title: "Sorry".localizedString, message: response.message)
+                    }
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func goBack(_ sender: Any) {
+<<<<<<< HEAD
+        if !comesFromTransactionList {
+            self.presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true, completion: nil)
+            delegate?.dismissP2PView()
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
+=======
+        
+        if someScreen {
+            self.dismiss(animated: true, completion: nil)
+        }else{
+            self.presentingViewController?
+                .presentingViewController?
+                .dismiss(animated: true, completion: nil)
+            delegate.dismissP2PView()
+        }
+       
+>>>>>>> feature/hugo-pf-HU28
+    }
+}

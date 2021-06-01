@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamHTF-Bold.otf">
+            <string>GothamHTF-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellTutorialPageNoImage" id="IGS-xZ-wwq" customClass="TutorialPageWithoutImageCollectionViewCell" customModule="Hugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="739"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="739"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hp_full_ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="RYa-ca-Kxr">
+                        <rect key="frame" x="0.0" y="204.5" width="449" height="330.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w0s-Z5-QNs">
+                        <rect key="frame" x="67.5" y="360" width="314" height="19"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-cc-oWD">
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="19"/>
+                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="HXY-Pu-5Oj"/>
+            <constraints>
+                <constraint firstItem="RYa-ca-Kxr" firstAttribute="centerX" secondItem="IGS-xZ-wwq" secondAttribute="centerX" id="4Je-Ve-D3X"/>
+                <constraint firstItem="RYa-ca-Kxr" firstAttribute="centerY" secondItem="IGS-xZ-wwq" secondAttribute="centerY" id="4v8-vJ-mdC"/>
+                <constraint firstItem="RYa-ca-Kxr" firstAttribute="height" secondItem="HXY-Pu-5Oj" secondAttribute="height" multiplier="0.5" id="GcJ-SR-mOM"/>
+                <constraint firstAttribute="trailing" secondItem="RYa-ca-Kxr" secondAttribute="trailing" id="Ju9-rA-mPk"/>
+                <constraint firstItem="w0s-Z5-QNs" firstAttribute="width" secondItem="HXY-Pu-5Oj" secondAttribute="width" multiplier="0.7" id="Loe-po-YOO"/>
+                <constraint firstItem="w0s-Z5-QNs" firstAttribute="centerX" secondItem="RYa-ca-Kxr" secondAttribute="centerX" id="WIE-4Z-vVa"/>
+                <constraint firstItem="RYa-ca-Kxr" firstAttribute="leading" secondItem="IGS-xZ-wwq" secondAttribute="leading" id="cow-OF-Ete"/>
+                <constraint firstItem="w0s-Z5-QNs" firstAttribute="centerY" secondItem="RYa-ca-Kxr" secondAttribute="centerY" id="yau-5p-6Q9"/>
+            </constraints>
+            <size key="customSize" width="449" height="739"/>
+            <connections>
+                <outlet property="stackViewTexts" destination="w0s-Z5-QNs" id="kax-O6-stq"/>
+            </connections>
+            <point key="canvasLocation" x="423.91304347826087" y="323.10267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hp_full_ellipse" width="1416" height="1416"/>
+    </resources>
+</document>

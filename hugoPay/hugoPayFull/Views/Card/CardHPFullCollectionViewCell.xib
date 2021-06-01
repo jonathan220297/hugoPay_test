@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BQa-CL-CVd" customClass="CardHPFullCollectionViewCell" customModule="Hugo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Rn-UG-J5y">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-DZ-6g8">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="159"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hp_full_card" translatesAutoresizingMaskIntoConstraints="NO" id="SUl-rb-Eoo">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="159"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa_orange" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-d5-o6D">
+                                <rect key="frame" x="222" y="123.5" width="42" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="LCu-cA-Dan"/>
+                                    <constraint firstAttribute="width" constant="42" id="W89-cV-up4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-qi-Nh3">
+                                <rect key="frame" x="10" y="131" width="120" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="yCn-Og-Lud"/>
+                                    <constraint firstAttribute="width" constant="120" id="zl1-WD-SHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SUl-rb-Eoo" secondAttribute="trailing" id="1cm-bF-E03"/>
+                            <constraint firstItem="Gfb-d5-o6D" firstAttribute="centerY" secondItem="Zo6-qi-Nh3" secondAttribute="centerY" id="3xT-7t-fsD"/>
+                            <constraint firstItem="Zo6-qi-Nh3" firstAttribute="leading" secondItem="UFL-DZ-6g8" secondAttribute="leading" constant="10" id="HdW-ch-nos"/>
+                            <constraint firstAttribute="bottom" secondItem="Zo6-qi-Nh3" secondAttribute="bottom" constant="10" id="HrC-00-MIw"/>
+                            <constraint firstAttribute="bottom" secondItem="SUl-rb-Eoo" secondAttribute="bottom" id="QMT-dp-Fzf"/>
+                            <constraint firstAttribute="trailing" secondItem="Gfb-d5-o6D" secondAttribute="trailing" constant="10" id="Xxg-Af-Zfn"/>
+                            <constraint firstItem="SUl-rb-Eoo" firstAttribute="top" secondItem="UFL-DZ-6g8" secondAttribute="top" id="cl3-nM-eoJ"/>
+                            <constraint firstItem="SUl-rb-Eoo" firstAttribute="leading" secondItem="UFL-DZ-6g8" secondAttribute="leading" id="xI1-bh-Bmu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UFL-DZ-6g8" secondAttribute="bottom" id="3dz-aZ-uQH"/>
+                    <constraint firstItem="UFL-DZ-6g8" firstAttribute="leading" secondItem="6Rn-UG-J5y" secondAttribute="leading" id="GYk-EQ-Xq7"/>
+                    <constraint firstAttribute="trailing" secondItem="UFL-DZ-6g8" secondAttribute="trailing" id="fZQ-dD-fIK"/>
+                    <constraint firstItem="UFL-DZ-6g8" firstAttribute="top" secondItem="6Rn-UG-J5y" secondAttribute="top" id="raD-6U-O9Q"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="ccImage" destination="SUl-rb-Eoo" id="bXi-aW-BwC"/>
+                <outlet property="ccNumberLbl" destination="Zo6-qi-Nh3" id="Bnk-Y7-tXi"/>
+                <outlet property="ccView" destination="UFL-DZ-6g8" id="FDu-JA-baK"/>
+                <outlet property="typeLogo" destination="Gfb-d5-o6D" id="6yq-YR-LNN"/>
+            </connections>
+            <point key="canvasLocation" x="572" y="125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hp_full_card" width="252" height="159"/>
+        <image name="visa_orange" width="50" height="16"/>
+    </resources>
+</document>

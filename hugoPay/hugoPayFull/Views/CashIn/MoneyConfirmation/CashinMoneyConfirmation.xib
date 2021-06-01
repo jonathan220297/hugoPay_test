@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamHTF-Bold.otf">
+            <string>GothamHTF-Bold</string>
+        </array>
+        <array key="GothamHTF-Light.otf">
+            <string>GothamHTF-Light</string>
+        </array>
+        <array key="GothamHTF-Medium.otf">
+            <string>GothamHTF-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CashinMoneyConfirmation" customModule="Hugo" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonConfirm" destination="ug3-6N-7fS" id="qSE-kt-amW"/>
+                <outlet property="imageViewCreditType" destination="bFg-bU-v4I" id="Mrh-yw-mkf"/>
+                <outlet property="labelCreditCardLastFour" destination="lr9-Ls-xwT" id="b7B-D7-btl"/>
+                <outlet property="labelMoneyAmount" destination="yGM-KY-abf" id="WAs-vB-igk"/>
+                <outlet property="labelMoneyAmountCreditCard" destination="vlY-8j-ShY" id="gHK-nz-hbX"/>
+                <outlet property="labelOriginMoneyTitle" destination="JT9-3b-x61" id="Hbb-Rg-hC9"/>
+                <outlet property="viewAddCreditCard" destination="7oi-sB-7G8" id="IAD-WI-aG9"/>
+                <outlet property="viewCreditCardSelector" destination="TrZ-nD-Oef" id="Rgz-n5-zJx"/>
+                <outlet property="viewSeparator" destination="WfJ-Cq-fPj" id="gYQ-Cc-fBy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="424"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-circle-cashIn" translatesAutoresizingMaskIntoConstraints="NO" id="buk-id-VZ1">
+                    <rect key="frame" x="177" y="-30" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="buk-id-VZ1" secondAttribute="height" multiplier="1:1" id="JAI-uF-Xjh"/>
+                        <constraint firstAttribute="width" constant="60" id="zp8-U6-WX5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASH-IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-oF-edl">
+                    <rect key="frame" x="16" y="46" width="382" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="e8E-wN-s9q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="16"/>
+                    <color key="textColor" name="DarkPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad a abonar a tarjeta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UJ-k4-mJP" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                    <rect key="frame" x="16" y="83" width="382" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="mdf-hK-7NN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamHTF-Light" family="Gotham HTF" pointSize="15"/>
+                    <color key="textColor" name="DarkPurple"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinMoneyConfirmation_Title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGM-KY-abf">
+                    <rect key="frame" x="16" y="120" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="NmQ-va-Qrv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="48"/>
+                    <color key="textColor" name="DarkPurple"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="llg-oa-2TE">
+                    <rect key="frame" x="16" y="192" width="382" height="141.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recoger fondos de:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT9-3b-x61" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="16.5"/>
+                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="14"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinMoneyConfirmation_MoneySource"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oi-sB-7G8">
+                            <rect key="frame" x="0.0" y="24.5" width="382" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-Up-Iub">
+                                    <rect key="frame" x="95.5" y="0.0" width="191" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="3A7-sH-zOt">
+                                            <rect key="frame" x="16" y="17.5" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="3A7-sH-zOt" secondAttribute="height" multiplier="1:1" id="oPN-dc-gKT"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agregar tarjeta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-Pq-nij" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                            <rect key="frame" x="39" y="8" width="144" height="34"/>
+                                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinMoneyConfirmation_AddCard"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Le-1Q-yhu">
+                                            <rect key="frame" x="0.0" y="0.0" width="191" height="50"/>
+                                            <connections>
+                                                <action selector="buttonAddCreditCardTapped:" destination="-1" eventType="touchUpInside" id="7jT-Mf-urL"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="StrongPurple1"/>
+                                    <constraints>
+                                        <constraint firstItem="5Le-1Q-yhu" firstAttribute="leading" secondItem="SM3-Up-Iub" secondAttribute="leading" id="PwK-W7-e2p"/>
+                                        <constraint firstItem="3A7-sH-zOt" firstAttribute="leading" secondItem="SM3-Up-Iub" secondAttribute="leading" constant="16" id="Q9U-JG-Jvh"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Le-1Q-yhu" secondAttribute="trailing" id="Qj1-wB-1wT"/>
+                                        <constraint firstItem="5Le-1Q-yhu" firstAttribute="top" secondItem="SM3-Up-Iub" secondAttribute="top" id="Zh1-dK-lwr"/>
+                                        <constraint firstItem="3A7-sH-zOt" firstAttribute="height" secondItem="SM3-Up-Iub" secondAttribute="height" multiplier="0.3" id="diN-et-cgD"/>
+                                        <constraint firstAttribute="bottom" secondItem="hV9-Pq-nij" secondAttribute="bottom" constant="8" id="gX1-K1-dYu"/>
+                                        <constraint firstItem="3A7-sH-zOt" firstAttribute="centerY" secondItem="SM3-Up-Iub" secondAttribute="centerY" id="iDZ-Mr-xV3"/>
+                                        <constraint firstItem="hV9-Pq-nij" firstAttribute="leading" secondItem="3A7-sH-zOt" secondAttribute="trailing" constant="8" id="lT8-dQ-Cs0"/>
+                                        <constraint firstItem="hV9-Pq-nij" firstAttribute="top" secondItem="SM3-Up-Iub" secondAttribute="top" constant="8" id="nwc-Dg-07b"/>
+                                        <constraint firstAttribute="bottom" secondItem="5Le-1Q-yhu" secondAttribute="bottom" id="rZB-5d-8y6"/>
+                                        <constraint firstAttribute="trailing" secondItem="hV9-Pq-nij" secondAttribute="trailing" constant="8" id="wAe-hp-B5V"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="SM3-Up-Iub" firstAttribute="top" secondItem="7oi-sB-7G8" secondAttribute="top" id="04r-DN-xE2"/>
+                                <constraint firstAttribute="bottom" secondItem="SM3-Up-Iub" secondAttribute="bottom" id="3H1-7r-OhF"/>
+                                <constraint firstItem="SM3-Up-Iub" firstAttribute="centerX" secondItem="7oi-sB-7G8" secondAttribute="centerX" id="JOL-lh-i9y"/>
+                                <constraint firstAttribute="height" constant="50" id="htN-Is-BvF"/>
+                                <constraint firstItem="SM3-Up-Iub" firstAttribute="width" secondItem="7oi-sB-7G8" secondAttribute="width" multiplier="0.5" id="knj-Gh-RmU"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-Cq-fPj">
+                            <rect key="frame" x="0.0" y="82.5" width="382" height="1"/>
+                            <color key="backgroundColor" name="PaleLilac"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7bm-3h-wZg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TrZ-nD-Oef">
+                            <rect key="frame" x="0.0" y="91.5" width="382" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlY-8j-ShY">
+                                    <rect key="frame" x="210" y="8" width="172" height="34"/>
+                                    <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="20"/>
+                                    <color key="textColor" name="DeepPurple"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4RB-kI-KU1">
+                                    <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa_logo" translatesAutoresizingMaskIntoConstraints="NO" id="bFg-bU-v4I">
+                                            <rect key="frame" x="0.0" y="12.5" width="44.5" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="bFg-bU-v4I" secondAttribute="height" multiplier="16:9" id="bP5-EK-bCk"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr9-Ls-xwT">
+                                            <rect key="frame" x="52.5" y="8" width="45" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="HpF-hV-J8n"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="14"/>
+                                            <color key="textColor" name="DeepPurple"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_expand_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-Po-mub">
+                                            <rect key="frame" x="105.5" y="20" width="10" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ceC-Po-mub" secondAttribute="height" multiplier="1:1" id="LCr-4Z-Ndb"/>
+                                                <constraint firstAttribute="width" constant="10" id="hZo-sB-pSG"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXB-2s-HHL">
+                                            <rect key="frame" x="0.0" y="0.0" width="202" height="50"/>
+                                            <connections>
+                                                <action selector="buttonSelectCreditCardTapped:" destination="-1" eventType="touchUpInside" id="vzQ-Mp-TUY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="YXB-2s-HHL" firstAttribute="leading" secondItem="4RB-kI-KU1" secondAttribute="leading" id="184-Gu-OiQ"/>
+                                        <constraint firstItem="YXB-2s-HHL" firstAttribute="top" secondItem="4RB-kI-KU1" secondAttribute="top" id="1yA-Ra-hV2"/>
+                                        <constraint firstItem="lr9-Ls-xwT" firstAttribute="leading" secondItem="bFg-bU-v4I" secondAttribute="trailing" constant="8" id="2aJ-sV-FGq"/>
+                                        <constraint firstAttribute="bottom" secondItem="YXB-2s-HHL" secondAttribute="bottom" id="9vl-20-EyK"/>
+                                        <constraint firstAttribute="bottom" secondItem="lr9-Ls-xwT" secondAttribute="bottom" constant="8" id="Ij1-GC-Yvy"/>
+                                        <constraint firstAttribute="trailing" secondItem="YXB-2s-HHL" secondAttribute="trailing" id="JCj-x9-zvO"/>
+                                        <constraint firstItem="ceC-Po-mub" firstAttribute="centerY" secondItem="4RB-kI-KU1" secondAttribute="centerY" id="Q6K-20-rEK"/>
+                                        <constraint firstItem="bFg-bU-v4I" firstAttribute="centerY" secondItem="4RB-kI-KU1" secondAttribute="centerY" id="iSD-o6-Rcs"/>
+                                        <constraint firstItem="bFg-bU-v4I" firstAttribute="leading" secondItem="4RB-kI-KU1" secondAttribute="leading" id="mE9-o9-Mkp"/>
+                                        <constraint firstItem="bFg-bU-v4I" firstAttribute="height" secondItem="4RB-kI-KU1" secondAttribute="height" multiplier="0.5" id="pNg-1H-hDA"/>
+                                        <constraint firstItem="ceC-Po-mub" firstAttribute="leading" secondItem="lr9-Ls-xwT" secondAttribute="trailing" constant="8" id="qYd-WR-pcK"/>
+                                        <constraint firstItem="lr9-Ls-xwT" firstAttribute="top" secondItem="4RB-kI-KU1" secondAttribute="top" constant="8" id="siL-fV-cY2"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="vlY-8j-ShY" firstAttribute="top" secondItem="TrZ-nD-Oef" secondAttribute="top" constant="8" id="EJf-Bx-E5l"/>
+                                <constraint firstAttribute="bottom" secondItem="vlY-8j-ShY" secondAttribute="bottom" constant="8" id="PQf-id-7OV"/>
+                                <constraint firstItem="vlY-8j-ShY" firstAttribute="leading" secondItem="4RB-kI-KU1" secondAttribute="trailing" constant="8" id="TRO-99-8TR"/>
+                                <constraint firstAttribute="trailing" secondItem="vlY-8j-ShY" secondAttribute="trailing" id="VMQ-Lj-9c3"/>
+                                <constraint firstAttribute="bottom" secondItem="4RB-kI-KU1" secondAttribute="bottom" id="fTt-zk-2cp"/>
+                                <constraint firstItem="vlY-8j-ShY" firstAttribute="width" secondItem="TrZ-nD-Oef" secondAttribute="width" multiplier="0.45" id="gr6-5L-70t"/>
+                                <constraint firstItem="4RB-kI-KU1" firstAttribute="top" secondItem="TrZ-nD-Oef" secondAttribute="top" id="lGb-1k-mlC"/>
+                                <constraint firstItem="4RB-kI-KU1" firstAttribute="leading" secondItem="TrZ-nD-Oef" secondAttribute="leading" id="lrb-ST-PwL"/>
+                                <constraint firstAttribute="height" constant="50" id="m5f-VW-spc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug3-6N-7fS" customClass="LoadingButton" customModule="Hugo" customModuleProvider="target">
+                    <rect key="frame" x="20.5" y="349.5" width="373" height="50"/>
+                    <color key="backgroundColor" name="StrongPurple1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bDQ-Gd-LOx"/>
+                    </constraints>
+                    <state key="normal" title="CONFIRMAR">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinMoneyConfirmation_ConfirmButton"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonConfirmTapped:" destination="-1" eventType="touchUpInside" id="v9g-yB-20f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yGM-KY-abf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="5Qw-PJ-ldt"/>
+                <constraint firstAttribute="trailing" secondItem="gBg-oF-edl" secondAttribute="trailing" constant="16" id="7Rs-Hi-Tgm"/>
+                <constraint firstItem="gBg-oF-edl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Eot-qk-Y3j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yGM-KY-abf" secondAttribute="trailing" constant="16" id="Hb0-Ol-9uz"/>
+                <constraint firstItem="ug3-6N-7fS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K1g-Ug-MFg"/>
+                <constraint firstItem="gBg-oF-edl" firstAttribute="top" secondItem="buk-id-VZ1" secondAttribute="bottom" constant="16" id="NOT-Gr-aMj"/>
+                <constraint firstItem="ug3-6N-7fS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="PCE-nA-tiw"/>
+                <constraint firstAttribute="trailing" secondItem="1UJ-k4-mJP" secondAttribute="trailing" constant="16" id="QL9-iy-9YB"/>
+                <constraint firstItem="buk-id-VZ1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-30" id="VKv-nE-oBg"/>
+                <constraint firstItem="yGM-KY-abf" firstAttribute="top" secondItem="1UJ-k4-mJP" secondAttribute="bottom" constant="16" id="WIH-1U-CaG"/>
+                <constraint firstItem="ug3-6N-7fS" firstAttribute="top" secondItem="llg-oa-2TE" secondAttribute="bottom" constant="16" id="YcC-f2-Zt5"/>
+                <constraint firstItem="1UJ-k4-mJP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ZcC-1a-pea"/>
+                <constraint firstItem="llg-oa-2TE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bsE-Dr-mgU"/>
+                <constraint firstItem="buk-id-VZ1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hdG-Tf-yX7"/>
+                <constraint firstItem="llg-oa-2TE" firstAttribute="top" secondItem="yGM-KY-abf" secondAttribute="bottom" constant="16" id="prG-BS-flw"/>
+                <constraint firstItem="1UJ-k4-mJP" firstAttribute="top" secondItem="gBg-oF-edl" secondAttribute="bottom" constant="16" id="wLG-YV-BNQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="llg-oa-2TE" secondAttribute="trailing" constant="16" id="zfE-MI-VKp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="278.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_expand_arrow" width="100" height="100"/>
+        <image name="icon-circle-cashIn" width="31.5" height="32"/>
+        <image name="plus" width="18" height="18"/>
+        <image name="visa_logo" width="50" height="35"/>
+        <namedColor name="DarkPurple">
+            <color red="0.2196078431372549" green="0.12549019607843137" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DeepPurple">
+            <color red="0.17647058823529413" green="0.062745098039215685" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PaleLilac">
+            <color red="0.88627450980392153" green="0.8666666666666667" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="StrongPurple1">
+            <color red="0.34901960784313724" green="0.10196078431372549" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

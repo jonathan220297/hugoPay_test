@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamHTF-Bold.otf">
+            <string>GothamHTF-Bold</string>
+        </array>
+        <array key="GothamHTF-Book.otf">
+            <string>GothamHTF-Book</string>
+        </array>
+        <array key="GothamHTF-Medium.otf">
+            <string>GothamHTF-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Transaction Filters View Controller-->
+        <scene sceneID="ner-zS-Uf6">
+            <objects>
+                <viewController storyboardIdentifier="TransactionFiltersViewController" id="UyN-Lt-1Kc" customClass="TransactionFiltersViewController" customModule="Hugo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BHk-Na-ts8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7X-3L-eSg">
+                                <rect key="frame" x="0.0" y="44" width="415.5" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03a-rj-I2M">
+                                        <rect key="frame" x="30" y="14.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="BNT-Cm-0vd"/>
+                                            <constraint firstAttribute="height" constant="15" id="u8B-cm-CeO"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_close_hp"/>
+                                        <connections>
+                                            <action selector="buttonCloseTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="6bH-MY-zf8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99l-Rl-ReK" customClass="LocalizableButton" customModule="Hugo" customModuleProvider="target">
+                                        <rect key="frame" x="334.5" y="14.5" width="55" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="MKl-WW-vLS"/>
+                                            <constraint firstAttribute="height" constant="15" id="NnV-iW-6tr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="14"/>
+                                        <state key="normal" title="Limpiar">
+                                            <color key="titleColor" red="0.23529411759999999" green="0.1058823529" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_CleanButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonCleanTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="oLD-jE-Ai3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="99l-Rl-ReK" firstAttribute="centerY" secondItem="L7X-3L-eSg" secondAttribute="centerY" id="I1x-HC-sha"/>
+                                    <constraint firstAttribute="height" constant="44" id="PTI-Tn-FIt"/>
+                                    <constraint firstItem="03a-rj-I2M" firstAttribute="leading" secondItem="L7X-3L-eSg" secondAttribute="leading" constant="30" id="Wto-CO-vH4"/>
+                                    <constraint firstItem="03a-rj-I2M" firstAttribute="centerY" secondItem="L7X-3L-eSg" secondAttribute="centerY" id="cdS-Uv-Cw7"/>
+                                    <constraint firstAttribute="trailing" secondItem="99l-Rl-ReK" secondAttribute="trailing" constant="26" id="kwV-EN-RVf"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-Cz-tc0">
+                                <rect key="frame" x="0.0" y="88" width="415.5" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-rm-VyK">
+                                        <rect key="frame" x="0.0" y="0.0" width="415.5" height="357"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filtrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sik-8U-r1Z" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="8" width="375.5" height="24.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="iy9-uM-hHR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="22"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_FilterTitle"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Ordena las transacciones a tu gusto!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmx-iL-2n0" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="34.5" width="375.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="2EW-ec-75J"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="13"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_FilterSubtitle"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hpf_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="dp1-fK-ugz">
+                                                <rect key="frame" x="20" y="79.5" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="15u-bA-u3w"/>
+                                                    <constraint firstAttribute="width" secondItem="dp1-fK-ugz" secondAttribute="height" multiplier="1:1" id="v51-dx-9gd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FECHA DE TRANSACCIÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udE-HE-jjB" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="79" width="339.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="eOb-nr-xL2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionDateLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="WMc-hM-d2Z">
+                                                <rect key="frame" x="20" y="116" width="375.5" height="40"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6w-SY-fZ7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inicio" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oH5-HG-1Rx">
+                                                                <rect key="frame" x="8" y="8" width="163.5" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="oH5-HG-1Rx" firstAttribute="centerY" secondItem="U6w-SY-fZ7" secondAttribute="centerY" id="YxP-ns-ihB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oH5-HG-1Rx" secondAttribute="bottom" constant="8" id="aGw-By-Uqg"/>
+                                                            <constraint firstItem="oH5-HG-1Rx" firstAttribute="leading" secondItem="U6w-SY-fZ7" secondAttribute="leading" constant="8" id="iyR-Mg-iXQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oH5-HG-1Rx" secondAttribute="trailing" constant="8" id="nsg-D4-6Vv"/>
+                                                            <constraint firstItem="oH5-HG-1Rx" firstAttribute="top" secondItem="U6w-SY-fZ7" secondAttribute="top" constant="8" id="oR9-9V-dzI"/>
+                                                            <constraint firstItem="oH5-HG-1Rx" firstAttribute="centerX" secondItem="U6w-SY-fZ7" secondAttribute="centerX" id="xGw-E5-9QW"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HyA-cE-Bbb">
+                                                        <rect key="frame" x="195.5" y="0.0" width="180" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-KL-UCK">
+                                                                <rect key="frame" x="8" y="8" width="164" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="gdz-KL-UCK" secondAttribute="trailing" constant="8" id="7Wv-wY-h3A"/>
+                                                            <constraint firstItem="gdz-KL-UCK" firstAttribute="top" secondItem="HyA-cE-Bbb" secondAttribute="top" constant="8" id="BVt-Da-lzW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="gdz-KL-UCK" secondAttribute="bottom" constant="8" id="HmU-bF-sXm"/>
+                                                            <constraint firstItem="gdz-KL-UCK" firstAttribute="centerY" secondItem="HyA-cE-Bbb" secondAttribute="centerY" id="LdO-AF-0P3"/>
+                                                            <constraint firstItem="gdz-KL-UCK" firstAttribute="centerX" secondItem="HyA-cE-Bbb" secondAttribute="centerX" id="kKE-KM-6Ep"/>
+                                                            <constraint firstItem="gdz-KL-UCK" firstAttribute="leading" secondItem="HyA-cE-Bbb" secondAttribute="leading" constant="8" id="wq1-RB-m05"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="uZi-UD-aVf"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hpf_price_range" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-t3-Yl2">
+                                                <rect key="frame" x="20" y="172" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="yRy-M5-ivG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIPO DE TRANSACCIÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm3-iG-WWR" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="171.5" width="160" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="jlu-bD-BCQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionTypeLabel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5iR-ir-LYs">
+                                                <rect key="frame" x="20" y="208.5" width="249" height="40"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwj-Qd-7HI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52V-MG-rAY" customClass="LocalizableButton" customModule="Hugo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                                                <state key="normal" title="Ingresos">
+                                                                    <color key="titleColor" name="DeepPurple"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionTypeIncome"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonIncomeTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="uwu-bY-HDR"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="52V-MG-rAY" secondAttribute="trailing" id="0TF-V7-Hfi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="52V-MG-rAY" secondAttribute="bottom" id="3Mu-3N-Mla"/>
+                                                            <constraint firstItem="52V-MG-rAY" firstAttribute="top" secondItem="fwj-Qd-7HI" secondAttribute="top" id="8ar-6c-OG4"/>
+                                                            <constraint firstItem="52V-MG-rAY" firstAttribute="leading" secondItem="fwj-Qd-7HI" secondAttribute="leading" id="a9y-N4-jMq"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtE-5f-rQc">
+                                                        <rect key="frame" x="128.5" y="0.0" width="120.5" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kJ-5B-wYp" customClass="LocalizableButton" customModule="Hugo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="40"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                                                <state key="normal" title="Egresos">
+                                                                    <color key="titleColor" name="DeepPurple"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionTypeExpense"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonExpensesTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="2M7-n2-yW5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="9kJ-5B-wYp" secondAttribute="bottom" id="Erv-CN-Q9o"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9kJ-5B-wYp" secondAttribute="trailing" id="YRK-8m-crh"/>
+                                                            <constraint firstItem="9kJ-5B-wYp" firstAttribute="top" secondItem="UtE-5f-rQc" secondAttribute="top" id="ej3-bG-oWv"/>
+                                                            <constraint firstItem="9kJ-5B-wYp" firstAttribute="leading" secondItem="UtE-5f-rQc" secondAttribute="leading" id="pTc-iT-GtB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ulq-kl-M4g"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hpf_precio" translatesAutoresizingMaskIntoConstraints="NO" id="BH5-XA-yqK">
+                                                <rect key="frame" x="20" y="264.5" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="pZE-nW-q1G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTO DE TRANSACCIÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXp-7C-EgA" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="264" width="179.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="yPp-eS-5Wh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionAmount"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yh1-cU-Fdd">
+                                                <rect key="frame" x="20" y="301" width="331.5" height="40"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-Un-5Gj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Min." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-9j-EE9">
+                                                                <rect key="frame" x="8" y="8" width="116.5" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="sbU-9j-EE9" secondAttribute="bottom" constant="8" id="1Sk-pI-jzk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sbU-9j-EE9" secondAttribute="trailing" constant="8" id="Jrn-XE-d4V"/>
+                                                            <constraint firstItem="sbU-9j-EE9" firstAttribute="top" secondItem="hPj-Un-5Gj" secondAttribute="top" constant="8" id="ehx-iD-8uq"/>
+                                                            <constraint firstItem="sbU-9j-EE9" firstAttribute="leading" secondItem="hPj-Un-5Gj" secondAttribute="leading" constant="8" id="ubH-AW-Nsd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-g9-Tbd" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                        <rect key="frame" x="140.5" y="0.0" width="33" height="40"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_full_TransactionFiltersViewController_TransactionAmountTo"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-po-YBn">
+                                                        <rect key="frame" x="181.5" y="0.0" width="150" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Min." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JxU-sh-t6D">
+                                                                <rect key="frame" x="8" y="8" width="134" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="JxU-sh-t6D" secondAttribute="trailing" constant="8" id="2F4-cE-7AF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="JxU-sh-t6D" secondAttribute="bottom" constant="8" id="Lkf-ls-AOq"/>
+                                                            <constraint firstItem="JxU-sh-t6D" firstAttribute="top" secondItem="UdC-po-YBn" secondAttribute="top" constant="8" id="fwE-51-62N"/>
+                                                            <constraint firstItem="JxU-sh-t6D" firstAttribute="leading" secondItem="UdC-po-YBn" secondAttribute="leading" constant="8" id="gYw-Tz-pJb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="AYz-o4-eeR"/>
+                                                    <constraint firstItem="kxe-g9-Tbd" firstAttribute="width" secondItem="Yh1-cU-Fdd" secondAttribute="width" multiplier="0.1" id="fbF-4H-Pj7"/>
+                                                    <constraint firstItem="hPj-Un-5Gj" firstAttribute="width" secondItem="Yh1-cU-Fdd" secondAttribute="width" multiplier="0.4" id="uX5-Ew-0we"/>
+                                                    <constraint firstItem="UdC-po-YBn" firstAttribute="width" secondItem="Yh1-cU-Fdd" secondAttribute="width" multiplier="0.4" id="xLf-kX-cev"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hpf_payment" translatesAutoresizingMaskIntoConstraints="NO" id="w0s-um-eF9">
+                                                <rect key="frame" x="20" y="357" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="apk-LD-rQn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÉTODOS DE PAGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAU-5R-d4N">
+                                                <rect key="frame" x="56" y="356.5" width="134" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="C40-Ca-hWd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                                <color key="textColor" name="DeepPurple"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-JE-JNX">
+                                                <rect key="frame" x="20" y="393.5" width="295.5" height="40"/>
+                                                <subviews>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlT-xf-Ewz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="40"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="12"/>
+                                                        <state key="normal" title="Otras tarjetas">
+                                                            <color key="titleColor" name="DeepPurple"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPaymentMethodsTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="97C-C0-sxF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lr-EI-Tw2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="40"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="12"/>
+                                                        <state key="normal" title="hugoPay">
+                                                            <color key="titleColor" name="DeepPurple"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPaymentMethodsTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="FIN-Gt-s3h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms3-8M-TbO">
+                                                        <rect key="frame" x="151.5" y="0.0" width="144" height="40"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="12"/>
+                                                        <state key="normal" title="Todos">
+                                                            <color key="titleColor" name="DeepPurple"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPaymentMethodsTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="MZj-Sa-LRZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="d9m-v1-cfd"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5iR-ir-LYs" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="1Pb-oB-m4p"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yh1-cU-Fdd" secondAttribute="bottom" constant="16" id="4DB-rn-SJk"/>
+                                            <constraint firstItem="YAU-5R-d4N" firstAttribute="leading" secondItem="w0s-um-eF9" secondAttribute="trailing" constant="16" id="740-1U-K5F"/>
+                                            <constraint firstItem="hmx-iL-2n0" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="8o4-O0-Rud"/>
+                                            <constraint firstItem="4Rh-t3-Yl2" firstAttribute="top" secondItem="WMc-hM-d2Z" secondAttribute="bottom" constant="16" id="9aw-lU-SaF"/>
+                                            <constraint firstItem="Yh1-cU-Fdd" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="A89-2N-OCQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="I1U-JE-JNX" secondAttribute="trailing" constant="100" id="DOj-aJ-TzR"/>
+                                            <constraint firstItem="5iR-ir-LYs" firstAttribute="top" secondItem="Rm3-iG-WWR" secondAttribute="bottom" constant="16" id="Hci-Wb-zUe"/>
+                                            <constraint firstItem="BH5-XA-yqK" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="I8t-gN-kCj"/>
+                                            <constraint firstItem="WMc-hM-d2Z" firstAttribute="top" secondItem="udE-HE-jjB" secondAttribute="bottom" constant="16" id="ItM-v0-hhu"/>
+                                            <constraint firstItem="udE-HE-jjB" firstAttribute="leading" secondItem="dp1-fK-ugz" secondAttribute="trailing" constant="16" id="Kdg-dy-0Ki"/>
+                                            <constraint firstItem="4Rh-t3-Yl2" firstAttribute="width" secondItem="4Rh-t3-Yl2" secondAttribute="height" multiplier="1:1" id="Kzz-4u-wqz"/>
+                                            <constraint firstItem="5iR-ir-LYs" firstAttribute="width" secondItem="nSL-rm-VyK" secondAttribute="width" multiplier="0.6" id="LQI-fl-X0k"/>
+                                            <constraint firstAttribute="trailing" secondItem="hmx-iL-2n0" secondAttribute="trailing" constant="20" id="Obh-RS-Cbz"/>
+                                            <constraint firstItem="NXp-7C-EgA" firstAttribute="leading" secondItem="BH5-XA-yqK" secondAttribute="trailing" constant="16" id="Ocw-L1-sQx"/>
+                                            <constraint firstItem="WMc-hM-d2Z" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="PpD-Vq-dr7"/>
+                                            <constraint firstItem="YAU-5R-d4N" firstAttribute="centerY" secondItem="w0s-um-eF9" secondAttribute="centerY" id="Rfq-BO-jl9"/>
+                                            <constraint firstItem="I1U-JE-JNX" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="UEB-c2-OEF"/>
+                                            <constraint firstItem="dp1-fK-ugz" firstAttribute="top" secondItem="hmx-iL-2n0" secondAttribute="bottom" constant="24" id="UVK-ao-G4P"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sik-8U-r1Z" secondAttribute="trailing" constant="20" id="UkU-XF-y86"/>
+                                            <constraint firstItem="NXp-7C-EgA" firstAttribute="centerY" secondItem="BH5-XA-yqK" secondAttribute="centerY" id="Xzy-Hh-A7l"/>
+                                            <constraint firstAttribute="trailing" secondItem="WMc-hM-d2Z" secondAttribute="trailing" constant="20" id="Y7N-dk-cJR"/>
+                                            <constraint firstItem="Rm3-iG-WWR" firstAttribute="centerY" secondItem="4Rh-t3-Yl2" secondAttribute="centerY" id="cEO-7y-XKS"/>
+                                            <constraint firstItem="udE-HE-jjB" firstAttribute="centerY" secondItem="dp1-fK-ugz" secondAttribute="centerY" id="daf-SS-67a"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yh1-cU-Fdd" secondAttribute="trailing" constant="64" id="dgq-Uv-S5f"/>
+                                            <constraint firstItem="w0s-um-eF9" firstAttribute="top" secondItem="Yh1-cU-Fdd" secondAttribute="bottom" constant="16" id="ecB-1f-3oj"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="eiy-xR-cGw"/>
+                                            <constraint firstAttribute="trailing" secondItem="udE-HE-jjB" secondAttribute="trailing" constant="20" id="eqX-VM-3Do"/>
+                                            <constraint firstItem="dp1-fK-ugz" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" symbolic="YES" id="flj-0t-ovY"/>
+                                            <constraint firstItem="Rm3-iG-WWR" firstAttribute="leading" secondItem="4Rh-t3-Yl2" secondAttribute="trailing" constant="16" id="nVT-0p-qgw"/>
+                                            <constraint firstItem="w0s-um-eF9" firstAttribute="width" secondItem="w0s-um-eF9" secondAttribute="height" multiplier="1:1" id="nk2-TZ-z0m"/>
+                                            <constraint firstItem="I1U-JE-JNX" firstAttribute="top" secondItem="YAU-5R-d4N" secondAttribute="bottom" constant="16" id="qKF-FQ-uFT"/>
+                                            <constraint firstItem="Yh1-cU-Fdd" firstAttribute="top" secondItem="NXp-7C-EgA" secondAttribute="bottom" constant="16" id="sis-Xv-GR4"/>
+                                            <constraint firstItem="hmx-iL-2n0" firstAttribute="top" secondItem="Sik-8U-r1Z" secondAttribute="bottom" constant="2" id="ttR-SO-0LD"/>
+                                            <constraint firstItem="4Rh-t3-Yl2" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="tug-7m-iJl"/>
+                                            <constraint firstItem="Sik-8U-r1Z" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="vXh-ND-g3h"/>
+                                            <constraint firstItem="w0s-um-eF9" firstAttribute="leading" secondItem="nSL-rm-VyK" secondAttribute="leading" constant="20" id="wLD-o6-cuO"/>
+                                            <constraint firstItem="Sik-8U-r1Z" firstAttribute="top" secondItem="nSL-rm-VyK" secondAttribute="top" constant="8" id="xN4-Gv-eko"/>
+                                            <constraint firstItem="BH5-XA-yqK" firstAttribute="width" secondItem="BH5-XA-yqK" secondAttribute="height" multiplier="1:1" id="yGF-Jb-7JT"/>
+                                            <constraint firstItem="BH5-XA-yqK" firstAttribute="top" secondItem="5iR-ir-LYs" secondAttribute="bottom" constant="16" id="yRb-Gc-fVT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nSL-rm-VyK" firstAttribute="width" secondItem="H0J-Cz-tc0" secondAttribute="width" id="5zC-B1-xlv"/>
+                                    <constraint firstItem="nSL-rm-VyK" firstAttribute="leading" secondItem="H0J-Cz-tc0" secondAttribute="leading" id="95J-fV-r5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="nSL-rm-VyK" secondAttribute="trailing" id="L4W-ks-O0V"/>
+                                    <constraint firstAttribute="bottom" secondItem="nSL-rm-VyK" secondAttribute="bottom" id="vWx-nl-Zra"/>
+                                    <constraint firstItem="nSL-rm-VyK" firstAttribute="top" secondItem="H0J-Cz-tc0" secondAttribute="top" id="vgO-kg-zak"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5e-c0-UU2">
+                                <rect key="frame" x="20" y="780" width="375.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EZf-AA-6MH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonApplyTapped:" destination="UyN-Lt-1Kc" eventType="touchUpInside" id="g4H-0f-fOc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c7V-RZ-aH0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c7V-RZ-aH0" firstAttribute="bottom" secondItem="H0J-Cz-tc0" secondAttribute="bottom" id="25H-81-py6"/>
+                            <constraint firstItem="M5e-c0-UU2" firstAttribute="leading" secondItem="c7V-RZ-aH0" secondAttribute="leading" constant="20" id="2Jy-io-DXg"/>
+                            <constraint firstItem="c7V-RZ-aH0" firstAttribute="trailing" secondItem="M5e-c0-UU2" secondAttribute="trailing" constant="20" id="5LL-CJ-u9r"/>
+                            <constraint firstItem="c7V-RZ-aH0" firstAttribute="trailing" secondItem="H0J-Cz-tc0" secondAttribute="trailing" id="7Km-uI-6ki"/>
+                            <constraint firstItem="c7V-RZ-aH0" firstAttribute="trailing" secondItem="L7X-3L-eSg" secondAttribute="trailing" id="7Sh-4N-c9Y"/>
+                            <constraint firstItem="L7X-3L-eSg" firstAttribute="leading" secondItem="c7V-RZ-aH0" secondAttribute="leading" id="TKA-gU-dCv"/>
+                            <constraint firstItem="H0J-Cz-tc0" firstAttribute="leading" secondItem="c7V-RZ-aH0" secondAttribute="leading" id="XhS-lR-iG7"/>
+                            <constraint firstItem="H0J-Cz-tc0" firstAttribute="top" secondItem="L7X-3L-eSg" secondAttribute="bottom" id="bTJ-Zg-8qH"/>
+                            <constraint firstItem="c7V-RZ-aH0" firstAttribute="bottom" secondItem="M5e-c0-UU2" secondAttribute="bottom" constant="32" id="nz7-2d-Wc9"/>
+                            <constraint firstItem="L7X-3L-eSg" firstAttribute="top" secondItem="c7V-RZ-aH0" secondAttribute="top" id="zoa-F7-BqC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAlls" destination="ms3-8M-TbO" id="jfr-23-GWJ"/>
+                        <outlet property="buttonApply" destination="M5e-c0-UU2" id="8Kx-yc-aJa"/>
+                        <outlet property="buttonHugoPay" destination="5lr-EI-Tw2" id="ZHR-4l-Dcy"/>
+                        <outlet property="buttonMoneyExpenses" destination="9kJ-5B-wYp" id="C6W-IC-n1o"/>
+                        <outlet property="buttonMoneyIncome" destination="52V-MG-rAY" id="Ob3-T1-Zem"/>
+                        <outlet property="buttonOtherCards" destination="vlT-xf-Ewz" id="kIM-HY-3Hy"/>
+                        <outlet property="labelAmountFilter" destination="NXp-7C-EgA" id="TVg-71-Pgo"/>
+                        <outlet property="labelDateFilter" destination="udE-HE-jjB" id="p7s-TZ-Ihq"/>
+                        <outlet property="labelPaymentsMethods" destination="YAU-5R-d4N" id="oBG-dF-usj"/>
+                        <outlet property="labelSubtitle" destination="hmx-iL-2n0" id="PNk-eo-IOc"/>
+                        <outlet property="labelTitle" destination="Sik-8U-r1Z" id="pR3-ar-53M"/>
+                        <outlet property="labelTo" destination="kxe-g9-Tbd" id="7BL-G3-rdC"/>
+                        <outlet property="labelTransactionFilter" destination="Rm3-iG-WWR" id="AcT-pC-DnR"/>
+                        <outlet property="textFieldEndDate" destination="gdz-KL-UCK" id="5OO-Ij-7oB"/>
+                        <outlet property="textFieldMaxAmount" destination="JxU-sh-t6D" id="A1u-21-2ox"/>
+                        <outlet property="textFieldMinAmount" destination="sbU-9j-EE9" id="N2J-bC-evB"/>
+                        <outlet property="textFieldStartDate" destination="oH5-HG-1Rx" id="uKY-se-TK4"/>
+                        <outlet property="viewEndDate" destination="HyA-cE-Bbb" id="JPc-9z-aHY"/>
+                        <outlet property="viewMaxAmount" destination="UdC-po-YBn" id="ZqR-dV-dfk"/>
+                        <outlet property="viewMinAmount" destination="hPj-Un-5Gj" id="QPE-e7-d7R"/>
+                        <outlet property="viewMoneyExpenses" destination="UtE-5f-rQc" id="yCr-l4-ZyE"/>
+                        <outlet property="viewMoneyIncome" destination="fwj-Qd-7HI" id="ANp-7V-9f8"/>
+                        <outlet property="viewStartDate" destination="U6w-SY-fZ7" id="dyV-q3-uUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLb-OP-Yuc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hpf_calendar" width="10" height="10"/>
+        <image name="hpf_payment" width="10" height="10"/>
+        <image name="hpf_precio" width="10" height="10"/>
+        <image name="hpf_price_range" width="10" height="10"/>
+        <image name="icon_close_hp" width="15" height="15"/>
+        <namedColor name="DeepPurple">
+            <color red="0.17647058823529413" green="0.062745098039215685" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

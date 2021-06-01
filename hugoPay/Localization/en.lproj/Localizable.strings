@@ -1,0 +1,2640 @@
+/* 
+  Localizable.strings
+  HugoPay
+
+  Created by Jonathan  Rodriguez on 31/5/21.
+  
+*/
+
+//EmailInfoViewController
+"lbl_EmailInfo_Main_Heading"                                    = "Let's start with Hugo!";
+"lbl_EmailInfo_Sub_Heading"                                     = "We'd like to know you.";
+"lbl_EmailInfo_username_title"                                  = "Full Name";
+"txt_EmailInfo_username"                                        = "Ej. Juan Martinez";
+"lbl_EmailInfo_requiretext"                                     = "Required";
+"txt_EmailInfo_email"                                           = "EJ. hugoapp@domain.com";
+"btn_EmailInfo_save"                                            = "SAVE";
+"lbl_EmailInfo_Email_Title"                                     = "e-mail";
+
+
+//BasicInfoViewController
+"lbl_BasicInfo_Main_Heading"                                    = "We'd like to know you!";
+"lbl_BasicInfo_Sub_Heading"                                     = "Step 3: Basic Information";
+"lbl_BasicInfo_title"                                           = "Gender";
+"lbl_BasicInfo_male"                                            = "Male";
+"lbl_BasicInfo_female"                                          = "Female";
+"lbl_BasicInfo_dob"                                             = "Date of birth";
+"txt_BasicInfo_dob_placeholder"                                 = "Insert Date";
+"btn_BasicInfo_save"                                            = "SAVE";
+
+
+//ValidPhoneLoginWithFBViewController
+"lbl_ValidPhoneLoginWithFB_Main_Heading"                        = "Wait a moment!";
+"lbl_ValidPhoneLoginWithFB_Sub_Heading"                         = "We have detected an account.";
+"lbl_ValidPhoneLoginWithFB_lengend_Text"                        = "The number **** **** is linked to a login through Facebook. We'd like you to validate your account through this social network.";
+"btn_ValidPhoneLoginWithFB_save"                                = "VALIDATE WITH FACEBOOK";
+
+
+//CreateFBPasswordViewController
+"lbl_CreateFBPassword_Welcome"                                  = "Welcome!";
+"lbl_CreateFBPassword_Sub_Heading"                              = "We'll add your security.";
+"lbl_CreateFBPassword_Legend_Heading"                           = "In Hugo, we're implementing new security measures, we'd like you to add a password that will protect your data in our platform.";
+"lbl_CreateFBPassword_Password_Text"                            = "Create your password.";
+"lbl_CreateFBPassword_Introductio_Text"                         = "Instructions:";
+"lbl_CreateFBPassword_Symbol_Text"                              = "• Use at least a symbol";
+"lbl_CreateFBPassword_Number_Text"                              = "• Use at least a number";
+"lbl_CreateFBPassword_UpperCase_Text"                           = "• Use at least a capital letter";
+"lbl_CreateFBPassword_LowerCase_Text"                           = "• Use at least a lower case letter";
+"lbl_CreateFBPassword_Length_Text"                              = "• It must have at least 8 characters";
+"btn_CreateFBPassword_Save"                                     = "SAVE PASSWORD.";
+
+
+//LoginWithPasswordViewController
+"lbl_LoginWithPassword_Heading"                                 = "Welcome";
+"lbl_LoginWithPassword_UserName"                                = "back!";
+"lbl_LoginWithPassword_Password_Text"                           = "Insert your password.";
+"btn_LoginWithPassword_Continue"                                = "NEXT";
+"btn_LoginWithPassword_Change"                                  = "INSERT";
+"btn_LoginWithPassword_Forgot"                                  = "I FORGOT MY PASSWORD.";
+
+
+//ChooseRecoverViewController
+"lbl_ChooseRecover_Main_Heading"                                = "We help you!";
+"lbl_ChooseRecover_Sub_Heading"                                 = "We'll recover your password.";
+"lbl_ChooseRecover_Recover_Msg"                                 = "We will send a recovery code to one of your registered media. Choose the channel where you would like to receive the code";
+"btn_ChooseRecover_Recover"                                     = "SEND CODE";
+
+
+// ValidateEmailViewController
+"lbl_ValidateEmail_validate_email"                              = "Validate your email.";
+"lbl_ValidateEmail_Mail_validation"                             = "Step 4: Email validation";
+"lbl_ValidateEmail_Mail_Msg"                                    = "We'll send an email to your synchronized account.";
+"lbl_ValidateEmail_Recive_Mail"                                 = "When you receive the email, go to the link to complete the validation.";
+"btn_ValidateEmail_Email_validation"                            = "SEND VALIDATION";
+"btn_ValidateEmail_Change_Email"                                = "CHANGE MY EMAIL";
+
+
+// UpdateEmailViewController
+"lbl_ValidateEmail_Update_email"                                = "Update your email!";
+"lbl_ValidateEmail_Remember_Text"                               = "Remember that you'll receive in this email the invoice of each purchase in Hugo.";
+"lbl_ValidateEmail_Email"                                       = "Email";
+"btn_ValidateEmail_Update_Validate"                             = "UPDATE AND VALIDATE";
+
+
+//ValidateRecoverCodeViewController
+"lbl_ValidateRecoverCode_Recover_Code"                          = "Insert the recovery code.";
+"lbl_ValidateRecoverCode_Sent_Code"                             = "Insert the recovery code that we have sent to your";
+"lbl_ValidateRecoverCode_Email"                                 = "sample@mail.com";
+"btn_ValidateRecoverCode_ReSend"                                = "RESEND";
+"btn_ValidateRecoverCode_Get_Code"                              = "GET THE CODE THROUGH PHONE CALL.";
+"btn_ValidateRecoverCode_Help"                                  = "I NEED HELP.";
+
+//UpdatePasswordViewController
+"lbl_UpdatePassword_Help"                                       = "Perfect!";
+"lbl_UpdatePassword_Help_SubTitle"                              = "Let's update your password.";
+"lbl_UpdatePassword_New_Password"                               = "New Password";
+"lbl_UpdatePassword_Instructions"                               = "Instructions";
+"lbl_UpdatePassword_Used_Symbol"                                = "• Use at least a symbol";
+"lbl_UpdatePassword_Used_Number"                                = "• Use at least a number";
+"lbl_UpdatePassword_Used_UpperCase"                             = "• Use at least a capital letter";
+"lbl_UpdatePassword_Used_LowerCase"                             = "• Use at least a lower case letter";
+"lbl_UpdatePassword_Minimum_msg"                                = "• It must have at least 8 characters";
+"btn_UpdatePassword_Save_Password"                              = "SAVE PASSWORD.";
+
+//StartedPhoneAlternativeViewController
+"lbl_StartedPhoneAlternative_Help"                              = "Welcome to";
+"lbl_StartedPhoneAlternative_Hading"                            = "Hugo";
+"lbl_StartedPhoneAlternative_Login_Text"                        = "Log in to your account.";
+"lbl_StartedPhoneAlternative_Conditions_Msg"                    = "I have read and accept the terms and conditions.";
+"lbl_StartedPhoneAlternative_StartWith"                         = "Or begin with";
+"lbl_StartedPhoneAlternative_Not_Account"                       = "You don't have an account?";
+"btn_StartedPhoneAlternative_signup"                            = "Sign up";
+
+
+//RegisterPhoneViewController
+"lbl_RegisterPhone_Create_Account"                              = "Create your account.";
+"lbl_RegisterPhone_StartWithPhone"                              = "Begin with a phone number.";
+"lbl_RegisterPhone_ReadCondtion"                                = "I have read and accept the terms and conditions.";
+"lbl_RegisterPhone_StartWith"                                   = "Or begin with";
+
+//StartedPhoneViewController
+"lbl_StartedPhone_Welcome"                                      = "Welcome to";
+"lbl_StartedPhone_Condition"                                    = "I accept the terms and conditions.";
+"lbl_StartedPhone_LoginWith"                                    = "Login with";
+"btn_StartedPhone_Facebook"                                     = "FACEBOOK";
+"lbl_StartedPhone_Create"                                       = "CREATE";
+"lbl_StartedPhone_Enter_Number"                                 = "Enter your phone number";
+
+
+//AddPhoneViewController
+"lbl_AddPhone_UserName"                                         = "Hi";
+"lbl_AddPhone_Edit_Title"                                       = "EDIT";
+"lbl_AddPhone_Enter_PhoneNumber"                                = "Add your phone number.";
+
+//WhereAreYouViewController
+"lbl_WhereAreYou_Heading"                                       = "Where are you?";
+"lbl_WhereAreYou_Sub_Heading"                                   = "Your location is important for us, we'd like to know your location to offer the best Delivery experience.";
+
+//ServerErrorViewController
+"lbl_ServerError_Sorry_Text"                                    = "We're very sorry!";
+"lbl_ServerError_Something_Wrong"                               = "Something is wrong.";
+"lbl_ServerError_Technical_Problem"                             = "We are having little technical problems, reload your app. We will solve it soon.";
+
+
+//ValidatePhoneViewController
+"lbl_ValidatePhone_Enter_Code"                                  = "Insert your code.";
+"lbl_ValidatePhone_Sent_Code_Msg"                               = "Insert the code we have sent to your cellphone number.";
+"btn_ValidatePhone_Get_Code"                                    = "GET THE CODE THROUGH PHONE CALL.";
+"btn_ValidatePhone_Forward_Sms"                                 = "RESEND SMS.";
+"btn_ValidatePhone_Need_Help"                                   = "I NEED HELP.";
+
+
+
+//EditUserProfileViewController
+"lbl_EditUserProfile_Full_Name"                                 = "COMPLETE NAME";
+"txt_EditUserProfile_Full_Name"                                 = "Complete name.";
+"lbl_EditUserProfile_Email"                                     = "EMAIL";
+"txt_EditUserProfile_Email"                                     = "Email";
+"lbl_EditUserProfile_Dob"                                       = "BIRTHDATE";
+"txt_EditUserProfile_Enter_Date"                                = "Insert the date.";
+
+
+//AddressBookViewController
+"lbl_AddressBook_Address_Nav"                                   = "Address";
+"lbl_AddressBook_Add_Address"                                   = "Add address";
+"btn_AddressBook_Use_Address"                                   = "Use this address";
+
+"lbl_AddressBook_Home"                                          = "House";
+"lbl_AddressBook_Office"                                        = "Job";
+"lbl_AddressBook_Other"                                         = "Other";
+"lbl_AddressBook_Localise"                                      = "Locate on the map";
+
+"lbl_AddressBook_City"                                          = "City";
+"lbl_AddressBook_State"                                         = "State";
+"lbl_AddressBook_Reference_Point"                               = "Reference point";
+"lbl_AddressBook_Example_Point"                                 = "Acrross Kingston city hall";
+"lbl_AddressBook_House_Number"                                  = "House or apartment number";
+"lbl_AddressBook_State_GT"                                      = "Zone";
+"lbl_AddressBook_Address"                                       = "Address";
+"lbl_AddressBook_Reference"                                     = "Reference:";
+"lbl_AddressBook_Required"                                      = "* Required";
+
+//OnboardingViewController
+"lbl_Onboarding_Allow_Location"                                 = "Let us have access to your location to recommend the businesses close to you.";
+"btn_Onboarding_Agree"                                          = "Agree";
+"btn_Onboarding_Not_Now"                                        = "Not now";
+"btn_Agree" = "AGREE";
+
+
+//TerritoryViewController
+"lbl_Territory_Area_Selcet"                                     = "Please select the area where you are.";
+
+
+//OrderSummaryViewController
+"lbl_OrderSummary_Summary_Order"                                   = "ORDER SUMMARY";
+"btn_OrderSummary_Add_Something"                                   = " Add something else";
+"lbl_OrderSummary_Out_Of_Stock"                                   = "I can receive a similar item if the one I select is sold out.";
+"btn_OrderSummary_Process_Order"                                   = "PROCESS ORDER";
+"lbl_OrderSummary_Title_Partner"                                   = "Your order in";
+"lbl_OrderSummary_Add_To_Order"                                   = "to order";
+"btn_OrderSummary_cancel_order"                                    = "CANCEL ORDER";
+"alert_OrderSummary_cancel_order_title"                             = "Cancel Order";
+"alert_OrderSummary_cancel_order_message"                           = "Do you want to cancel your order?";
+"alert_OrderSummary_cancel_order_cancel"                            = "CANCEL";
+"alert_OrderSummary_cancel_order_continue"                          = "CONTINUE";
+"lbl_OrderSummary_Header_Variation"                            = "PRODUCT NOT AVAILABLE IN BRANCH";
+"lbl_OrderSummary_Header_Variation_Supermarket"                             = "PRODUCT NOT AVAILABLE";
+"lbl_OrderSummary_Header_Product"                               = "PRODUCT AVAILABLE";
+"lbl_OrderSummary_Not_Variation_Title"                          = "We are sorry the inconvenience.";
+"lbl_OrderSummary_Not_Variation_Message"                        = "While you were placing your order the \nfollowing products were sold out";
+
+//PaymentTypeSelectionViewController
+"lbl_PaymentTypeSelection_Way_To_Pay"                           = "PAYMENT METHOD";
+"lbl_PaymentTypeSelection_Consulted"                            = "The points of the banks that apply will be consulted.";
+"lbl_PaymentTypeSelection_Pay_Total"                            = "Your total to cancel through %@ is";
+"lbl_PaymentTypeSelection_Upload_Voucher"                       = "UPLOAD PROOF OF PAYMENT";
+
+//AddUserInfoViewController
+"lbl_AddUserInfo_Our_Apologies"                                 = "Our apologies!";
+"lbl_AddUserInfo_Take_Seconds"                                  = "It will take some seconds.";
+"lbl_AddUserInfo_Send_Receipts"                                 = "We need the following data to send you the invoices of each purchase in our platform.";
+"lbl_AddUserInfo_FullName"                                      = "COMPLETE NAME";
+"txt_AddUserInfo_FullName"                                      = "Ej. Juan Martinez";
+"lbl_AddUserInfo_Email"                                         = "EMAIL";
+"txt_AddUserInfo_Email"                                         = "Ejem. juan.lopez@moradito.com";
+"btn_AddUserInfo_save"                                          = "SAVE";
+
+
+//OrderRedeemViewController
+"lbl_OrderRedeem_Check"                                         = "Verify.";
+"lbl_OrderRedeem_Access_Code"                                   = "Insert your access code.";
+"btn_OrderRedeem_Continue"                                      = "Continue";
+"lbl_OrderRedeem_Invitation_Code"                               = "This purchase requires an invitation code, if you have received one, insert it in the space above and then tap continue.";
+
+
+//ProcessOrderViewController
+"lbl_ProcessOrder_Nav"                                          = "SHOPPING CART";
+"lbl_ProcessOrder_Need_Invoice"                                 = "Do you need an invoice?";
+"lbl_ProcessOrder_Demand_Invoice"                               = "Demand your invoice";
+"lbl_ProcessOrder_MoreInfo"                                     = "For more information visit the prize section";
+
+"lbl_ProcessOrder_Instruction"                                  = "Delivery instructions (e.g. ring the bell)";
+"btn_ProcessOrder_Precess_Order"                                = "PROCESS ORDER";
+"alert_ProcessOrder_Valid_QTY"                                  = "Please enter a valid amount for the change";
+"lbl_ProcessOrder_Delivery_Type"                                = "DELIVERY METHOD";
+"lbl_ProcessOrder_TO_Warning_Title"                             = "Keep in mind!";
+"lbl_ProcessOrder_TO_Warning_SubTitle"                          = "At the time of processing your order to pick up at the branch, you will not be able to change the method of home delivery.";
+"alert_ProcessOrder_remove_product_title"                       = "Remove Product";
+"alert_ProcessOrder_eemove_product_subtitle"                    = "Do you want to remove this product from your order?";
+"alert_ProcessOrder_remove_product_cancel"                      = "CANCEL";
+"alert_ProcessOrder_remove_product_continue"                    = "CONTINUE";
+"lbl_need_change_ProcessOrder_modal"                            = "Do you need change?";
+"lbl_enter_amount_ProcessOrder_modal"                           = "Enter the amount";
+"btn_done_ProcessOrder_modal"                                   = "Done";
+"btn_done_minimun_ProcessOrder_modal"                           = "Agree";
+"alert_ProcessOrder_remove_product_title"                         = "Remove Product";
+"alert_ProcessOrder_eemove_product_subtitle"                      = "Do you want to remove this product from your order?";
+"alert_ProcessOrder_remove_product_cancel"                            = "CANCEL";
+"alert_ProcessOrder_remove_product_continue"                          = "CONTINUE";
+"alert_ProcessOrder_zelle_image_required"                       = "You must upload your payment image in Zelle to continue with your order.";
+"alert_ProcessOrder_pagomovil_image_required"                   = "You must upload your payment image in Pago Móvil to continue with your order.";
+"alert_ProcessOrder_paypal_image_required"                      = "You must upload your payment image in Paypal to continue with your order.";
+"alert_ProcessOrder_reserve_image_required"                     = "You must upload your payment image in Reserve to continue with your order.";
+"alert_ProcessOrder_pipolpay_image_required"                    = "You must upload your payment image in Pipol Pay to continue with your order.";
+"alert_ProcessOrder_venmo_image_required"                       = "You must upload your payment image in Venmo to continue with your order.";
+"alert_ProcessOrder_billing_required"                           = "You must select billing information to continue with your order.";
+"alert_ProcessOrder_cash_payment"                                = "When using cash as a payment, method we recommend having the exact amount. If change is required well fund the wallet in your profile with Yummy Credits for future orders. To obtain your credit message us on the Chat within the app.";
+
+//RatingViewController
+"lbl_RatingView_Order_Delovered"                                = "Your order was delivered by:";
+"lbl_RatingView_Driver_Name"                                    = "Roberto Centeno";
+"lbl_RatingView_Experience"                                     = "How was your experience?";
+
+
+//OrderReceivedViewController
+"lbl_RatingView_Ready"                                          = "ALL SET!";
+"lbl_RatingView_Order_Processed"                                = "Your order was scheduled. We'll notify you when your scheduled delivery begins.";
+"lbl_RatingView_enjoy"                                          = "We hope you enjoy it!";
+"btn_RatingView_Order_Status"                                   = "Done";
+
+
+//CallRequestViewController
+"lbl_CallRequest_Select_Subject"                                = "Please select the subject of your request.";
+
+
+//UpdateViewController
+"lbl_Update_Update_Version"                                     = "You have a new Hugo version available, please update to enjoy our new features.";
+"btn_Update_ToUpdate_Text"                                      = "Update.";
+
+
+//OrderFinishedViewController
+"lbl_OrderFinished_Request_Sent"                                = "REQUEST SENT";
+"lbl_OrderFinished_Perfect"                                     = "Perfect!";
+"lbl_OrderFinished_Request_Received"                            = "Your request has been received and is being processed. We will notify the progress.";
+"lbl_OrderFinished_Trusting_Us"                                 = "Thanks to trust in us!";
+"btn_OrderFinished_Make_Another_Shipping"                       = "MAKE ANOTHER DELIVERY.";
+"btn_OrderFinished_See_Status_MyOrder"                          = "SEE MY ORDER STATUS.";
+
+
+//PromosViewController
+"lbl_Promos_Awards"                                             = "Prizes";
+"lbl_Promos_Free_Shipping"                                      = "FREE delivery";
+"lbl_Promos_Dont_Use_AnyPrice"                                  = "Don't use any prize";
+"lbl_Promos_See_Promotion"                                      = "See promotions";
+"btn_Promos_Used_Awards"                                        = "Use this prize.";
+"lbl_Promo_Cell"                                                = "Promotions";
+
+
+//PromosMoreInfoViewController
+"lbl_PromosMoreInfo_MoreInfo"                                   = "More information";
+"Invalid_Code"                                                  = "Invalid code";
+"Enter_Code"                                                    = "Please enter the code you want to use.";
+
+//ScheduleOrders
+"lbl_title_onlyschedule"                                        = "Scheduled orders only";
+"alert_sch_expired"                                             = "The time of the scheduled order has expired, select a new one";
+"alert_sch_onlycard"                                            = "We do not accept cash payments for scheduled orders. Please select a debit or credit card.";
+"alert_sch_selectdate"                                          = "Please select a date and time to schedule the order";
+"lbl_sch_selectdate"                                            = "Define delivery date and time";
+"lbl_sch_alert_title"                                           = "Schedule a date and time for your order";
+"lbl_sch_schedule_sublabel"                                     = "Delivery date and time";
+"lbl_schedule_only_orders_with_program_date"                    = "At this time the store exclusively accepts orders with a scheduled delivery time and date";
+"lbl_schedule_understanding_msg"                                = "¡Thanks for your understanding!";
+
+//ScheduleOrdersDetail
+"lbl_sch_detail_products"                                       = "Order products";
+"lbl_sch_detail_address"                                        = "Delivery address";
+"lbl_sch_detail_date"                                           = "Approximate delivery date and time";
+"btn_sch_detail_cancel"                                         = "CANCEL";
+"lbl_sch_detail_cancel_order"                                   = "CANCEL MY ORDER";
+
+"lbl_sch_detail_number"                                         = "ORDER NUMBER";
+"lbl_sch_detail_sch_order"                                      = "SCHEDULED ORDER";
+
+//DriverTipViewController
+"lbl_DriverTip_Reward_Driver"                                   = "Reward your driver.";
+"lbl_DriverTip_Charge_To"                                       = "Charge to:";
+"btn_DriverTip_ThanksYou"                                       = "Thanks";
+
+
+//MainViewController
+"lbl_Main_SearchFor"                                              = "Search";
+"lbl_Main_View_MyOrder"                                          = "See my order";
+"lbl_Main_Saturation"                                              = "We are experiencing high traffic.";
+"lbl_Main_Delivery_Time"                                          = "The delivery time is above 60 minutes.";
+"lbl_Main_Active_Order"                                         = "You have 1 active order.";
+"lbl_Main_Active"                                               = "You have";
+"lbl_Main_Active_OrderCount"                                    = "active order";
+"lbl_Main_Active_Orders_Count"                                  = "active orders";
+"lbl_Main_Not_Coverage_Area"                                    = "There are no results in this covered area.";
+"lbl_Main_Checking_Shipping"                                    = "Verify your last delivery address or try another address.";
+"lbl_Main_favorites_section_title"                             = "Favorites";
+"lbl_Main_commerce_title"                                      = "Shops";
+
+//CancelScheduleOrder
+"lbl_Title"                                                     = "Order cancellation";
+"lbl_Subtitle"                                                  = "If you want to cancel your order, we need to know how you would like to receive your money back.";
+"lbl_Credits"                                                   = "Credits hugo";
+"lbl_Credits_Subtitle"                                          = "Credits usable within hugoapp in any of our services.";
+"lbl_Program"                                                   = "Refund to the card";
+"lbl_Program_Subtitle"                                          = "This process can take up to 90 days depending on your bank.";
+
+
+//ProductViewAllViewController
+"lbl_ProductView_Title"                                         = "Section Title";
+"lbl_ProductView_ViewOrder"                                     = "SEE MY ORDER";
+"lbl_ProductView_No_Result_Found"                               = "No results found.";
+
+
+
+//ProductsByCategoryViewController
+"lbl_ProductsByCategory_Products"                               = "Partner name";
+"lbl_ProductsByCategory_ViewOrder"                              = "SEE MY ORDER";
+
+
+//CoverAlertViewController
+"lbl_CoverAlert_Heading"                                        = "We are very sorry";
+"lbl_CoverAlert_Sub_Headling"                                   = "We have detected that you´re outside our service area. Hugo is expanding as quickly as possible. Would you like to be notified when we cover this zone?";
+"txt_CoverAlert_Name"                                           = "Name";
+"txt_CoverAlert_Mail"                                           = "Email";
+"btn_CoverAlert_Submit"                                         = "SEND";
+"btn_CoverAlert_Another_Shipping"                               = "SET ANOTHER DELIVERY POINT";
+
+
+
+//ChooseAddressIconViewController
+"lbl_ChooseAddressIcon_Heading"                                 = "Select an icon.";
+"lbl_ChooseAddressIcon_Descripation"                            = "Description";
+"lbl_ChooseAddressIcon_Fill_Details"                            = "Complete your data.";
+"btn_ChooseAddressIcon_Add"                                     = "ADD";
+
+//Billing
+"billing_title"                                                 = "Billing";
+"billing_cell_lblname"                                          = "Jhon Doe";
+"billing_cell_nit"                                              = "101-2563-123-8";
+"billing_cell_address"                                          = "Av. Masferrer, Col. Escalon, San Salvador, El Salvador";
+"billing_use_the_info"                                          = "Use this information.";
+"lbl_new_billing_title"                                         = "New invoice";
+"lbl_new_billing_name"                                          = "Name";
+"txt_new_billing_name_placeholder"                              = "Name";
+"lbl_new_billing_txt_number"                                    = "Tax document";
+"txt_new_billing_txt_number_placeholder"                        = "Insert your tax document.";
+"lbl_new_billing_address"                                       = "Address";
+"txt_new_billing_address_placeholder"                           = "Address";
+"txt_new_billing_Enter"                                         = "Enter your";
+"Reqiured_Field"                                                = "Required fields";
+"Reqiured_Msg"                                                  = "Please make sure the fields are not empty";
+"Cloud_Not_save"                                                = "Could not save billing information";
+"txt_new_billing_email_placeholder"                             = "Email";
+"lbl_new_billing_email"                                         = "Send invoice to the mail:";
+"btn_Add_Billing"                                               = "ADD DATA";
+"lbl_billing_title"                                             = "Enter your billing information";
+"btn_Use_Billing"                                               = "USE DATA";
+
+// New Billing
+"receipt_navBar_title" = "INVOICE";
+"receipt_list_button_title" = "USE INFORMATION";
+"receipt_list_edit_action_title" = "EDIT";
+"receipt_list_delete_action_title" = "DELETE";
+"receipt_configuration_create_button_title" = "SAVE";
+"receipt_configuration_edit_button_title" = "UPDATE";
+"receipt_configutarion_name_title" = "Full name";
+"receipt_configuration_document_title" = "Tax ID Number";
+"receipt_configuration_document_title_yummy" = "Cédula";
+"receipt_configuration_address_title" = "Address";
+"receipt_configuration_name_placeholder" = "Juan Ernesto López";
+"receipt_configuration_document_placeholder" = "00000000000000";
+"receipt_configuration_address_placeholder" = "Enter address";
+"receipt_configuration_title" = "Invoice Information";
+"receipt_configuration_create_subtitle" = "Enter data";
+"receipt_configuration_edit_subtitle" = "Update data";
+
+//Bussiness
+"lbl_pending_order_title"                                       = "Pending orders";
+"lbl_enter_phone_number_token"                                  = "Insert your token (phone number).";
+"btn_verifier"                                                  = "Verify.";
+
+//CC
+//1.Register Credit card vc
+"txt_creditcard_name_placeholder"                               = "Name on the card";
+"txt_creditcard_number_placeholder"                             = "Number on the card";
+"txt_creditcard_type"                                           = "Type of card";
+"txt_creditcard_exirydate"                                      = "Expiration date";
+"txt_creditcard_pin"                                            = "Security PIN";
+"lbl_creditcard_description"                                    = "The card is saved exclusively in the device in a safe way and the information is subject to our privacy policies and use. ";
+"lbl_creditcard_privacy_policy"                                 = "See the Privacy Policies.";
+
+//CCBookViewController
+
+"lbl_creditcard_title"                                          = "Credit cards";
+"lbl_Add_card"                                                  = "Add card";
+"btn_use_this_card"                                             = "Use this card";
+"First_Card"                                                    = "¡Add your first card and start your hugo experience!";
+"Searching_points_calculating"                                  = "Updating...";
+
+//HistoryAndTracking
+"lbl_order_titke"                                               = "ORDERS";
+"btn_active_orders"                                             = "ACTIVE ORDERS";
+"btn_order_history"                                             = "HISTORY";
+"lbl_Active_orders"                                             = "ACTIVE";
+"lbl_Schedule_orders"                                           = "SCHEDULED";
+
+//PAST ORDERS
+"lbl_past_order_imp_notes"                                      = "When re-processing this order, some prices may vary depending on the charges that are in effect at the time of processing (e.g., delivery charge, booking fee, tax and others).";
+"btn_past_order_request_help"                                   = "REQUEST HELP WITH THIS ORDER";
+"btn_past_order_again"                                          = "Order again";
+
+//Tracking sheet
+
+"lbl_swipe_up"                                                  = "Swipe up";
+"lbl_swipe_down"                                                = "Swipe down";
+"lbl_Keep_Going"                                                = "Keep going";
+"btn_call_driver"                                               = "Call";
+"lbl_driver_name"                                               = "Roberto Centeno";
+"lbl_driver_plate"                                              = "Hugo ID: M3324455";
+"lbl_cell_order_tracking_info_label"                            = "Added order";
+"lbl_cell_order_tracking_info_time"                             = "10:00 am";
+"btn_help_with_my_order"                                        = "Help with my order";
+"lbl_order_estimation"                                          = "00:00";
+"lbl_order_estimate_time_for_delivery"                          = "ESTIMATED DELIVERY TIME";
+"lbl_no_active_orders"                                          = "You don't have an active order.";
+"lbl_no_active_order_notes"                                     = "You don't have an active order, ask what you need and we will bring it in minutes";
+"lbl_picking_activ_order_info"                                  = "Hugo is collecting your order, there isn't tracking information still. You can tap the icon above to see the history of your order.";
+"lbl_yummy_picking_activ_order_info"                            = "Yummy is collecting your order, there isn't tracking information still. You can tap the icon above to see the history of your order.";
+"lbl_unable_to_locate_hugo"                                     = "It is impossible to locate Hugo, trying…";
+
+"lbl_soon_in_hugo"                                              = "SOON IN HUGO!";
+"btn_skip"                                                      = "Skip";
+"lbl_description"                                               = "Sample description";
+"lbl_sample_title"                                              = "Sample title";
+"lbl_say_hello_yo_driver"                                       = "Say hello to your new personal driver!";
+"lbl_welcome_code_for_veichle"                                  = "Enter the welcome code to order your first vehicle";
+"btn_how_to_get"                                                = "How to get?";
+"lbl_branch_to_pick"                                            = "Branch to withdraw order";
+"lbl_order_information"                                         = "Your order information";
+
+//CheckoutPayServiceViewController
+"lbl_CheckoutPayService_Nav"                                    = "CHECKOUT";
+
+
+//TopUpMainViewController
+"lbl_TopUpMain_Recharge"                                        = "Let's recharge.";
+"lbl_TopUpMain_Who_Recharge"                                    = "Who will we recharge?";
+"btn_TopUpMain_Anothet_Number"                                  = "ENTER ANOTHER NUMBER.";
+"btn_TopUpMain_Choose_Operator"                                 = "Choose the network";
+"btn_TopUpMain_How_much_Balance"                                = "Amount to recharge";
+"btn_Enter_Another"                                             = "ENTER ANOTHER NUMBER";
+
+
+//TopUpAddNumberViewController
+"lbl_TopUpAdd_Enter_Number"                                     = "Enter the number to recharge.";
+"txt_TopUpAdd_Enter_Number"                                     = "Phone number";
+
+//SearchAddressShipmentViewController
+"lbl_SearchAddressShipment_Cancel"                              = "Cancel";
+"lbl_SearchAddressShipment_Hugo"                                = "Hugo";
+"txt_SearchAddressShipment_Starting_place"                      = "Place of start";
+"lbl_SearchAddressShipment_Destination"                         = "Destiny place";
+"lbl_SearchAddressShipment_Sorry_NoResult"                      = "We are sorry, no results were found.";
+"lbl_SearchAddressShipment_modify_image"                        = "MODIFY IMAGE";
+
+//SortViewController
+
+"lbl_Sort_Callsification"                                       = "Qualification";
+"lbl_Sort_Price"                                                = "Price";
+"lbl_Sort_DeliverTime"                                          = "Delivery time";
+"lbl_Sort_Cost"                                                 = "Cost per shipment";
+
+"lbl_Sort_Demand" = "Inmediate delivery";
+"lbl_Sort_Schedule" = "Schedule order";
+"lbl_Sort_TakeOut" = "Pick up at location";
+
+"lbl_Sort_By" = "Sort by:";
+"lbl_Sort_Delivery" = "Delivery method:";
+
+//FinalizeRideViewController
+"lbl_FinalizeRide_Shipping_Completed"                           = "Finished delivery!";
+"lbl_FinalizeRide_Total_Shipping_Order"                         = "We present you a summary of the shipment";
+"lbl_FinalizeRide_Amount"                                       = "$amount";
+"lbl_FinalizeRide_About_Service"                                = "How is our delivery service?";
+"lbl_FinalizeRide_Exprience"                                    = "We would like to know your opinion about\nthe experience.";
+"btn_FinalizeRide_Continue"                                     = "CONTINUE";
+"lbl_FinalizeRide_PointA"                                       = "POINT A";
+"lbl_FinalizeRide_PointB"                                       = "POINT B";
+"lbl_FinalizeRide_PointC"                                       = "POINT C";
+"lbl_FinalizeRide_QualificationTitle"                           = "Qualification required
+";
+"lbl_FinalizeRide_QualificationMSg"                             = "POINT C";
+
+
+//FinalizeGoodRatingViewController
+
+"lbl_FinalizeGoodRating_Great"                                  = "Great!";
+"lbl_FinalizeGoodRating_Thanks_Trusting"                        = "Thanks for your trust in us";
+"lbl_FinalizeGoodRating_Postive_Comments"                       = "Do you have any positive comment for";
+"lbl_FinalizeGoodRating_Add_Comments"                           = "Add a comment (optional)";
+"lbl_FinalizeGoodRating_Thank_you"                              = "You can thank";
+"lbl_FinalizeGoodRating_Select_Reward"                          = "Next you can select a reward:";
+"btn_FinalizeGoodRating_Reward_To"                              = "REWARD TO";
+"btn_FinalizeGoodRating_Not_Reward"                             = "DO NOT REWARD THIS TIME";
+"lbl_FinalizeGoodRating_Title"                                  = "Qualification required";
+"lbl_FinalizeGoodRating_Subtitle"                               = "Please rate your experience";
+
+
+
+//FinalizeBadRatingViewController
+"lbl_FinalizeBadRating_Name"                                    = "Wow!";
+"lbl_FinalizeBadRating_experience"                              = "We are sorry you didn't have a good experience.";
+"lbl_FinalizeBadRating_Improve_Name"                            = "What can improve";
+"lbl_FinalizeBadRating_Improve_Comment"                         = "Commentary";
+
+
+//RideMapViewController
+"lbl_RideMap_Home"                                              = "Home";
+"lbl_RideMap_Work"                                              = "Work";
+        
+//RideSummaryCarsViewController
+"lbl_RideMap_passenger"                                         = "1-9 passengers";
+   
+        
+//SearchGpsLocationViewController
+"lbl_Search_GpsLocation"                                        = "Confirm your current location!";
+"lbl_Search_GpsLocation_Profile"                                = "Move your profile photo in the map to locate you better.";
+"lbl_Search_GpsLocation_Ready"                                  = "Ready";
+
+//WelcomeMapsBottomViewController
+"lbl_WelcomeMaps_UP"                                            = "What's up";
+"lbl_WelcomeMaps_today"                                         = "Where do you want to go today?";
+"lbl_WelcomeMaps_destiny"                                       = "Search your destiny.";
+"lbl_WelcomeMaps_address"                                       = "There are no addresses.";
+
+        
+//RideSummaryArrivingViewController
+"lbl_RideSummaryA"                                              = "Giovanni";
+"lbl_RideSummaryJeep"                                           = "Jeep Cherokee";
+"lbl_RideSummaryLooking"                                        = "Looking for transportation…";
+"lbl_RideSummary_Cancel"                                        = "Cancel";
+
+
+//CustomPageViewController
+"btn_CustomPage_Skip"                                           = "Skip";
+"lbl_CustomPage_Sample_Title"                                   = "Sample title";
+"txt_CustomPage_Sample_Description"                             = "Sample description";
+"btn_CustomPage_Sample_SoonInHugo"                              = "COMING SOON!";
+
+
+//InvitationCodeViewController
+"lbl_InvitationCode_New_Driver"                                 = "Say hi to your new personal driver!";
+"lbl_InvitationCode_Code_First_Vehicle"                         = "Enter the welcoming code to ask for your first vehicle.";
+
+//Help
+"lbl_Help_Tickets"                                              = "My Tickets";
+
+
+
+//XIB
+
+//TokenHeaderTableView
+"lbl_TokenHeaderTable_Impressa"                                 = "Impressa Repuestos";
+//TokenRowTableViewCell
+"lbl_TokanRowTable_Ho"                                          = "HO-12345462";
+
+//SalutationTableViewCell
+"lbl_Salutation_You_Need"                                 = "What do you want today?";
+
+//ServiceCollectionViewCell
+"lbl_Service_Food"                                              = "Food";
+"lbl_Service_Restaurants"                                       = "140 restaurants";
+
+
+//TotalTableViewCell
+"lbl_TotalTable_SubTotal"                                       = "Subtotal";
+"lbl_TotalTable_Food_Service_Charge"                            = "Charge for service";
+"lbl_TotalTable_Delivery_Charge"                                = "Charge for delivery";
+"lbl_TotalTable_Total"                                          = "TOTAL";
+"btn_TotalTable_Cancel"                                         = "Cancel order";
+
+
+//ServiceSelectionItem
+"lbl_ServiceSelection_Cancel"                                   = "Cancel order";
+"lbl_ServiceSelection_Food"                                     = "Food";
+"lbl_ServiceSelection_Coming_Soon"                              = "Very soon";
+
+//PartnerTableViewCell
+"lbl_PartnerTable_Name"                                         = "Koi Sushi";
+"lbl_PartnerTable_Minimum"                                      = "$10 minimum";
+"lbl_PartnerTable_Minutes"                                      = "30-40 min.";
+"lbl_PartnerTable_New"                                          = "New";
+"lbl_PartnerTable_Close"                                        = "Closed";
+"lbl_PartnerTable_Time"                                         = "10:00am - 10:30pm";
+
+
+
+//HANotificationBanner
+"lbl_HANotificationBanner_Text"                                 = "We are experiencing high traffic now, it is possible that you get your order in a delivery time of 60 min.";
+
+
+//EntertainmentOrderTableViewCell
+"lbl_EntertainmentOrder_January"                                = "JANUARY";
+"lbl_EntertainmentOrder_Ev"                                     = "EV- 93482342934";
+"lbl_EntertainmentOrder_Service"                                = "Servicio - Tributo a Natalia…";
+
+
+//RideOrderTableViewCell
+"lbl_RideOrderTable_Transporte"                                 = "Transportation";
+"lbl_RideOrderTable_Address"                                    = "91 Avenida Norte, San Salvador …";
+"lbl_RideOrderTable_Address_Sub"                                = "Avenida Calle 153, Bogotá…";
+"lbl_RideOrderTable_Total"                                      = "Total: $20.23";
+"lbl_RideOrderTable_Time"                                       = "ETA: 12:45 PM";
+
+
+//ShipmentAddressTableViewCell
+"lbl_ShipmentAddress_Summit"                                    = "Cumbre Palo Alto";
+"lbl_ShipmentAddress_House"                                     = "Casa #45, Puerta Trasera";
+"lbl_ShipmentAddress_Description"                               = "Description";
+"lbl_ShipmentAddress_Attachments"                               = "Attachment";
+
+
+
+//DateRangePicker
+
+"btn_DateRangePicker_Cancel"                                    = "Cancel";
+"btn_DateRangePicker_Finalize"                                  = "Done";
+
+
+//TicketCollectionViewCell
+
+"lbl_DateRangePicker_Months"                                    = "DOMINGO 22 DE ENERO / 7PM";
+"lbl_DateRangePicker_Tribute"                                   = "Tributo a Natalia Lafourcade";
+"lbl_DateRangePicker_Caminito"                                  = "CAMINITO PLAZA FUTURA";
+"lbl_DateRangePicker_Vip"                                       = "VIP / A";
+"lbl_DateRangePicker_TicketId"                                  = "TICKET ID";
+"lbl_DateRangePicker_Id"                                        = "GHFYT-UODHFYG-154BGS";
+
+//CancelOrderTableViewCell
+"btn_CancelOrder"                                               = "Cancel order";
+
+//OrderSummaryProductCell
+"lbl_OrderSummary_Product_Name"                                 = "Product name";
+"lbl_OrderSummary_Product_Details"                              = "Detail ($0.50)";
+
+//GetPrizeTableViewCell
+"lbl_GetPrize_Apply_Order"                                      = "You have prizes that can apply for this order.";
+
+
+//PromotionalCodeTableViewCell
+"lbl_PromotionalCode_Enter_Promo_Code"                          = "Enter your promo code.";
+
+
+//ViewReceiptsTableViewCell
+"lbl_ViewReceipts_Purchase_Ticket"                              = "See the purchase ticket.";
+
+//RefundDesclaimerTableViewCell.xib
+"lbl_RefundDesclaimer_Remimber_refund"                          = "In the event you need refund, please check out our refund policy.";
+"lbl_RefundDesclaimer_Refund_Policy"                            = "Know about our refund policy.";
+
+
+//ConfirmSimilarProducts
+"lbl_ConfirmSimilar_Similar_Purchase"                           = "Are you sure you don't want to get a similar item in your purchase?";
+"lbl_ConfirmSimilar_Similar_Purchase_Desc"                      = "If you don't find some article in your list, we will remove this item and you'll receive its value in the balance of your profile.";
+
+//RedeemSwitchTableViewCell
+"lbl_RedeemSwitch_Card_Point"                                   = "Do you want to use the points of your card in this order?";
+
+//CategoryCollectionViewCell
+"lbl_Category_Water"                                            = "Water";
+
+
+
+//ProductCollectionViewCell
+"lbl_ProductCollection_Signature"                               = "Kirkland Signature Compactor Bag With DrawstringKirkland Signature Compactor Bag With Drawstring";
+
+//ProductNormalCollectionViewCell
+"lbl_ProductNormal_Title"                                       = "Yuca Fritag con Parmesano Yuca Fritag con Parmesano";
+"lbl_ProductNormal_Activities"                                  = "Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities";
+
+//AgeRequieredWarning
+"lbl_AgeReuired_Take_Account"                                   = "Important reminder!";
+"lbl_AgeReuired_Driver_Request"                                 = "The driver will ask for you to show your ID to verify your age.";
+"lbl_AgeReuired_Driver_Request_Ok"                              = "I AGREE";
+"lbl_AgeReuired_Product"                                        = "The sale of these products is not allowed to minors.";
+"lbl_product_unavailable_title"                                 = "We are sorry the inconvenience!";
+"lbl_product_unavailable_message"                               = "This product is no longer available, we recommend you a similar product.";
+"lbl_stock_unavailable_title"                                   = "Insufficient product!";
+"lbl_stock_unavailable_message"                                 = "We apologize for the inconvenience, in this moment we don’t count with the product quantity that you need.";
+"lbl_product_variation_message"                                 = "Some products are no longer available in inventory. Please, check again the cart.";
+
+//PartnerProductWithImageTableViewCell
+"lbl_PartnerProduct_Tiltle"                                     = "Yuca Fritag with Parmesan cheeseYuca Fritag with Parmesan cheese";
+
+"lbl_PartnerProduct_Activities"                                 = "Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities Entrepreneurial activities";
+
+
+
+//ProductDetailTableViewCell
+"lbl_ProductDetail_Product_Name"                                = "Product name";
+"lbl_ProductDetail_Des"                                         = "Detalle ($0.50)";
+
+
+//GLIndexedCollectionViewCell
+
+"lbl_GLIndexed_Title"                                           = "Absolute";
+
+//PartnerProductHeaderTableViewCell
+"lbl_PartnerProduct_Restaurant"                                 = "Restaurant Mata ";
+"lbl_PartnerProduct_Café_Gourmet"                               = "Coffee Gourmet";
+"lbl_PartnerProduct_Schedule"                                   = "SCHEDULE";
+"lbl_PartnerProduct_Minimum"                                    = "DELIVERY FEE";
+
+
+//OptionsInfoHeaderCell
+"lbl_OptionsInfo_Pink_Sauce"                                    = "Fish ceviche in pink sauce";
+"lbl_OptionsInfo_Activites"                                     = "Entrepreneurial activities";
+"lbl_OptionsInfo_Extra_Descripation"                            = "eExtra description";
+    
+//OptionsInfoWithImageHeaderCell
+"lbl_OptionsInfoWithImage_Pink_Sauce"                           = "Fish ceviche in pink sauce";
+"lbl_OptionsInfoWithImage_Activites"                            = "Entrepreneurial activities";
+
+//OptionsQtyCell
+"lbl_OptionsQtyCell_Instruction"                                = "Special instructions";
+"btn_OptionsQtyCell_Add_Note"                                   = "Add a note to this product.";
+"lbl_OptionsQtyCell_Qty"                                        = " Select the quantity.";
+    
+//PartnerFeedTableViewCell
+"lbl_PartnerFeedTable_Address"                                  = "Super Marino";
+"lbl_PartnerFeedTable_Ceviche"                                  = "Ceviche - Seafood";
+"lbl_PartnerFeedTable_New"                                      = "New";
+"lbl_PartnerFeedTable_Closed"                                   = " Closed";
+"lbl_PartnerFeedTable_Minimum"                                  = "$100,999.95 minimum";
+"lbl_PartnerFeedTable_Mintues"                                  = "35 min.";
+
+    
+//RangeSlider
+"lbl_RangeSlider_Dynamic"                                       = "Dynamic rate applies";
+"lbl_RangeSlider_Condition"                                     = "We are far, your product may not arrive in the best condition.";
+"btn_RangeSlider_Done"                                          = "DONE!";
+"lbl_costMessage"                                               = "Cost of service";
+    
+
+//CreditCardTableViewCell
+"lbl_CreditCard_Bazan"                                          = "Rodrigo Antonio Bazan";
+"lbl_CreditCard_Predeterminado"                                 = "PREDETERMINED";
+
+
+//CardTableViewCell
+"lbl_CardTable_Not_Apply"                                       = "This card does not apply.";
+
+//CardInfoView
+"lbl_CardInfo_Expiration"                                       = "Expiration date";
+"lbl_CardInfo_Under_Card"                                       = "You can find this date in the front of your card, under the card number.";
+
+
+//ConfirmAlertView
+"lbl_ConfirmAlert_Confirm_Data"                                 = "Confirm information";
+"lbl_ConfirmAlert_Card_Detail_Correct"                          = "Are you sure the information in your card is correct?";
+"lbl_ConfirmAlert_Card_Number"                                  = "Card number";
+"lbl_ConfirmAlert_ExpireDate"                                   = "Expiration date";
+
+//TopUpCheckoutTableViewCell
+"lbl_TopUpCheckout_Number_Rechage"                              = "Number to recharge";
+"btn_TopUpCheckout_Edit"                                        = "Edit";
+"lbl_TopUpCheckout_Total_Rechage"                               = "Recharge total";
+
+
+//DisclaimerTopUpTableViewCell
+"lbl_Already_include"                                           = "The applicable taxes are included in your recharge.";
+
+//TopUpDetailHistoryTableViewCell
+"lbl_TopUpDetailHistory_Refence_Number"                         = "Reference number";
+
+
+//PayServiceDetailHistoryTableViewCell
+"lbl_PayServiceDetailHistory_Invoice"                           = "Invoice holder";
+"lbl_PayServiceDetailHistory_Identifier"                        = "Reference identifier";
+
+
+//PayServiceCollectionViewCell
+"lbl_PayServiceCollection_Financial"                            = "Finance";
+
+
+
+
+//ProvidersPayServicesTableViewCell
+"lbl_ProvidersPayServices_Insurance"                            = "Insurance carrier";
+"lbl_ProvidersPayServices_Insurance_ACSA"                       = "ACSA Insurance";
+
+    
+    
+//BillPayServiceTableViewCell
+"lbl_BillPayService_Invoice_Holder"                             = "Invoice holder X:";
+"lbl_BillPayService_Reference_Identifi"                         = "Reference identifier";
+   
+    
+//TitlePayServiceCollectionViewCell
+"lbl_TitlPayService_Pay_Today"                                  = "need to pay today?";
+"lbl_TitlPayService_Pay"                                        = "What do you ";
+
+    
+//ThirdPartyImageTableViewCell
+"lbl_ThirdPartyImage_Accept"                                    = "I have read and accept the terms and conditions to use this service.";
+
+    
+//PersonalAddressTableViewCell
+"lbl_PersonalAddress_Title"                                     = "Home";
+"lbl_PersonalAddress_Address"                                   = "La Libertad, El Salvador";
+
+    
+//CustomAddressTableViewCell
+"lbl_CustomAddress_Title"                                       = "San Salvador, Municipality of San Salvador";
+"lbl_CustomAddress_Address"                                     = "San Salvador, El Salvador";
+
+    
+//UserLocationTableViewCell
+"lbl_UserLocation_Location"                                     = "Current location";
+
+    
+//PaymentLocationTableViewCell
+"lbl_PaymentLocation_Pickup_Location"                           = "Place to collect (A)";
+"lbl_PaymentLocation_Stop_Place"                                = " Stop place (B)";
+"lbl_PaymentLocation_Place_Delivery"                            = "Delivery place (C)";
+
+
+   
+//PaymentTypeHeader
+"lbl_PaymentTypeHeader_Method"                                  = "PAYMENT METHOD";
+"btn_PaymentTypeHeader_Add"                                     = "ADD";
+
+    
+    
+//ShipmentCheckoutHeader
+"lbl_ShipmentCheckout_Date"                                     = "DATE AND TIME (APPROX.)";
+"lbl_ShipmentCheckout_Subtitle"                                 = "The cash will be delivered at the destination point because you have at least one purchase with a list at one point.";
+
+
+    
+//ShipmentETATableViewCell
+"lbl_ShipmentETA_Monday"                                        = "Monday, February 25th";
+
+    
+//ShipmentLocationTableViewCell
+"lbl_ShipmentLocation_Point"                                    = "POINT A";
+"lbl_ShipmentLocation_Address"                                  = "Home, La Libertad, El Salvador";
+"btn_ShipmentLocation_ProductList"                              = "See product list";
+"btn_ShipmentLocation_Add_Image"                                = "Attached images";
+
+
+    
+//ShipmentPurchaseTableviewCell
+"lbl_ShipmentPurchase_Total_Cost"                               = "Total cost of delivery only";
+"lbl_ShipmentLocation_Inside_Errand"                            = "Inside your errand, you can find a list of purchases, we will make the payment when carrying them out.";
+
+    
+    
+//ShipmentErrorPurchase
+"lbl_ShipmentError_Update"                                      = "PAYMENT UPDATE";
+"lbl_ShipmentError_Info"                                        = "We need you to update your payment information for the next detail:";
+
+//ShipmentOrderView
+"lbl_Shipment_Invoice"                                          = "Demand your invoice";
+    
+    
+//AlertMandaditos
+"lbl_Alert_Add_Stop"                                            = "Add a stop";
+"lbl_Alert_Alert"                                               = "Are you sure you want to add a stop in your errands? This can affect the current cost.";
+"lbl_Alert_Cash"                                                = "Remember any change required in cash will be given in Yummy Credits within the wallet of your profile for future orders. You can obtain your credit by messaging us on the Chat within the app once you recive your order. Remember to give us your order number.";
+
+//ActiveOrdersView
+"lbl_ActiveOrder_Active"                                        = "You have 1 active order.";
+
+    
+//WriteDescriptionView
+"lbl_WriteDescription_Address"                                  = "ADDRESS DETAILS";
+"txt_WriteDescription_Building"                                 = "Building, Office, Floor, Door, Commerce…";
+"lbl_WriteDescription_Point_Hugo"                               = "WHAT WILL HUGO DO IN POINT A?";
+"btn_WriteDescription_Mandadito"                                = "Errands";
+"btn_WriteDescription_Buy_List"                                 = "List of purchases";
+"lbl_WriteDescription_Item_BackPack"                            = "Your item(s) must fit in our backpack.";
+
+    
+//ConfirmationBottomShipmentView
+"lbl_ConfirmationBottom_Confirm_Location"                       = "Confirm your location!";
+"lbl_ConfirmationBottom_Set_Pin"                                = "Set the pin in the correct address.";
+"btn_ConfirmationBottom_Pin_Up"                                 = "SET";
+
+    
+//AddressInitBottomView
+"lbl_AddressInit_Ready"                                         = "We've got you!";
+"lbl_AddressInit_Do_for_Today"                                  = "Where are we going today?";
+"lbl_AddressInit_PointA"                                        = "Address point A";
+"lbl_AddressInit_PointB"                                        = "Address point B";
+"lbl_AddressInit_PointC"                                        = "Address point C";
+"btn_AddressInit_Add_Stop"                                      = "ADD STOP";
+"lbl_AddressInit_Total_Cost"                                    = "TOTAL COST OF DELIVERY ONLY";
+"lbl_AddressInit_Distance"                                      = "DISTANCE";
+"lbl_AddressInit_Esitimated_Cost"                               = "ESTIMATED COST";
+"btn_AddressInit_Round_Trip"                                    = "Round trip";
+    
+
+//ListViewShipment
+"lbl_ListView_Product"                                          = "List of products";
+"lbl_AddressInit_Comnfirm_List"                                 = "PPlease confirm the list of products that we will buy for you today:";
+"lbl_ListView_Product_Name"                                     = "1. Product Name";
+"lbl_ListView_Product2"                                         = "2. Product Name";
+"lbl_ListView_Product3"                                         = "3.  Product Name";
+"lbl_ListView_Product4"                                         = "4.  Product Name";
+"lbl_ListView_Product5"                                         = "5.  Product Name";
+"btn_ListView_Confirm"                                          = "Confirm";
+"btn_ListView_Modify_List"                                      = " MODIFY LIST";
+    
+//ShipmentErrorPaymentPopUp
+"lbl_ShipmentError"                                             = "UPS!";
+"lbl_ShipmentError_Card_Problem"                                = "We have problems with your card.";
+"lbl_ShipmentError_Selecting_Another"                           = "We have not been able to charge the card registered for your order, help us changing the payment method or selecting another card.";
+"btn_ShipmentError_Change_Card"                                 = "CHANGE CARD";
+
+    
+//SearchTableViewHeader
+"lbl_SearchTable_Option"                                        = "Recommended options";
+"lbl_SearchTable_Shop"                                          = "Recommended Shops";
+"Sorry_No_Match"                                                = "Sorry no matches found";
+
+    
+//OptionItemHeader
+"lbl_Option_Category"                                           = "OPTION CATEGORY";
+"lbl_Option_R"                                                  = "R (max 12)";
+    
+
+//ProductTableViewHeader
+"lbl_ProductTable_Drinks"                                       = "Beverages";
+"lbl_ProductTable_See_ALl"                                      = "See all ›";
+
+//OrderProcessTableViewHeader
+"lbl_OrderProcess_Drinks"                                       = "Beverages";
+    
+//TrackingInfoTableViewHeader
+"lbl_Tracking_Order_Status"                                     = "Estate of order: HO-9999999999";
+"lbl_Tracking_See_Details"                                      = "See detail";
+
+    
+//CountryTableViewCell.xib
+"lbl_Country_Name"                                              = "El Salvador";
+
+    
+    
+//FinalizeBadRatingEndCell.xib
+"btn_FinalizeBad_Submit"                                        = "SEND";
+"lbl_FinalizeBad_Team_provider"                                 = "Thanks for letting us know. We will work to improve the service our team provides.";
+
+
+
+//RideSummaryArrivingCell.xib
+"lbl_RideSummaryArriving"                                       = "Home";
+"lbl_RideSummaryArriving_Address"                               = "Residencial Miramar, Poligono G, casa #137";
+
+    
+    
+//RideSummaryCarsCell.xib
+"lbl_RideSummaryCars_Cargo"                                     = "charge";
+
+    
+//ChatEmpty.xib
+"lbl_ChatEmpty_Title"                                           = "¡Hi %@!\nStart taking to your driver.";
+
+//LocalNotificationChat.xib
+"btn_LocalNotification_Open"                                    = "Open";
+"btn_LocalNotification_To_Close"                                = "Close";
+"lbl_LocalNotification_New_Transport"                           = "New transport message";
+"lbl_LocalNotification_Cant_Guarantee"                          = "At the moment, we could not establish the position of your driver.";
+
+//ImprovementListCell.xib
+"lbl_ImprovementList_Improve_Name"                              = "What can $name improve?";
+
+//ImprovementDetail.xib
+"lbl_ImprovementList_Details"                                   = "textoooooooooooorretrtrtertertertertertrtrt";
+
+    
+    
+//BottomBadRatingCell.xib
+//"lbl_BottomBadRating_Imporve_Name" = "¿Qué puede mejorar $name?";
+"txt_BottomBadRating_Add_Comment"                               = "Add comment (optional)";
+"btn_BottomBadRating_Send_Comment"                              = "SEND COMMENT";
+"lbl_BottomBadRating_Improve_Service"                           = "Thanks for letting us know. We will work to improve the service our team provides.";
+
+
+//RatingCommentPositive.xib
+"lbl_RatingComment_Postive"                                     = "Do you have any positive comment for";
+"txt_RatingComment_Postive"                                     = "Add a comment (optional)";
+
+//TipCell.xib
+"lbl_TipCell_Thanks"                                            = "You can thank to";
+"lbl_TipCell_Thanks_Sub"                                        = "You can give an additional reward (Optional):";
+"btn_TipCell_Finalizer"                                         = "FINISH";
+
+    
+//HeaderFinalizeRide.xib
+"lbl_HeaderFinalizeRide_EndTrip"                                = "End of trip!";
+"lbl_HeaderFinalizeRide_Total"                                  = "Your total is:";
+"btn_HeaderFinalizeRide_Skip"                                   = "Skip";
+"lbl_HeaderFinalizeRide_Success"                                = "You have successfully completed your trip, you will receive an email with all the details";
+
+//FinalizeRideNewCell.xib
+"lbl_FinalizeRideNew_Destination"                               = "Destiny 10";
+"lbl_FinalizeRideNew_test"                                      = "test";
+
+//RatingCell.xib
+"lbl_RatingCell_Your_Trip"                                      = "How was your trip?";
+"lbl_RatingCell_Your_Opinion"                                   = "We would like to know your opinion.";
+"lbl_RatingCell_Your_Dissatisfied"                              = "Unsatisfied";
+"lbl_RatingCell_Very_satisfied"                                 = "Very satisfied";
+"btn_RatingCell_Continue"                                       = "CONTINUE";
+
+    
+//AlertOutOfSync.xib
+"lbl_AlertOutOfSync_Update_Shortly"                             = "We can´t locate your driver now, we suggest you to be aware, it will be updated shortly. ";
+
+
+    
+//AlertTransport.xib
+"btn_AlertTransport_To_Accept"                                  = "Accept";
+"btn_AlertTransport_To_Yes"                                     = "YES";
+"btn_AlertTransport_To_No"                                      = "NO";
+"lbl_AlertTransport_FarAway"                                    = "Far away";
+"lbl_AlertTransport_FarAway_Subtitle"                           = "The new point is very far from the original point.";
+    
+    
+//ChangeDestination.xib
+"lbl_ChangeDestination_Route_Update"                            = "Route update!";
+"lbl_AlertTransport_Affect_Cost"                                = "You are about to make a change to your route, this action can affect the cost and final time of the trip.";
+"btn_AlertTransport_Cancel"                                     = "CANCEL";
+"btn_AlertTransport_Continue"                                   = "CONTINUE";
+
+    
+//DriverDetailTableViewCell.xib
+"lbl_DriverDetail_Address"                                      = "Jeep Cherokee 2016 / Placa: M-3324455";
+"lbl_DriverDetail_Name"                                         = "Raúl";
+    
+//OutstandingAccountHeaderTableViewCell.xib
+"lbl_Outstanding_Account"                                       = "PENDING PAYMENT";
+"lbl_Outstanding_Ups"                                           = "Ups!";
+"lbl_Outstanding_pending"                                       = "You have a pending payment. Please pay the former trip to use this function.";
+    
+//BottomButtonTableViewCell.xib
+"btn_BottomButton_Pay"                                          = "PAY";
+
+    
+//ConfirmOutstandingAccount.xib
+"lbl_ConfirmOutstanding_Cancel_Trip"                            = "You have a pending payment. Please pay the former trip to use this function.";
+"btn_ConfirmOutstanding_Remember_Later"                         = "REMEMBER LATER";
+"btn_ConfirmOutstanding_See_Trip"                               = "SEE TRIP";
+
+    
+//RouteOutstandingCell.xib
+"lbl_RouteOutstanding_Match"                                    = "DEPARTURE";
+"lbl_RouteOutstanding_Address"                                  = "Home. Residencial los Olivos, #6, Santa Tecla. La Libertad, El Salvador, Centro America";
+
+//SearchFromAToBFields.xib
+"txt_Search_Go_Today"                                           = "Where do you want to go today?";
+"txt_Search_StratTrip"                                          = "Beginning of trip";
+"txt_Search_Add_Stop"                                           = "Add stop";
+    
+//TypeSelector.xib
+"lbl_Type_Request_Vehicle"                                      = "REQUEST VEHICLE";
+
+    
+//EmergencyOnTheWayRide.xib
+"lbl_EmergencyOn_Emergencias"                                   = "EMERGENCIES";
+"lbl_EmergencyOn_Call"                                          = " Call 911";
+"btn_EmergencyOn_Cancel"                                        = "CANCEL";
+"lbl_EmergencyOn_Alert_Family"                                  = "Alert my family.";
+
+//LookUpRideView.xib
+"lbl_LookUpRide_title"                                          = "What's up";
+"lbl_LookUpRide_Go_Today"                                       = "Where do you want to go today?";
+"lbl_LookUpRide_Search_Destiny"                                 = "Search your destiny.";
+
+//ConfirmationBottomView.xib
+"lbl_ConfirmationBottom_Confirm_Start"                          = "Confirm where we will start!";
+"lbl_ConfirmationBottom_Pick_Up"                                = "Move the pin to the exact place where we will pick you up.";
+"btn_ConfirmationBottom_Ready"                                  = "READY";
+
+//SearchingDriver.xib
+"lbl_SearchingDriver_Transport"                                 = "Searching transportation…";
+"btn_SearchingDriver_Cancel"                                    = "CANCEL";
+    
+//RouteNav.xib
+"lbl_RouteNav_Current_Location"                                 = "Current location";
+"lbl_RouteNav_Address"                                          = "Parque Centenario";
+
+//TopBarView.xib
+"lbl_RouteNav_Journey"                                          = "COURSE";
+
+//OnTheWayRide2.xib
+"lbl_OnTheWayRide2_Fernado"                                     = "Fernando";
+"lbl_OnTheWayRide2_Jeep"                                        = "Jeep Cherokee";
+"lbl_OnTheWayRide2_P"                                           = "P-845678";
+    
+//OnTheWayRide.xib
+"lbl_OnTheWayRide_Name"                                         = "Guillermo";
+"lbl_OnTheWayRide_Jeep"                                         = "Jeep Cheroke";
+"lbl_OnTheWayRide_M"                                            = "M-3324455";
+
+//PlaceMarker.xib
+"lbl_PlaceMarker_Going"                                         = "Where are you going?";
+"lbl_PlaceMarker_Destination"                                   = "Move the pin to the destiny place.";
+"btn_PlaceMarker_Ready"                                         = "READY";
+
+//SearchAddressHeader.xib
+"lbl_SearchAddress_Title"                                       = "Title address";
+"btn_SearchAddress_SeE_All"                                     = "See all";
+
+//SearchAddressResultViewCell.xib
+"lbl_SearchAddress_Home"                                        = "Home";
+"lbl_SearchAddress_Address"                                     = "La Libertad, El Salvador";
+
+//InformationCell.xib
+"lbl_Information_Name"                                          = " @ name is on the way.";
+"lbl_Information_time"                                          = " He will arrive in @time";
+"lbl_Information_Model"                                         = " @vehicleModel - @color";
+"lbl_Information_Plate"                                         = " @vehiclePlate";
+    
+//RouteCell.xib
+"lbl_RouteCell_Route"                                           = "TRIP'S ROUTE";
+"btn_RouteCell_Edit"                                            = " EDIT ROUTE";
+   
+//RouteItemCell.xib
+"lbl_RouteItem_Home"                                            = "Home";
+"lbl_RouteItem_Address"                                         = "Recidencial Miramar, Poligono C, Casa #137 #56789";
+
+//ActionCell.xib
+"btn_ActionCell_Cancel_Trip"                                    = "CANCEL TRIP";
+
+    
+//PickingRide2
+"lbl_PickingRide2_Fernando"                                     = "Fernando";
+"lbl_PickingRide2_Jeep"                                         = "Jeep Cherokee";
+"lbl_PickingRide2_P"                                            = "P-845678";
+"lbl_PickingRide2_Arrives_Time"                                 = " YOUR TRANSPORTATION WILL ARRIVE IN 4 MIN.!";
+"lbl_PickingRide2_Home"                                         = "Home";
+"lbl_PickingRide2_Address"                                      = "Recidencial Miramar, Poligono C, Casa #137 #56789";
+"lbl_PickingRide2_Start_Time"                                   = "Start 5:40 p.m.";
+"lbl_PickingRide2_Job"                                          = "Trabajo";
+"lbl_PickingRide2_Job_Address"                                  = "Recidencial Miramar, Poligono C, Casa #137";
+"btn_PickingRide2_Cancel"                                       = "CANCEL";
+
+//PickingRide.xib
+"lbl_PickingRide_Name"                                          = "Guillermo";
+"lbl_PickingRide_Jeep"                                          = "Jeep Cheroke";
+"lbl_PickingRide_Number"                                        = "M-3324455";
+
+"lbl_Picking_Ride_Minute"                                       = "Will arrive in 1 minute";
+"lbl_Picking_Ride_Minutes"                                      = "Will arrive in %d minutes";
+
+//BoardingChat.xib
+"btn_Boarding_Finish"                                           = "Tap to end.";
+"lbl_Boarding_personalized"                                     = "In Hugo, we want to help you in the best way to you. The chat option is today available for you where we will help you in a personal way.";
+"btn_Boarding_Chat_Us"                                          = "Chat with us!";
+
+//HelpZendeskTableViewCell.xib
+"lbl_HelpZendesk_Helps"                                         = "Hugo help, I";
+"lbl_HelpZendesk_Problem"                                       = "Re: problems with my app";
+"lbl_HelpZendesk_Last_Msg"                                      = "Last message";
+
+    
+//RatingCommentTableViewCell.xib
+"txt_RatingComment_Comment"                                     = "Comment (optional)";
+"btn_RatingComment_Submit"                                      = "Send";
+"btn_RatingComment_Skip"                                        = "Skip";
+
+//RatingHeaderTableViewCell.xib
+"lbl_RatingHeader_Platform"                                     = "Platform";
+"lbl_RatingHeader_Liked"                                        = "Tell us what you liked.";
+"lbl_RatingHeader_Improve"                                      = "What can we improve?";
+
+//RatingTipTableViewCell.xib
+"lbl_RatingTip_Reward"                                          = "Reward your driver.";
+
+    
+//TerritoryCountryTableViewCell.xib
+"lbl_TerritoryCountry_Name"                                     = "El Salvador";
+
+//TerritoryHugoTableViewCell.xib
+"lbl_TerritoryHugo_Name"                                        = "San Salvador";
+
+    
+//ProfileOptionsSubtitleTableViewCell.xib
+"lbl_ProfileOptions_Address"                                    = "Your addresses";
+"lbl_ProfileOptions_Not_Resgister"                              = "There isn't any registered address.";
+
+    
+//InfoUserTableViewCell.xib
+"lbl_InfoUser_Name"                                             = "Hola Ricardo!";
+"lbl_InfoUser_Email"                                            = "ricardo_lopez@gmail.com";
+"lbl_InfoUser_Inatial"                                          = "RB";
+
+//ProfileProgressTableViewCell.xib
+"lbl_InfoUser_Progress"                                         = "Progress of your profile (2 out of 5)";
+"lbl_InfoUser_SubTitle"                                         = "Next step: additional information";
+"lbl_InfoUser_Next_Step"                                        = "Next step:";
+
+//StatusProfileRewardsTableViewCell.xib
+"lbl_StatusProfile_Credits"                                     = "CREDITS";
+"lbl_StatusProfile_Awards"                                      = "PRIZES";
+"lbl_StatusProfile_OustStanding_balance"                        = "Pending balance";
+
+//PreferencesSubtitleTableViewCell.xib
+"lbl_PreferencesSubtitle_Change_Number"                         = "Change the phone number linked to my profile.";
+"lbl_PreferencesSubtitle_Edit_Phone"                            = " Edit my telephone number.";
+
+   
+    
+//ProfileOptionsTableViewCell.xib
+"lbl_ProfileOptions_Preferences"                                = "Preferences";
+
+//PreferencesSingleTableViewCell.xib
+"lbl_PreferencesSingle_Condtion"                                = "Terms and conditions";
+
+    
+//PreferencesHeaderCell.xib
+"lbl_Preferences_Security"                                      = "SECURITY";
+
+    
+//AcceptButtonTableViewCell.xib
+"btn_Preferences_Save"                                          = "SAVE";
+
+    
+//ChooseAddressTypeTableViewCell.xib
+"lbl_ChooseAddress_Save_As"                                     = "Save as";
+
+    
+//VerifyCreateAddressView.xib
+"lbl_VerifyCreateAddres_Alert"                                  = "Do you wish to continue?";
+
+    
+//MyLocationNewAddressTableViewCell.xib
+"lbl_MyLocationNewAddress_Title"                                = "Locate me in the map.";
+
+    
+//SearchNewAddressTableViewCell.xib
+"lbl_SearchNewAddress_Address"                                  = "Parque Maquilishuat";
+"lbl_SearchNewAddress_Sub_Address"                              = "Colonia Maquilishuat, San Salvador";
+
+    
+//MyLocationXib.xib
+"lbl_MyLocation"                                                = "Where will we deliver your orders?";
+"btn_MyLocation"                                                = "SET";
+"lbl_MyLocation_Set_Pin"                                        = "Set the pin to the exact address.";
+    
+    
+    
+//CustomCallRequestAlertView.xib
+"lbl_CustomCall_Perfect"                                        = "Perfect!";
+"lbl_CustomCall_Sent_Help"                                      = "A help request has been sent.";
+"lbl_CustomCall_Agents_Contact"                                 = "LWe are sorry the inconvenience, a help request has been generated and one of our agents will communicate with you to give a solution.";
+"lbl_CustomCall_Thanks"                                         = "THANKS A LOT HUGO!";
+    
+//RequestPhoneView.xib
+"txt_RequestPhone_EnterPhone"                                   = "Enter telephone number.";
+
+    
+//CorrectNumber.xib
+"lbl_CorrectNumber_Phone"                                       = "Confirm";
+"lbl_CorrectNumber_Importtance"                                 = "This number will be important for us.";
+"btn_Right"                                                     = "RIGHT";
+"title_Number"                                                  = "You're about to log in with the following\nnumber\n\n%@";
+
+    
+//OptionRecoverTableViewCell.xib
+"lbl_Optionrecover_sample_info"                                 = "sample info";
+
+
+
+
+//Other App in side String
+
+"lbl_Need_Invoice"                                              = "Do you need an invoice?";
+
+"lbl_Enter_Tokan"                                               = "Enter your tokeN";
+
+"lbl_No_Result_Found_Name"                                      = "We are sorry no results were found\(territoryName), please verify your address ";
+
+"lbl_No_result_found"                                           = "We are sorry, no results were found " ;
+
+"lbl_Service"                                                   = "SERVICES";
+
+"lbl_Delivery_Time"                                             = "We are having high traffic now, it is possible that your order will have a delivery time of more than 60 minutes";
+
+"lbl_Hugo_Support"                                              = "hugo Support";
+
+"lbl_Yummy_Support"                                             = "Yummy Support";
+
+"lbl_Not_Avaiable"                                              = "Not available";
+
+"lbl_Hugo_ID"                                                   = "Hugo ID:";
+
+"lbl_Update_App"                                                = "UPDATED REQUEST";
+
+"lbl_Processed_Sucessfully"                                     = "Your payment has been processed successfully, the progress will be notified";
+
+"lbl_Enter_Code"                                                = "Enter your promo code";
+
+"lbl_Invoice"                                                   = "Invoice";
+
+"lbl_Note_Order"                                                = "Notes for the order";
+
+
+
+"lbl_Use_Point"                                                 = "Use points";
+
+"lbl_Additional_Info"                                           = "Additional information";
+
+"lbl_Preparing_Search"                                          = "Preparing search…";
+
+"lbl_Identification"                                            = "Enter the type of identification";
+
+"lbl_Help_Service"                                              = "If you need help or you have any doubt about your invoice payment, we will communicate directly with the organization we provide the service with";
+
+"lbl_Help_Recharge"                                             = "If you need help or you have any doubt about your recharge, we will communicate directly with the organization we provide the service with";
+
+"lbl_Another_Refill"                                            = "MAKE ANOTHER RECHARGE";
+
+"lbl_Current_Invoice"                                           = "Current invoice";
+
+"lbl_Late_Payments"                                             = "Delayed payments";
+
+"lbl_Billing_Details"                                           = "Invoice details";
+
+"lbl_Update_Payment"                                            = "UPDATE PAYMENT";
+"lbl_Send_It"                                                   = "SEND IT!";
+
+"lbl_Reference_Number"                                          = "Reference number";
+
+"lbl_Country_Made"                                              = "Made in";
+
+"lbl_Locate_Map"                                                = "Find me in the map";
+
+"lbl_Cash"                                                      = "Cash";
+
+"lbl_PointA_Purchase"                                           = "POINT A - BUY WITH A LIST";
+
+"lbl_PointA"                                                    = "POINT A - ERRAND";
+
+"lbl_PointB"                                                    = "POINT B - DELIVERY";
+
+"lbl_PointC"                                                    = "POINT C - DELIVERY";
+
+"lbl_PointB_Purchase"                                           = "POINT B - BUY WITH A LIST";
+
+"lbl_PointB_Mandadito"                                          = "POINT B - ERRAND";
+"lbl_Knock_Door"                                                = "E.G. He will knock on the door and ask for Juan…";
+
+"lbl_Hugo_PointA"                                               = "WHAT WILL HUGO DO AT POINT A?";
+
+"lbl_Hugo_PointB"                                               = "WHAT WILL HUGO DO AT POINT B?";
+
+"lbl_Hugo_PointC"                                               = "WHAT WILL HUGO DO AT POINT C?";
+
+"lbl_First_Time"                                                = "1. First article on the list";
+
+"lbl_Hugo_Buy_PointA"                                           = "WHAT WILL HUGO BUY AT POINT A?";
+
+"lbl_Hugo_Buy_PointB"                                           = "WHAT WILL HUGO BUY AT POINT B?";
+
+"lbl_Payment_Update"                                            = "PAYMENT UPDATE";
+
+"lbl_Checkout"                                                  = "CHECK OUT";
+ 
+"lbl_Place_Delivery"                                            = "Place of delivery (B)";
+
+"lbl_Payment_Method"                                            = "PAYMENT METHOD";
+
+"lbl_Shipping_Indications"                                      = "DELIVERY INDICATIONS";
+
+"lbl_Billing_Details"                                           = "INVOICE DETAIL";
+
+"lbl_Date_Time_Delivery"                                        = "DATE AND TIME OF DELIVERY (APPROX.)";
+
+"lbl_Billing_Details"                                           = "INVOICE DETAIL";
+
+"lbl_Shipping_Indication"                                       = "DELIVERY INDICATIONS";
+
+"lbl_Driver_Cash_In"                                            = "I WILL GIVE THE CASH IN:";
+
+"lbl_Route"                                                     = "ROUTE";
+
+"lbl_Mandaditos"                                                = "ERRANDS";
+
+"lbl_Confirm_Location"                                          = "Confirm your location!";
+
+"lbl_Image_Purchase"                                            = "IMAGES - LIST OF PURCHASE";
+
+"lbl_Thanks_You_Very_Much"                                      = "Thanks a lot!";
+
+"lbl_Match"                                                     = "DEPARTURE";
+
+"lbl_Destination"                                               = "DESTINY";
+"lbl_Origen"                                                    = "ORIGIN";
+
+"lbl_Type_Of_Comment"                                           = "Type a comment…";
+
+"lbl_Reward_Hugo"                                               = "Reward your Hugo";
+
+"lbl_Please_Select_One"                                         = "Please select one of our options";
+
+"lbl_What_Ware"                                                 = "What's up";
+
+"lbl_Empty_Results"                                             = "Empty results";
+
+"lbl_Recent_trip"                                               = "RECENT TRIPS";
+
+"lbl_Where_do_Stop"                                             = "Where do we stop?";
+
+"lbl_Location_Pin"                                              = "Move the pin to the location you need";
+
+"lbl_Come_Form"                                                 = "Where do we depart?";
+
+"lbl_Set_Pin"                                                   = "Set the pin in the exact location";
+
+"lbl_Arrival_Point"                                             = "Choose your arrival point!";
+
+"lbl_Move_Pin"                                                  = "Move the pin to your destiny place";
+
+"lbl_Buaa"                                                      = "Wow!";
+
+"lbl_Didnt_Good"                                                = "We are sorry you didn't have a good trip";
+
+"lbl_Yuu"                                                       = "Yippee!";
+
+"lbl_Good_Trip"                                                 = "We are glad you had a good trip";
+
+"lbl_Start"                                                     = "START";
+
+"lbl_End"                                                       = "END";
+
+"lbl_Stop"                                                      = "STOP";
+
+"lbl_Add_Comment"                                               = "Add a comment (optional)";
+
+"lbl_Detail_Order"                                              = "ORDER DETAIL";
+
+"lbl_Select_Destination"                                        = "Select your destiny!";
+
+"lbl_Move_To_Pin_Destination"                                   = "Move the pin to your destiny place";
+
+"lbl_Recent_Tips"                                               = "RECENT TRIPS";
+
+"lbl_Summary"                                                   = "SUMMARY";
+"lbl_Payments_Method"                                           = "PAYMENT METHOD";
+
+"lbl_Thnaks_You"                                                = "Thanks a lot!";
+
+"lbl_Comment_Optional"                                          = "Comment (optional)";
+
+"lbl_Select_Territo"                                            = "SELECT A TERRITORY";
+
+"lbl_Hello"                                                     = "Hi!";
+
+"lbl_Welcome_Hugo"                                              = "Welcome to Hugo";
+
+"lbl_Preference"                                                = "PREFERENCE";
+
+"lbl_Security"                                                  = "SECURITY";
+
+"lbl_About_Hugo"                                                = "ABOUT HUGO";
+
+"lbl_About_Yummy"                                               = "ABOUT YUMMY";
+
+"lbl_Profile"                                                   = "PROFILE";
+
+"lbl_Validate_Account"                                          = "Validate your account";
+
+"lbl_Safe"                                                      = "We want to be sure";
+
+"lbl_Last_Trade"                                                = "2- Which was the last business you had contact with?";
+
+"lbl_Whoops_Somthing"                                           = "Ups! Something went wrong";
+
+"lbl_Didnt_Get_GPS"                                             = "We could not detect your GPS location";
+
+"lbl_To_Continue"                                               = "To continue you must choose a location manually to provide you with our services";
+
+"lbl_Inconvenience"                                             = "Sorry for the inconveniences";
+
+"lbl_Where_You_Are"                                             = "We need to know your location";
+
+"lbl_Address_Save"                                              = "Your address will be saved in this way:";
+
+"lbl_Search_address"                                            = "SEARCH ADDRESS";
+
+"lbl_Locate_Map"                                                = "Find me in the map";
+
+"lbl_Loading"                                                   = "loading…";
+
+"lbl_Attenting"                                                 = "ATTENTION!";
+
+"lbl_Proper_Testing"                                            = "The phone number is very important for the proper functioning of the app.";
+
+"lbl_Link_Number"                                               = "When changing your linked phone number, all your information will move to this number";
+
+"lbl_Proble_When_Entering"                                      = "There was a problem when logging in";
+
+"lbl_We_are_Sorry"                                              = "We are sorry!";
+
+"lbl_Existing_Account"                                          = "The number you entered is linked to another account, please try to enter your password";
+
+"lbl_Hide"                                                      = "hide";
+
+"lbl_See_Detail"                                                = "see detail";
+
+"lbl_Detail_Order"                                              = "Order detail";
+
+"lbl_Details_Of_Shipment"                                       = "Detalle de tu envío";
+
+"lbl_Payment_By_Card"                                           = "Pay with your card";
+
+"lbl_Cash_Payments"                                             = "Pay in cash";
+
+"lbl_Zelle_Payments"                                            = "Pay in Zelle";
+
+"lbl_PagoMovil_Payments"                                        = "Pay in Pago Móvil";
+
+"lbl_Paypal_Payments"                                           = "Pay in Paypal";
+
+"lbl_Reserve_Payments"                                          = "Pay in Reserve";
+
+"lbl_Pipol_Payments"                                            = "Pay in Pipol Pay";
+
+"lbl_Venmo_Payments"                                            = "Pay in Venmo";
+
+"lbl_To_Close"                                                  = "close";
+
+"lbl_To_Accept"                                                 = "ACCEPT";
+
+"lbl_Process_Order"                                             = "PROCESS MY ORDER";
+
+"lbl_Process_Order_Upper"                                       = "PROCESS MY ORDER";
+
+"lbl_Process_Order_Discard"                                     = "Discard order!";
+
+"lbl_Process_Order_Discard_Desc"                                = "If you discard your order, your entire purchase order will be deleted.\n\nDo you want to continue?";
+
+"lbl_See"                                                       = "See all >";
+
+"lbl_Perfect"                                                   = "PERFECT!";
+
+"lbl_Request_Mandadito"                                         = "SET UP ERRADS";
+
+"lbl_Modify_Pin"                                                = "Modify pin";
+
+"lbl_Submit"                                                    = "Send";
+
+"lbl_Cancel"                                                    = "CANCEL";
+
+"lbl_Round_Trip"                                                = "Round trip";
+
+"lbl_Ready"                                                     = "READY";
+
+"lbl_Cancel_Trip"                                               = "CANCEL TRIP";
+
+"lbl_End_Trip"                                                  = "FINISH TRIP";
+
+"lbl_None_Of_These"                                             = "NONE OF THESE";
+
+"lbl_UnderStanding"                                             = "OK, UNDERSTOOD!";
+
+"lbl_Continue"                                                  = "CONTINUE";
+"lbl_Keep_Searching"                                            = "Keep searching";
+
+"lbl_ChatTransport_TextField"                                   = "Write your message...";
+
+
+
+//String file in Alert
+
+// CreditCard
+"CCTypeRequiredWarningTitle"                                    = "Card type";
+"CCTypeRequiredWarningMessage"                                  = "Currently we only support VISA and MASTERCARD";
+   
+    
+// History
+"ProductAlertTitle"                                             = "Important announcement";
+"ProductAlertMsg"                                               = "Some products may not be available or have a different price, do you want to continue?";
+    
+//Order
+"OrderActiveTitle"                                              = "Order in process";
+    
+//ProductOptions
+"ProductRequireDocTitle"                                        = "This product requires to show your identity document";
+"ProductRequireDocMsg"                                          = "Write it in the space below, your driver will ask you before giving you the order, otherwise we will not be able to complete your order";
+   
+//CCBook
+"LimitExceededTitle"                                            = "Limit Exceeded";
+"LimitExceededMessage"                                          = "Sorry you can't add more than 3 cards. If you want to add a new card you must delete one.";
+"CarNotAvailableTitle"                                          = "Card not available";
+
+    
+//ATM
+"DailyLimitExceededTitle"                                       = "Limit Exceeded";
+"DailyLimitExceededMessage"                                     = "You have exceeded the ATM transaction limit per day.";
+    
+//CCRegistration{
+"CardSavedSuccessTitle"                                         = "Card saved successfully";
+"ConfirmSaveTitle"                                              = "Confirmation";
+"ConfirmSaveMessage"                                            = "Before continuing, verify the information on your card. Do you want to continue?";
+    
+    
+"SubscriptionFailTitle"                                         = "Subscription failed";
+"SubscriptionFailBody"                                          = "The action could not be completed";
+"AProblemOcurredTitle"                                          = "There was a problem";
+"RequiredFields"                                                = "Data required";
+"LocationChangedTitle"                                          = "Delivery Address";
+"LocationChangedMessage"                                        = "we have detected that your shipping address is no longer valid in the place where you are";
+"LocationChangedSelectQuestion"                                 = "Do you want to select an address?";
+"LocationChangedAddQuestion"                                    = "Do you want to add a new address?";
+"LocationChangedAcceptLabelBtn"                                 = "lbl_To_Accept";
+"LocationNeedToBeActive"                                        = "You must have the location function active. Go to settings -> privacy";
+"LocationNoAccess"                                              = "The app does not have access to your location. Go to settings -> privacy";
+"LocationWithoutAccess"                                         = "Without the location we cannot show the closest branches. Go to settings -> privacy";
+"LocationNeededForPartners"                                     = "Without your location we cannot show you the shops near you. Go to settings -> privacy";
+"LocationNoAccess2"                                             = "To give you a better experience, help us with your authorization in the necessary permissions. Go to Accesses, Location to configure them.";
+"NotInDelivereArea"                                             = "Sorry you're out of coverage area, but don't worry you can select one of our coverage areas.";
+"LocationImpossibleLocation"                                    = "The location could not be determined";
+"OrderNoSamePartner"                                            = "Your cart already contains and item from a different store. Would you like to clear the cart and add this item instead?";
+"OrderNoSamePartnerTitle"                                       = "Start a new cart?";
+"OrderRequiredOptions"                                          = "You must select the required options";
+"OrderRequiredOptionsTitle"                                     = "Required Options";
+"OrderAddSpecialInstructions"                                   = "Add special instructions";
+"OrderActiveTitle"                                              = "Active Order";
+"OrderActive"                                                   = "At the moment you can only have one order in process at a time";
+"HelpTitle"                                                     = "Need help?";
+    //  helpBody = "Crea una petición de llamada y uno de nuestro agentes de servicio al cliente te contactará"
+"helpBody"                                                      = "At Hugo we are here to help you! \nSelect one of the options we have available to assist you";
+"helpYes"                                                       = "I need help";
+"helpNo"                                                        = "No thanks";
+"helpRequested"                                                 = "Ready! In a few moments we will call you on the registered phone number";
+"helpRequestFailedTitle"                                        = "Unable to complete action 😣";
+"helpRequestFailedMessage"                                      = "We are sorry at this time it is not possible to request help";
+"phoneCallSmsFailedMessage"                                     = "Sorry at this time it is not possible to make a call, try again later";
+"phoneCallSmsSucess"                                            = "In a moment you will receive a call with your code.";
+"OK"                                                            = "OK";
+"NO"                                                            = "No";
+"Si"                                                            = "Yes";
+"NoCoverTitle"                                                  = "What a shame we";
+"NoCoverMessage"                                                = "Hugo is expanding as fast as possible. At the moment we do not cover this shipping area, but we are working to solve it";
+"DeleteAddressTitle"                                            = "Delete address";
+"DeleteAddressMessage"                                          = "Are you sure you want to delete this address?";
+"DeleteCardTitle"                                               = "Delete Card";
+"DeleteCardMessage"                                             = "Are you sure you want to delete this card?";
+"ActionDeleteLabel"                                             = "Remove";
+"ActionEditLabel"                                               = "Edit";
+"WelcomeBetaTitle"                                              = "Welcome to)";
+"WelcomeBetaMessage"                                            = "Thank you for participating in our beta. We are still working to adjust some things, but we need your opinion about our app. We appreciate your patience, because with your help we will make Hugo the best app to take what you need, to your home. ";
+"BetaNewVersionTitle"                                           = "New version available";
+"BetaNewVersionMessage"                                         = "We have a new version of the app. During our beta, we are adding new functions quickly and fixing problems. In order for the app to continue working normally for you it is important that you update it every time a new version is released. Your current version is $1 and the latest version is $ 2, please upgrade from TestFlight ";
+"NoInternetAccessTitle"                                         = "No Internet access";
+"NoInternetAccessMessage"                                       = "Hugo uses the internet to work. Please check that you have access and that the app is not restricted in the use of data";
+"ComingTitle"                                                   = "SOON";
+"ComingMessage"                                                 = "Wait for it!";
+"CloseSessionTitle"                                             = "Sign off";
+"CloseSessionMessage"                                           = "Are you sure you want to log out?";
+"CancelOrderTitle"                                              = "To cancel an order";
+"CancelOrderMessage"                                            = "Are you sure you want to cancel the order?";
+"CancelShipmentTitle"                                           = "Cancel errand";
+"CancelShipmentMessage"                                         = "Are you sure you want to cancel the errand?";
+"NeedChangeMessage"                                             = "Do you need change for?";
+"MinimumAmountTitle"                                            = "Invalid value";
+"Valid_Amount"                                                  = "Please enter a valid amount for the change.";
+"MinimumAmounMessage"                                           = "The value of the change must be greater than the total of the order";
+"NoChangeAction"                                                = "I don't need change";
+"CancelLabel"                                                   = "Cancel";
+"CloseLabel"                                                    = "lbl_To_Close";
+"ViewLabel"                                                     = "See";
+"AcceptLabel"                                                   = "lbl_To_Accept";
+"ConfirmLabel"                                                  = "Continue";
+"AddressTitle"                                                  = "Delivery Address";
+"PaymentTypeTitle"                                              = "Way to pay";
+"SelectPaymentTypeTitle"                                        = "Select payment method";
+"CCLabel"                                                       = "Credit card";
+"RedeemLabel"                                                   = "Redeem code";
+"CashLabel"                                                     = "lbl_Cash";
+"ListoLabel"                                                    = "Ready";
+"GoToTracking"                                                  = "See order";
+"StayOnApp"                                                     = "Continue";
+"AddressTypeRequired"                                           = "Type of address required";
+"AddressTitleTakeOut"                                           = "Branch to pick up the order";
+"OrderDeliveredTitle"                                           = "Order delivered";
+"OrderDeliveredMessage"                                         = "Thank you for choosing us, enjoy it!";
+"AllFieldRequired"                                              = "All fields are required";
+"BirthdateRequired"                                             = "The date of birth field is required   ";
+"PasswordRequired"                                              = "The password field is required";
+"WeakPasswordSubmitted"                                         = "The password must have:
+                                       At least one number
+                                       At least one symbol
+                                       At least one lowercase
+                                       at least one capital letter
+                                       A minimum of eight characters
+";
+"Not_Possible"                                                  = "Sorry it was not possible to select the billing information";
+"AccessRequiredTitle"                                           = "Access required";
+"AccessToCameraExplanation"                                     = "Access to the camera is required to perform the credit card scan";
+"AccessToCameraExplanation2"                                    = "Please allow access to the camera to scan the credit card";
+"PaymentRequiredWarningTitle"                                   = "Payment type";
+"PaymentRequiredWarningMessage"                                 = "You must select a payment method";
+"ProblemTitle"                                                  = "There is a problem";
+"EmailNoValidMessage"                                           = "Mail is required";
+"PassNoValidMessage"                                            = "The password is mandatory";
+"NoValidTitle"                                                  = "Not valid";
+"UserRequired"                                                  = "User is required";
+"UserNameRequired"                                              = "Name is required";
+"UserOrPassNoValidTitle"                                        = "The username or password are incorrect";
+"Sent"                                                          = "Sent";
+"EmailSentMessage"                                              = "The mail was sent, you can close this screen";
+"EmailNoValidTitle"                                             = "Invalid email";
+"EmailNoValidMessage2"                                          = "Apparently, this email has already been used. Please enter another email";
+"EmailRequiredTitle"                                            = "* You must enter a valid email";
+"VerifiedMobileTitle"                                           = "Check your mobile";
+"FeedbackExcelentTitle"                                         = "Excellent!";
+"FeedbackHowToImproveTitle"                                     = "How can we improve?";
+"ProfileSaved"                                                  = "Profile saved";
+"MinOrderRequiredTitle"                                         = "Minimum purchase required";
+"MinOrderRequiredMessage"                                       = "The minimum purchase of this business is __min__, add something else";
+"CominSoonTitle"                                                = "Coming soon 😁";
+"CominSoonMessage"                                              = "You can enjoy the products of this trade";
+"CloseTitle"                                                    = "Closed ☹️";
+"CloseMessage"                                                  = "This trade is closed for the moment";
+"ViewOrderBtnTitle"                                             = "See my order $1";
+"NoAvailable"                                                   = "Not available";
+"FirstInstallTitle"                                             = "You have a FREE delivery";
+"FirstInstallMsg"                                               = "Thank you for installing Hugo App, your first order 🛵 is on us :)";
+"NeedLoginTitle"                                                = "A session is needed";
+"NeedLoginDesc"                                                 = "You must have an active session, do you want to log in?";
+"authReason"                                                    = "Authenticate yourself with your fingerprint";
+"authErrorTitle"                                                = "Authentication Error";
+"authErrorDesc"                                                 = "We couldn't recognize you, are you sure it's your fingerprint?";
+"CCPaymentErrorTitle"                                           = "There was a problem with the transaction";
+"CCPaymentErrorMessage"                                         = "The transaction was not possible, please try another form of payment or contact your bank, reason: $1";
+"CCPaymentTimeoutErrorMessage"                                  = "At the moment the card payment option is not available, we are working to solve it as soon as possible, you can choose to make your payment in cash or contact customer service at 2247-8100";
+"CCPaymentMinimunAmountTitle"                                   = "We are sorry";
+"CCPaymentMinimunAmountBody"                                    = "The total of the purchase does not exceed the minimum amount for card payment. \n Do you want to change the payment to cash?";
+"NewVersionTitle"                                               = "New version available";
+"NewVersionMessage"                                             = "Thank you for using Hugo! To make our app better for you, we send regular updates to the App Store. Each update includes speed and stability improvements as well as new features. Your current version is $1 and the latest version is $ 2. ";
+"NewVersionButton"                                              = "To update";
+"ConfirmAddressTitle"                                           = "Confirm your address";
+"ConfirmAddressOK"                                              = "Confirm";
+"OrderProcessError"                                             = "Sorry, your order could not be completed, please contact support, your order is HO- $1";
+"OrderProcessTerritoryTitleError"                               = "The order cannot be processed";
+"OrderProcessTerritoryMsgError"                                 = "The selected address is not within the coverage area";
+"CCPaymentGeneralTitle"                                         = "Unknown error";
+"CCPaymentGeneralMsg"                                           = "An unrecognized error occurred, please call customer service";
+"CCShowCSSTitle"                                                = "Important reminder";
+"CCShowCSSMsg"                                                  = "The driver will ask for you to show your payment card and ID to verify your identity";
+"Entendido"                                                     = "OK";
+"UnderStood"                                                    = "IT IS UNDERSTOOD!";
+"ChooseOtherAddrTitle"                                          = "Use another address";
+"NoValidCouponTitle"                                            = "Invalid coupon";
+"NoValidCouponMsg"                                              = "This coupon is not valid in this order 😵";
+"YouHaveNewPrizesTitle"                                         = "Congratulations you have new prizes!";
+"SaturatedPartnerTitle"                                         = "Saturated Trade 😢";
+"SaturatedPartnerMessage"                                       = "We are sorry at the moment the store is too saturated to receive your order... Try again later.";
+"GeneralSaturatedTitle"                                         = "Saturation";
+"GeneralSaturatedMessage"                                       = "We are sorry at the moment we do not have hugos available to meet our delivery times, try later";
+"NoLocationPossibleMessage"                                     = "It was not possible to get your location, you can check your iPhone settings or select a territory";
+"GoToSettingsMessage"                                           = "Go to settings";
+"SelectTerritoriesMessage"                                      = "Select a territory";
+"WrongTerritoryAddressTitle"                                    = "Invalid address";
+"WrongTerritoryAddressMessage"                                  = "This address does not belong to the coverage area of ​​your order, please select a different one";
+"WrongSetRangeAddressTitle"                                     = "Error";
+"WrongSetRangeAddressMessage"                                   = "The action could not be performed.";
+//      WrongTerritoryAddressDeleteOrderMessage = "Hemos detectado que tienes una orden pendiente de procesar, si cambias de dirección perderás tus cambios ¿Deseas cambiar continuar?"
+"WrongTerritoryAddressDeleteOrderMessage2"                      = "We have detected that you have an order pending to process, if you change your address it will be deleted. Do you want to continue?";
+"WrongTerritoryAddressDeleteOrderMessage"                       = "You have an order in your truck; if you want to change to this address your order will be automatically canceled. Do you want to continue?";
+"WrongRangeAddressDeleteOrderMessage"                           = "The selected address is outside the coverage range of the trade. If you want to change to this address your order will be automatically canceled. Do you want to continue?";
+"DeleteBillingTitle"                                            = "Delete information";
+"DeleteBillingMessage"                                          = "Are you sure you want to delete the billing information?";
+"PartnerLimitTitle"                                             = "Limited product";
+"PartnerLimitMessage"                                           = "This trade only allows adding $1 per purchase";
+    
+"ShipmentAddSpecialInstructions"                                = "Add direction instructions";
+"ShipmentAddDescriptionInstructionsA"                           = "Specify what Hugo will do at Point A";
+"ShipmentAddDescriptionInstructionsB"                           = "Specify what Hugo will do at Point B";
+"InfoShipment"                                                  = "
+    1. Write the address where we will pick up your package (Point A)
+
+    2. Write the address where we will deliver your package (Point B)
+
+    3. Tell us what Hugo should do at Point A (Request the keys to ...)
+
+    4. Tell us what Hugo should do at point B (leave the keys with ...)
+
+    5. Add a photo for a better explanation (Optional)
+
+    Ready! It's that easy
+
+    * Remember that we transport anything, that fits on the motorcycle *
+";
+"ShipmentPreviewError"                                          = "An error occurred while processing your errand";
+"ShipmentAddRideComment"                                        = "Add a comment about the service provided";
+"ShipmentRoundTrip"                                             = "To make a round trip you must select an address for point A";
+
+
+    //Selection Scursal
+"SucursalChangeAlertTitle"                                      = "Confirm your order again!";
+"SucursalChangeAlertDesc"                                       = "The change of branch can generate a variation in your shopping cart, either in the price or in product stock. We ask you to verify your order again to proceed.";
+
+"SelectSucursalTitle"                                           = "Select the branch";
+"SelectSucursalSubtitle"                                        = "where it is convenient for you to withdraw your order";
+
+"SelectSucursalTitleNear"                                       = "BRANCH CLOSER TO YOU";
+"SelectSucursalTitleAll"                                        = "ALL BRANCHES";
+"SelectSucursalButtonSelect"                                    = "SELECT";
+
+    
+    //Trasportation
+"VehicleNotAvailable"                                           = "Vehicles not found";
+"VehicleNotAvailableDetail"                                     = "At the moment there are no vehicles of this category near you, select another category to continue.";
+
+"CancelRideTitlePicking"                                        = "lbl_Cancel_Trip";
+
+"CancelRideSubTitlePicking"                                     = "Confirmation";
+"CancelRideMessagePicking"                                      = "You are about to cancel your trip \nAre you sure you wish to continue?";
+"CallTitlePicking"                                              = "Call driver";
+"CallSubTitlePicking"                                           = "Confirmation";
+"CallMessagePicking"                                            = "You are about to make a call to the assigned driver, this action may generate an extra charge from your company on your credit. Are you sure you want to continue?";
+"CancelRideTitleOnWay"                                          = "lbl_End_Trip";
+"CancelRideSubTitleOnWay"                                       = "Confirmation";
+"CancelRideMessageOnWay"                                        = "We have not yet reached the destination and you are about to end your trip, if you continue, you will be charged the value of the trip generated up to this moment. Do you want to continue?";
+"CallTitleOnWay"                                                = "Emergency call";
+"CallSubTitleOnWay"                                             = "Confirmation";
+"CallMessageOnWay"                                              = "You are about to make an emergency call to 911. Are you sure you want to continue?";
+"HotZoneTitle"                                                  = "Destination out of coverage";
+"HotZoneSubTitle"                                               = "";
+"HotZoneMessage"                                                = "The selected destination is outside our area of ​​operations. Please choose another address";
+"ErrorCDTitle"                                                  = "We are very sorry.";
+"ErrorCDSubTitle"                                               = "";
+"ErrorCDMessage"                                                = "We were unable to complete your change of destination request, please try again";
+"ErrorChatTitle"                                                = "Your chat is no longer active!";
+"ErrorChatMessage"                                              = "The chat you had with your driver is no longer active because your journey has started and you are on your way to your destination.";
+    
+//Service
+"noOperationalTitle"                                            = "Service not available";
+"noOperationalMessage"                                          = "Sorry we cannot process your order, because the service where this order was processed is not available 😢";
+    
+//Token
+"tokenErrorTitle"                                               = "There was a problem";
+"tokenErrorMessage"                                             = "Sorry it was not possible to validate the token, if you think it is an error please call customer service at 2247-8100";
+"tokenErrorDigitsTitle"                                         = "Invalid Token";
+"tokenErrorDigitsMessage"                                       = "The token must contain 8 digits";
+"orderLoadErrorMessage"                                         = "Sorry it was not possible to obtain the information for this order, if you think it is an error please call customer service at 2247-8100.";
+"tokenLoadNewOrderTitle"                                        = "Process order";
+"tokenLoadNewOrderMessage"                                      = "A new order will be loaded, if you have an unprocessed order it will be replaced. Do you want to continue?";
+    
+// PhoneVerification
+"GetHelpTitle"                                                  = "Ask for help";
+"GetHelpMsg"                                                    = "For reasons beyond our control, sometimes it is possible not to receive a code, let me help you, request a call and I will create an account for you in seconds";
+"cannotGetPhoneMessage"                                         = "We're sorry, something went wrong when you got your phone.";
+"cannotHaveBlankSpacesMessage"                                  = "The phone must not contain blank spaces";
+"cannotHaveLetttersMessage"                                     = "The phone can only contain numbers";
+"cannotHaveMoreOrLessCharactersMessage"                         = "The phone must contain $1 digits";
+"cannotHaveCountryCodeInPhoneMessage"                           = "The phone must not contain the country code";
+"confirmPhoneTitle"                                             = "Confirmar número";
+"confirmPhoneMessage"                                           = "Are you sure your $1 number is correct?";
+    
+// ProductsByCategory
+"ProductNotAvailableTitle"                                      = "Product not avilable";
+"ProductNotAvailableMessage"                                    = "Sorry there is no stock available for this product 😢";
+"DraftExist"                                                    = "You have a pending order";
+    
+"CardTypeTitle"                                                 = "Card type";
+
+//CVC
+"CVCTitleAutorization_Enter"                                    = "Enter the CVC code";
+"CVCDescAutorization_Base"                                      = "To authorize the use of your card";
+"CVCDescAutorization_Middle"                                    = "you must enter the last";
+"CVCDescAutorization_End"                                       = "digits of the code that you will find on the back of your card.";
+
+//ValidationRules
+"CardNameRequired"                                              = "Name on card required";
+"NumCardRequired"                                               = "Card number required";
+"NumCardLength"                                                 = "Card number must contain 16 digits";
+"MonthRequired"                                                 = "Expiration month required";
+"MonthLength"                                                   = "Month must contain 2 digits";
+"YearRequired"                                                  = "Year of expiration required";
+"YearLength "                                                   = "Year must contain 2 digits";
+"PinRequired"                                                   = "Security pin required";
+
+"ExpCardInfoTitle"                                              = "Expiration date";
+"ExpCardInfoMessage"                                            = "You can find this date in the front of your card, under the card number.";
+"CVCCardInfoTitle"                                              = "CVC";
+"CVCCardInfoMessage"                                            = "A three digit code on your credit card can be found on the back of your card.";
+
+"GeneralErrorTitle"                                             = "Unexpected Error 😵";
+"GeneralErrorMsg"                                               = "Sorry an error arose, which has already been reported, please try again later";
+
+"originalNote"                                                  = "Add note (without onion, extra sauce, etc.)";
+"Actualizar"                                                    = "To update";
+"Agregar"                                                       = "Add";
+"FreeCouponCode"                                                = "FREE_DELIVER_INSTALL";
+"Free"                                                          = "FREE";
+"Soon"                                                          = "Coming soon";
+"Close"                                                         = "Closed";
+"Min"                                                           = "__min__ minimum";
+"lblDeliveryCost"                                               = "Delivery fee __deliveryCostLabel__";
+"notificationService"                                           = "Firebase";
+"searchLabelPlaceholder"                                        = "Search for";
+"GeneralPanicModeStatusMessage"                                 = "We are experiencing saturation, so your order may have a delay of more than 60 minutes";
+"PartnerPanicModeStatusMessage"                                 = "We are experiencing saturation in this trade, it is possible that your order has a delivery time of more than 60 minutes";
+"Saturated"                                                     = "Not available due to saturation";
+"KM_UNITS"                                                      = "km";
+
+"No_Card_Register"                                              = "There are no registered cards";
+"Playing_for"                                                   = "Paying from";
+"Payments_Method"                                               = "Payment Methods";
+"Preferences"                                                   = "Preferences";
+"Help"                                                          =  "Help";
+"Completed_Profile"                                             = "COMPLETE PROFILE";
+"Progress_Profile"                                              = "Progress of your profile";
+"Progress_Profile_title_component"                              = "out of";
+"last_Step"                                                     = "It is the last step!";
+"Step_5"                                                        = "Step 5: Add payment method";
+"Please_Wait"                                                   = "Please wait";
+"Sort_By"                                                       = "FILTER";
+
+"Change_Password"                                               = "Change Password";
+"Security_Option"                                               = "Security option";
+"Policy_Security"                                               = "Privacy and Security Policy";
+"Refund_policy"                                                 = "Refund Policies";
+"Program"                                                       = "Loyalty Program";
+"Invalid_Card"                                                  = "The card number is invalid.";
+"Card_Not_Support"                                              = "Card not supported";
+"Card_Not_Location"                                             = "Sorry 😞 the type of card entered is not supported in your location.";
+"Expire_Date_Invalid"                                           = "The expiration date is invalid.";
+"Scurity_Number_Invalid"                                        = "The security number is invalid.";
+"Enter_Invalid_Card_Number"                                     = "The number of the card entered is invalid.";
+"Payment_Type"                                                  = "Sorry, payment types could not be loaded.";
+"Consult_Point"                                                 = "I WANT TO CHECK MY POINTS";
+"Save_Changes"                                                  = "SAVE CHANGES";
+"Required_Fields"                                               = "Required field";
+"Email_Filed_Required"                                          = "The email field is required";
+"Name_Filed_Rquired"                                            = "The name field is required";
+"Promotional_Code"                                              = "Promotional code";
+"Code"                                                          = "Code";
+"Retry"                                                         = "RETRY";
+"Chat_Us"                                                       = "CHAT WITH US";
+"No_Bill"                                                       = "Sorry you don't have a billing record available, try adding a new one.";
+"Chat_Agent"                                                    = "Chat with an agent";
+"Request_Call"                                                  = "Request a call";
+"Frequent_questions"                                            = "Frequent questions";
+"TermAndCondition"                                              = "Terms and Conditions";
+"Track"                                                         = "Track order";
+"Statu_Order"                                                   = "Status of your order";
+"showSimpleAlertLbl"                                            = "Starting tracking...";
+"Status_Shipping"                                               = "Status of your shipment:";
+"Chat_Agent"                                                    = "Chat with an agent";
+"Chat_Tutorial"                                                 = "At hugo we are willing to help you in the way that seems most convenient for you. Today we offer you a chat from which we can help you in a personalized way.";
+"Cards"                                                         = "CARDS";
+"No_Cards_Registered_Message"                                   = "You do not have a registered credit card, please register one";
+
+//CCRegistrationViewController
+"txt_Exp"                                                       = "Expiration";
+"Add_Card"                                                      = "Add card!";
+"Edit_Card"                                                     = "Edit card details";
+"Good_Care"                                                     = "We will take very good care of her";
+"Name_Card"                                                     = "Name of the Card";
+"Read_More"                                                     = "The card is stored exclusively in the device in a secure way. This information is subject to our policies and use. Read more";
+"Card_Number"                                                   = "Number on the card";
+"Card_Exp"                                                      = "Exp.";
+"Card_Customization"                                            = "Card personalization";
+"Card_Id_Name"                                                  = "Identifying name";
+"Card_Colour_Title"                                             = "COLOUR";
+"Update_Card"                                                   = "UPDATE CARD";
+"Example_Card_Name"                                             = "Example: Juan Carlos Aldana";
+"Example_Card_Identier"                                         = "Example: My orange credit card.";
+
+//PastOrdersViewController
+"PastOrders_Make"                                               = "Make an order";
+"PastOrders_Not_Order_History"                                  = "You don't have an order history yet";
+"PastOrders_TypeErrands"                                        = "ERRAND";
+
+//OrdersListViewController
+"OrdersList_Make"                                               = "Make an order";
+"OrdersList_No_Active_Order"                                    = "There are no active orders";
+
+//SearchViewController
+"Search_Placeholder"                                            = "Search for a store or label";
+"Search_Not_Found"                                              = "Trade not found";
+
+//New String find
+"select_Country"                                                = "SELECT A COUNTRY!";
+"Locate_Me_County"                                              = "LOCATE ME MANUALLY";
+"Need_Location_Service"                                         = "To enter hugo we need to know your location, in order to provide you with our services.";
+"Share_My_Address"                                              = "SHARE MY ADDRESS";
+//UbicationController
+"lbl_Ubication_Direction"                                       = "ADDRESS";
+"See_Ubication_Shop"                                            = "SEE SHOPS";
+"Where_UbicationDeliver_Order"                                  = "Where will we deliver your orders? ";
+"Set_UbicationPin_Location"                                     = "Set the pin on the delivery address.";
+
+//Welcome ViewController
+"lbl_Welcome_Explora"                                           = "Explore as a guest";
+"btn_WelcomeSignup_free"                                        = "SIGN UP";
+"btn_WelcomeLog_In"                                             = "LOG IN";
+"lbl_WelcomeEverything_You"                                     = "I do all for you!";
+
+//NewLoginController
+"lbl_NewLogin_EnterPhone_number"                                = "Enter your phone number,
+associated with the account";
+"lbl_NewLogin_Login"                                            = "LOG IN";
+"lbl_NewLogin_Assocaite"                                        = "Enter your phone number,\nasassociated to the account";
+"lbl_NewLogin_Number"                                           = "Enter your number";
+"lbl_NewLogin_Right"                                            = "RIGHT";
+"lbl_NewLogin_Create_Account"                                   = "CREATE ACCOUNT";
+
+//CreatePasswordViewController
+"CreatePassword_Add_Security"                                   = "Let's add security!";
+"CreatePassword_Set_Password"                                   = "Set a password";
+"CreatePassword_Eight"                                          = "8-16 character password";
+
+//LoginPasswordController
+"lbl_LoginPassword_Insert"                                      = "INSERT";
+"lbl_LoginPassword_Welcome"                                     = "Welcome back";
+"lbl_LoginPassword_name"                                        = "Eduardo López";
+"lbl_LoginPassword_Password"                                    = "Enter your password";
+"lbl_LoginPassword_Invalid_Password"                            = "The password entered is invalid";
+"lbl_LoginPassword_Forgot_Password"                             = "Forget your password?";
+
+//ChanelRecoveryPasswordController
+"btn_ChanelRecover_Forgot"                                      = "Did you forget your password?";
+"btn_ChanelRecover_Recover"                                     = "RECOVER PASSWORD";
+"btn_ChanelRecover_Validate_Identifier"                         = "Don't worry! Choose the medium where you would like to receive the code to validate your identity.";
+"btn_ChanelRecover_Send_Code"                                   = "SEND CODE";
+
+//CreatePasswordController
+"lbl_CreatePassword_Welcome"                                    = "Welcome back";
+"lbl_CreatePassword_Name"                                       = "Eduardo López";
+"lbl_CreatePassword_A_Password"                                 = "Enter your password";
+"lbl_CreatePassword_Password"                                   = "Enter password";
+"lbl_CreatePassword_Assign"                                     = "It's time to assign a password";
+"lbl_CreatePassword_Added_Security"                             = "For added security, your password should contain:";
+"lbl_CreatePassword_Minimum_Eight"                              = "A minimum of 8 characters";
+"lbl_CreatePassword_Capital_Later"                              = "A capital letter";
+"lbl_CreatePassword_Number"                                     = "A number";
+"lbl_CreatePassword_Again_Password"                             = "Enter password again";
+"lbl_CreatePassword_Save"                                       = "SAVE";
+"lbl_CreatePassword_Don't_Match"                                = "Passwords do not match.";
+"lbl_CreatePassword_Neccesary"                                  = "The password does not meet one or more of the necessary requirements.";
+"lbl_CreatePassword_Require"                                    = "The requested fields are required.";
+"lbl_CreatePassword_Try_Again"                                  = "We couldn't create your password, please try again.";
+"lbl_CreatePassword_Ready"                                      = "We are ready!";
+"lbl_CreatePassword_New_Password"                               = "It is time to enter your new password";
+"lbl_CreatePassword_Hello"                                      = "Hello!";
+"lbl_CreatePassword_Update_Password"                            = "Update your password!";
+"lbl_CreatePassword_Change_Password"                            = "It is time to change your password";
+
+//WhatIsHugoController
+"lbl_WhatIsHugo_Skip"                                           = "Skip";
+"lbl_WhatIsHugo_Swipe"                                          = "Swipe for more";
+"lbl_WhatIsHugo_Start"                                          = "START";
+"lbl_WhatIsHugo_Start_Text"                                     = "START";
+//WhatIsHugoCollectionViewCell
+"lbl_WhatIsHugo_Cell_Hello"                                     = "Hello! I'm Hugo, \n the SuperApp!";
+"lbl_WhatIsHugo_Cell_CountMe"                                   = "Count on me \n for anything you need.";
+"lbl_WhatIsHugo_Cell_Tell"                                      = "And I mean literally anything";
+"lbl_WhatIsHugo_Cell_Food"                                      = "Food, drinks, groceries, \n errands, transportation, \n bill payments and much more.";
+"lbl_WhatIsHugo_Cell_Shack_Hand"                                = "Think of me as your personal assistant";
+"lbl_WhatIsHugo_Cell_Everthing_You"                             = "with instant access to the best products and service around.";
+
+//Step1Controller
+"lbl_Step1"                                                     = "1 of 3";
+"lbl_Step1_Start"                                               = "To get started, enter your phone number.";
+"lbl_Step1_Send_Code"                                           = "We'll send you a verification code";
+"lbl_Step1_Need_Help"                                           = "Need help?";
+"lbl_Step1_Term_Condition_Message"                              = "I have read and agree to the ";
+"lbl_Step1_Term_Condition"                                      = "terms and conditions";
+"lbl_Step1_Already_Active"                                      = "The number entered already has an active account";
+"lbl_Step1_Enter_Number"                                        = "ENTER YOUR NUMBER";
+"lbl_Step1_Enter_number_Small"                                  = "Enter your number";
+"lbl_Step1_Following"                                           = "NEXT";
+"lbl_Step1_Login"                                               = "LOG IN";
+"lbl_Step1_Agent"                                               = "CONTACT AN AGENT";
+"lbl_step1_send_sms"                                            = "Receive code by SMS";
+"lbl_step1_send_whatsapp"                                       = "Receive code by WhatsApp";
+
+
+//Step2Controller
+"lbl_Step2"                                                     = "2 of 2";
+"lbl_Step2_Send_Code"                                           = "Enter the code sent to";
+"lbl_Step2_30_Sec"                                              = "The code may take up to 30 seconds to arrive";
+"lbl_Step2_Send_Code_Again"                                     = "Send the code again";
+"lbl_Step2_Send_Code_Ready"                                     = "  Ready! We have sent the code again";
+"lbl_Step2_Have_Not_recive"                                     = "Haven't you received your code? Request Help";
+"lbl_Step2_Check_Number"                                        = "CHECK YOUR NUMBER";
+"lbl_Step2_Login"                                               = "LOG IN";
+"lbl_Step2_Recover_Password"                                    = "RECOVER PASSWORD";
+"lbl_Step2_Recover_Code_Send"                                   = "Enter the recovery code sent to";
+"lbl_Step2_Erro"                                                = "An error occurred";
+"lbl_Step2_Resend"                                              = "We couldn't resend the verification code to you.";
+"lbl_Step2_InCorrect"                                           = "The code entered is not correct";
+"lbl_Step2_Check_Out_Try"                                       = "Check it out and try again";
+"lbl_Step2_Get_Call_Code"                                       = "GET CODE BY CALL";
+"lbl_Step2_Agent"                                               = "CONTACT AN AGENT";
+"lbl_Step2_Code_Send_Arrive"                                    = "Code can take up to %d seconds to arrive";
+"lbl_Step2_Call_On_Way"                                         = "Call on the way";
+
+//Step3Controller
+"lbl_Step3"                                                     = "3 of 3";
+"lbl_Step3_About_Finish"                                        = "Almost there!";
+"lbl_Step3_Name"                                                = "Name";
+"lbl_Step3_Surname"                                             = "Last name";
+"lbl_Step3_Email"                                               = "Email";
+"lbl_Step3_Info_Finish"                                         = "Please complete the following information";
+"lbl_Step3_Enter_Data"                                          = "ENTER YOUR DATA";
+"lbl_Step3_Following"                                           = "SUBMIT";
+
+//SignUpFinalizeController
+"lbl_SignUpFinalize_Sucessfully"                                = "Your account has been created successfully!";
+"lbl_SignUpFinalize_Enter_Hugo"                                 = "ENTER HUGO";
+"lbl_SignUpFinalize_Enter_Yummy"                                = "ENTER YUMMY";
+
+
+//TerritoryController
+"lbl_Territory_Selcet"                                          = "To enter you must \n select a territory";
+"lbl_Territory_Choose_Country"                                  = "Choose one of the available territories in your \n country to show you the shops";
+
+//CountryController
+"lbl_Country"                                                   = "Choose one of the countries where we count
+with service";
+
+
+//AlertBottam
+"alert_Bottam_help_you"                                         = "At Hugo we are here to help you! Select \none of the following options we can provide you with assistance.";
+"active_Account"                                                = "The entered phone does not \n have an active account";
+
+//RequestPhoneSignUp
+"Select_County"                                                 = "Select your country";
+"code_Not_Send"                                                 = "The code could not be sent";
+"wrong_Error"                                                   = "Sorry something has gone wrong.";
+"missing_Data"                                                  = "Missing data";
+"enter_Phone_Number"                                            = "Enter your phone number";
+"invalid_Phone"                                                 = "Invalid Phone";
+"account_Assocaite"                                             = "There is an account associated with this phone";
+
+//Signup Alert Method String
+"Invalid_Phone_Number"                                          ="Invalid phone number";
+"To_Continue_Ness"                                              = "To continue it is necessary that all the requested fields are completed";
+"contain_Digit"                                                 = "The phone number must contain $1 digits. Please verify the number entered.";
+"Accept_Terms"                                                  = "To continue you must accept the terms and conditions";
+"Service_Agent"                                                 = "At the moment we have not been able to assign any Customer Service Agent, we ask that you please try again later.";
+"Reqiure_Field_Pending"                                         = "Required pending fields";
+"Email_Not_Correct_Format"                                      = "The email is not in a correct format";
+"Select_Option"                                                 = "You must select an option";
+"Password_Require"                                              = "Password required";
+"Date_Not_Match"                                                = "The data does not match";
+"Password_Not_Correct"                                          = "The username or password entered is not correct, please verify the information again.";
+"Occur_Error"                                                   = "An error occurred";
+"Try_Again"                                                     = "We had a problem, we ask that you please try again later.";
+"To_Continue_Password"                                          =  "To continue you need to enter your password";
+
+"Search_Title_Edit_Route"                                       =  "EDIT ROUTE";
+"Search_Title_Route"                                            =  "TRAJECTORY";
+
+//SearchAddressDetailViewController
+"Search_Text"                                                   = "Type a text to search";
+"Select_Origin"                                                 = "SELECT ORIGIN";
+"Select_Destination"                                            = "SELECT DESTINATION";
+"Address_A"                                                     = "ADDRESS A";
+"Address_B"                                                     = "ADDRESS B";
+"Address_C"                                                     = "ADDRESS C";
+"Find_Stop"                                                     = "Find stop";
+"Search_Origin"                                                 = "Search origin";
+"Search_Destination"                                            = "Search destination";
+"Pickup_Address"                                                = "Pickup address";
+"Information_text"                                              = "Information";
+"Add_More_Destination"                                          = "Add more destinations, module under construction.";
+"Search_result"                                                 = "SEARCH RESULTS";
+"MY_address"                                                    = "MY ADDRESSES";
+"Recent_Trip"                                                   = "RECENT TRIPS";
+"Create_Address"                                                = "You must select a territory in order to create an address.";
+"Access_CC"                                                     = "You must select a territory in order to access to payment methods.";
+"Not_Available_service"                                         = "In your current location this service is not available";
+"Defalut_Address"                                               = "We have detected that the shipping address is not your default address. Please select or add a new address";
+"Please_Select_New_Address"                                     = "For% @ you do not yet have an address saved. To complete your shipment, please select an address or add a new address";
+"Shopping_Work"                                                 = "How does it work?";
+"Not_Valid_Location"                                            = "Sorry this option is not valid in your location.";
+"Invalid_option"                                                = "Invalid option";
+
+"Can_Not_Track"                                                 = "Sorry, you can't track this order at this time";
+"Action_Can_Not_Complete"                                       = "Action could not be completed, please try again";
+"Sorry"                                                         = "Sorry 😣";
+"Agree_Term_Condition"                                          = "You must agree to terms and conditions";
+"Completed_Action"                                              = "It was not possible to complete the action";
+"Atlest_One_address"                                            = "You must keep at least one address on your list";
+"Start_Jounary"                                                 = "Journey started";
+"Good_Trip"                                                     = "Have a good trip";
+"Required_fields"                                               = "Required field";
+"Specify_Location"                                              = "Specify what you want to do in this location";
+"Sorry_Card"                                                    = "Sorry 😞 the selected card type is not supported in your location.";
+"Invalid_Number"                                                = "Invalid number";
+"Enter_Valid_Number"                                            = "Enter a valid number to recharge";
+"Select_Payment_Method"                                         = "Select a payment method";
+"Select_Valid_Payment"                                          = "Select a valid payment method";
+"Camera_Permission"                                             = "Camera permissions";
+"Camera_Permission_Not_Avable"                                  = "Camera permissions are not enabled, enter your device options to enable it";
+"Reference_Number"                                              = "You must enter the reference number";
+"Security_number_Invalid"                                       = "The security number is invalid.";
+"Point_bank"                                                    = "Points of participating banks were consulted";
+"Limit_Product"                                                 = "The limit for this product is ";
+"Process"                                                       = "PROCEED";
+"Not_Valid"                                                     = "Not valid";
+"Create_With_Facebook"                                          = "There is no user associated with this email, it is possible that your profile was created with Facebook";
+"Sorry_Con_Not_Order"                                           = "Sorry, we couldn't enter your order 🙁";
+"Error_Code"                                                    = "Error code";
+"Code_Enter_Try_again"                                          = "It was not possible to use the code entered, try again";
+"Failed_Process"                                                = "Failed to process";
+"Cancel_Order"                                                  = "It was not possible to cancel the order, try again";
+"Authu_naessary"                                                = "To give you the best experience, we will request your authorization on the necessary permissions.";
+"permission_Text"                                               = "Permissions";
+"not_Awrad"                                                     = "You haven't won any awards yet";
+"safe_travels"                                                  = "Travel safe";
+"Move_Style"                                                    = "Move in style";
+"Cancel_without_Cost"                                           = "Free cancellation";
+"Profiession_Cycle"                                             = "With our exclusive network of professional drivers";
+"Mordel_feet"                                                   = "With our modern fleet";
+"Cancel_free_Charge"                                            = "Change your plans? No worries - you can cancel without a charge.";
+"valid_code"                                                    = "VALIDATE CODE";
+"Details_Text"                                                  = "DETAIL";
+"Code_Not_Found"                                                = "Code not found";
+"pay_invoice"                                                   = "PAY INVOICE";
+"Make_rechare"                                                  = "MAKE RECHARGE";
+"About_Recharge"                                                = "You're about to recharge";
+"To_Number"                                                     = " to the number ";
+"About_pay"                                                     = "You are about to pay";
+"make_payments"                                                 = "MAKE ANOTHER PAYMENT";
+"request_Help"                                                  = "Request for help";
+"call_to"                                                       = "CALL TO";
+"We_invite"                                                     = "We invite you to read our terms and conditions";
+"importance"                                                    = "IMPORTANT";
+"Hugo_Payment_Code"                                             = "HUGO PAYMENT CODE";
+"Create_Account_Small"                                          = "Create Account";
+"Do_You_Continuous"                                             = "To continue we must create a profile for you, it is easy and fast, it will take you less than a minute. Do you want to continue?";
+"title_Orders"                                                  = "Orders";
+"first_Order_Create_account"                                    = "On this screen you can see the history of your past orders and track all your active orders. Create your account and place your first order";
+"transporte_option"                                             = "In this screen you will be able to access the transport option, to be able to access and enjoy this option, create your account or log in.";
+"Edit_Card"                                                     = "Edit Card";
+"New_Card"                                                      = "New Card";
+"behind"                                                        = "Behind";
+"loading_Text"                                                  = "Loading ...";
+"current_location_Service_Not"                                  = "In your current location this service is not available";
+"test"                                                          = "Test";
+"test_Small"                                                    = "test";
+
+//SearchViewControllerNew
+"lbl_Title_Search"                                              = "SEARCH";
+"lbl_Title_Search_Result"                                       = "RESULTS";
+"lbl_Title_Type_Commerce"                                       = "Commerce";
+"lbl_Title_Type_Product"                                        = "Product";
+"lbl_Title_Type_Category"                                       = "Category";
+"lbl_Title_Type_Recent"                                         = "Recent";
+"lbl_NoResult_Search"                                           = "We have not found a result\nfor the word \"%@\"";
+
+
+//ConfirmCancelOrder
+"lblTitleConfirmCancelOrder"                                    = "Confirmation";
+"lblDescription1ConfirmCancelOrder"                             = "You are about to cancel your scheduled order, your money will be refunded in the form of consumable credits within the app.";
+"lblDescription2ConfirmCancelOrder"                             = "You are about to cancel your scheduled order, your money will be returned to your card according to the process of each bank.";
+"lblQuestionConfirmCancelOrder"                                 = "Do you want to continue?";
+
+//RatingViewModel
+"lblhugoNamRatingDelivery"                                      = "Platform";
+
+"lblhugoGoodRatings1"                                           = "Tracking";
+"lblhugoGoodRatings2"                                           = "Attention";
+"lblhugoGoodRatings3"                                           = "Speed";
+"lblhugoGoodRatings4"                                           = "Platform";
+"lblhugoGoodRatings5"                                           = "Efficiency";
+"lblhugoGoodRatings6"                                           = "Packing";
+
+"lblhugoBadRatings1"                                            = "Attention";
+"lblhugoBadRatings2"                                            = "Without Bag";
+"lblhugoBadRatings3"                                            = "Tracking";
+"lblhugoBadRatings4"                                            = "Payment";
+"lblhugoBadRatings5"                                            = "Cold Product";
+"lblhugoBadRatings6"                                            = "Delivery Time";
+
+"lbldriverGoodRatings1"                                         = "Amiability";
+"lbldriverGoodRatings2"                                         = "Speed";
+"lbldriverGoodRatings3"                                         = "Attention";
+"lbldriverGoodRatings4"                                         = "Presentation";
+"lbldriverGoodRatings5"                                         = "Early Delivery";
+
+"lbldriverBadRatings1"                                          = "Attitude";
+"lbldriverBadRatings2"                                          = "Lost";
+"lbldriverBadRatings3"                                          = "No Change";
+"lbldriverBadRatings4"                                          = "Product Handling";
+"lbldriverBadRatings5"                                          = "Delivery Time";
+
+"lblpartnerGoodRatings1"                                        = "Quality";
+"lblpartnerGoodRatings2"                                        = "Portion";
+"lblpartnerGoodRatings3"                                        = "Packaging";
+"lblpartnerGoodRatings4"                                        = "Price";
+"lblpartnerGoodRatings5"                                        = "Order Complete";
+"lblpartnerGoodRatings6"                                        = "Efficiency";
+
+"lblpartnerBadRatings1"                                         = "Quality";
+"lblpartnerBadRatings2"                                         = "Packaging";
+"lblpartnerBadRatings3"                                         = "Time";
+"lblpartnerBadRatings4"                                         = "Portion";
+"lblpartnerBadRatings5"                                         = "Bad Product";
+"lblpartnerBadRatings6"                                         = "Incomplete Order";
+
+"lblThankyou"                                                   = "Thank you!";
+
+//ConfirmCancelRideViewController
+"lbl_ConfirmCancelRide_Title"                                   = "End trip";
+"lbl_ConfirmCancelRide_Desc"                                    = "You're about to end your trip";
+"lbl_ConfirmCancelRide_Why_Cancel_Ride"                         = "Why are you ending the trip?";
+"btn_ConfirmCancelRide_Confirm"                                 = "Confirm";
+// Service Feed
+"lbl_see_all_services"                                          = "SEE ALL";
+"lbl_service_recent"                                            = "RECENTS";
+
+// Chat Alert
+"alert_chat_title"                                              = "Hugo support";
+"alert_chat_message"                                            = "Here you could ask for help about any kind of problems in app. Create your account to use this service.";
+"alert_chat_button_title"                                       = "CREATE ACCOUNT";
+
+// ItemOptionsViewController
+"btn_add_order"                                                 = "ADD TO ORDER";
+
+// Product partner header
+"partner_header_favorite_title"                                 = "Favorite";
+"partner_header_delivery_title"                                 = "Delivery";
+"partner_header_schedule_title"                                 = "Schedule";
+"partner_header_rating_title"                                   = "Rating";
+"partner_header_search_in"                                      = "Search in ";
+
+
+//WidgetHugoPay
+"user_login"                                                    = "Join the financial\nrevolution!";
+"user_cash"                                                     = "Cashback";
+
+// HugoPay Strings
+"hp_lbl_onboarding_login"           = "Log In";
+"hp_lbl_onboarding_moreinfo"        = "More Info";
+"hp_lbl_onboarding_terms_word"      = "Terms";
+"hp_lbl_onboarding_conditions_word" = "Conditions";
+"hp_lbl_onboarding_terms"           = "By log in to hugoPay you are agreeing to hugo's \n%@ and %@.";
+"hp_lbl_onboarding_create_account"  = "Create Account";
+"hp_lbl_onboarding_soon_hugo"       = "Soon in Hugo";
+
+"hp_lbl_account_next"               = "Next";
+"hp_lbl_account_keepsafe"           = "¡Keep your account Safe!";
+"hp_lbl_account_createpin"          = "Create a 4 digit Passcode.";
+"hp_lbl_account_confirmpin"         = "Confirm Passcode";
+"hp_lbl_account_allow_biometric"    = "Allow";
+"hp_lbl_account_skip_biometric"     = "Skip";
+"hp_lbl_account_enable_biometric"   = "Set up";
+"hp_lbl_account_desc_biometric"     = "Use Fingertip in place of your Passcode for faster purchases";
+"hp_lbl_account_login"              = "Enter your Passcode";
+
+"hp_lbl_home_addcard"           = "Add a Card";
+"hp_lbl_home_transactions"      = "Transactions";
+"hp_lbl_home_mytransactions"    = "My %@";
+"hp_lbl_home_viewall"           = "View All";
+"hp_lbl_home_emptystate_trx"    = "No transactions yet.";
+"hp_lbl_home_emptystate_payall" = "Make your first purchase with hugoPay";
+
+"hp_lbl_qr_card_disabled" = "You can use this card in:";
+"hp_lbl_qr_card_remaining_time_value" = "hours";
+"hp_lbl_qr_card_remaining_value" = "hour";
+
+"hp_lbl_qr_payment_commerce" = "Payment of commerce";
+"hp_lbl_qr_payment_applicant_commerce" = "Applicant commerce";
+"hp_lbl_qr_payment_qty_request" = "Quantity to request";
+"hp_lbl_qr_payment_use_my_cashback" = "Use my Cashback";
+"hp_lbl_qr_payment_accumulated_cashback" = "Accumulated Cashback";
+"hp_lbl_qr_payment_to_refuse" = "Refuse";
+"hp_lbl_qr_payment_to_pay" = "Pay";
+
+"hp_lbl_transaction_list_emptytitle" = "No transactions yet.";
+"hp_lbl_transaction_list_emptysubtitle" = "¡Get started with hugoPay!";
+"hp_lbl_transaction_list_emptytitlefilters" = "There are no transactions for the selected range";
+
+"hp_lbl_transaction_filter_title" = "Filter";
+"hp_lbl_transaction_filter_description" = "¡Order transactions as you like!";
+"hp_lbl_transaction_filter_clean" = "Clean";
+"hp_lbl_transaction_filter_date" = "Date transaction";
+"hp_lbl_transaction_filter_from" = "From";
+"hp_lbl_transaction_filter_to" = "To";
+"hp_lbl_transaction_filter_quantity" = "Quantity";
+"hp_lbl_transaction_filter_done" = "Done";
+"hp_lbl_transaction_filter_cancel" = "Cancel";
+"hp_lbl_transaction_filter_minimum" = "Minimum";
+"hp_lbl_transaction_filter_maximum" = "Maximum";
+
+// Notifications
+"hp_lbl_notifications_title" = "Notifications";
+"hp_lbl_notifications_unselect_all" = "Unselect all";
+"hp_lbl_notificactions_select_all" = "Select all";
+"hp_empty_transactions_lbl" = "No notifications";
+"hp_get_started_with_hugopay" = "Here we will notify you of all the\nmovements of your account!";
+
+// Security politics
+"hp_get_security_politics" = "Security Politics";
+
+// HP Request biometrics
+"hp_authentication_is_required" = "Authentication is required to enter";
+"hp_biometrics_successful_update" = "Successful update";
+"hp_biometrics_update_was_successful" = "The update was successful";
+
+// HP conexion problems
+"hp_conecction_taking_too_long" = "This is taking too long, check your connection and try again";
+
+// HP Verify PIN
+"hp_verify_pin_wrong_message" = "Wrong PIN";
+"hp_verify_pin_try_again" = "Try again";
+
+// HP Block Account
+"hp_block_account_title" = "Ups it looks like you've locked\nyour account.";
+"hp_block_account_body" = "We can help you get it back";
+"hp_block_account_button" = "recover password";
+
+// HP Temporal Passcode
+"hp_temporal_code_validate" = "VALIDATE";
+"hp_temporal_code_enter_temporal_code" = "Enter your temporary code";
+"hp_temporal_code_next" = "NEXT";
+"hp_temporal_code_set_security_pin" = "Set your new security PIN";
+"hp_temporal_code_enter_security_pin" = "Enter a 4-digit PIN";
+"hp_temporal_code_confirm" = "CONFIRM";
+"hp_temporal_code_set_new_pin" = "Enter your PIN again";
+"hp_temporal_code_confirm_pin" = "Confirm PIN.";
+"hp_temporary_code_label_text" = "Your PIN must be 4 digits";
+
+// HP Recovery metods
+"hp_title_recovery_method" = "Choose recovery method";
+"hp_title_recovery_method_email" = "Send me code to my email";
+"hp_title_recovery_method_sms" = "Send me code as SMS";
+
+// HP Cashback
+"hp_cashback_message_about" = "This is the cashback you have obtained \n from your purchases. Use it when paying with QR!";
+"hp_cashback_commerce_info" = "FIND OUT WHERE TO REDEEM YOUR CASHBACK REWARDS";
+"hp_my_transactions_title" = "My transactions";
+"hp_my_view_all_transactions_title" = "View All";
+
+// HP Create PIN
+"hp_create_pin_dont_match_first" = "Wrong code, the numbers you have entered do not match those entered previously,\n";
+"hp_create_pin_dont_match_second" = "Try again";
+
+// Onboarding Territory
+"hp_very_soon_title" = "soon in hugo";
+
+"hp_lbl_expense_title" = "Expense Control";
+"hp_lbl_expense_dailystring" = "Daily Expense";
+
+//DeleteTarjertaAlert
+"lbl_DeleteCardTitle" = "Delete Card";
+"lbl_DeleteCardMessage" = "You are about to delete the card ****%@. Are you sure you want to continue";
+
+// Expense control
+"hp_expense_control_nav_title" = "Financial Tracker";
+"hp_expense_control_body_title" = "¡Soon!";
+"hp_expense_control_message_title" = "We are creating an expense report\nfor you, with it you can identify your\n consumption patterns and make better\nfinancial decisions. Keep\ntrading to get it.";
+"hp_expense_control_type_monthly" = "Type of monthly consumption";
+"hp_expense_control_my_transactions" = "My transactions";
+"hp_expense_control_transactions_of" = "Transactions of";
+
+// Tutorial
+"hp_tutorial_control_soon_title" = "(Soon)";
+
+// Transaction detail
+"hp_transaction_detail_navigation_title" = "DETAIL OF TRANSACTION";
+"hp_transaction_detail_have_sent" = "You have sent";
+"hp_transaction_detail_successfully_title" = "successfully";
+"hp_transaction_title" = "TRANSACTION NOTE";
+"hp_transaction_detail_title" = "DETAIL";
+"hp_transaction_id_title" = "Transaction ID";
+"hp_datetime_title" = "Date and Time";
+"hp_commerce_title" = "Commerce";
+"hp_branch_title" = "Branch office";
+"hp_base_currency_title" = "Base Currency";
+"hp_debit_card_title" = "Debited card";
+"hp_billing_detail_title" = "BILLING DETAIL";
+"hp_debit_card_title" = "Debit to card";
+"hp_cashback_title" = "Cashback";
+"hp_total_title" = "Total";
+
+// Notifications
+"hp_notifications_view_more" = "See all";
+
+//Detail Orders
+"hp_title_order_in_process" = "Order in progress";
+"hp_message_order_in_process" = "This order is already beign processed";
+
+// CashInMoneyIncome
+"hp_CashInMoneyIncome_Title" = "Amount to be charged";
+"hp_CashInMoneyIncome_MinimumAmount" = "** Minimum amount to charge ";
+"hp_CashInMoneyIncome_AmountRequired" = "Required";
+"hp_CashInMoneyIncome_MinimumAmountValidation" = "Minimum Amount ";
+"hp_CashInMoneyIncome_NextButton" = "NEXT";
+
+// CashinMoneyConfirmation
+"hp_CashinMoneyConfirmation_Title" = "Amount to be charged";
+"hp_CashinMoneyConfirmation_MoneySource" = "Collect funds from:";
+"hp_CashinMoneyConfirmation_AddCard" = "Add card";
+"hp_CashinMoneyConfirmation_ConfirmButton" = "CONFIRM";
+"hp_CashinMoneyConfirmation_CreditCardSelectionValidation" = "You must choose a card";
+"hp_CashinMoneyConfirmation_invalidAmount" = "Invalid amount";
+
+// CashinSucessViewController
+"hp_CashinSucessViewController_Title" = "Accredited card!";
+"hp_CashinSucessViewController_subtitle" = "Your new balance has been updated";
+"hp_CashinSucessViewController_ThanksForUse" = "Thanks for using ";
+"hp_CashinSucessViewController_HugoPay" = "hugoPay!";
+"hp_CashinSucessViewController_seeDetail" = "TRANSACTION DETAILS";
+"hp_CashinSucessViewController_BackToHome" = "BACK TO HOME";
+
+// CashinTransactionDetailViewController
+"hp_CashinTransactionDetailViewController_Title" = "SUMMARY";
+"hp_CashinTransactionDetailViewController_ChargedLabel" = "You have charged";
+"hp_CashinTransactionDetailViewController_CardLabel" = "to your card";
+"hp_CashinTransactionDetailViewController_Detail" = "DETAIL";
+"hp_CashinTransactionDetailViewController_Datetime" = "Date & time";
+"hp_CashinTransactionDetailViewController_MoneySource" = "Debited card";
+"hp_CashinTransactionDetailViewController_Amount" = "Amount";
+
+// HP Full Reset Pin Strings
+"hp_full_reset_pin_options_subtitle" = "Choose the medium where you would like to receive the code to validate your identity.";
+"hp_full_reset_pin_validate_button" = "CONFIRM";
+"hp_full_reset_pin_title" = "Please input your temporary code";
+"hp_full_reset_pin_subtitle" = "Your temporary code has been sent to";
+"hp_full_reset_pin_resend_code" = "RESEND CODE";
+"hp_full_reset_pin_next_button" = "NEXT";
+"hp_full_reset_pin_newpin_title" = "Select a new security PIN";
+"hp_full_reset_pin_newpin_subtitle" = "Input a 4 digit PIN";
+"hp_full_reset_pin_confirm_button" = "CONFIRM";
+"hp_full_reset_pin_newpin_confirmation_title" = "Input your PIN one more time";
+"hp_full_reset_pin_newpin_confirmation_subtitle" = "Confirm your PIN";
+"hp_full_reset_pin_time_disclaimer" = "It may take up to 30 seconds for your temporary code to arrive";
+"hp_full_reset_pin_locked_account_title" = "It appears you may have blocked your account";
+"hp_full_reset_pin_locked_account_subtitle" = "Let's recover it";
+"hp_full_reset_pin_locked_account_recover_button" = "RECOVER ACCOUNT";
+
+// TransactionFiltersViewController
+"hp_full_TransactionFiltersViewController_CleanButton" = "Clean";
+"hp_full_TransactionFiltersViewController_FilterTitle" = "Filter";
+"hp_full_TransactionFiltersViewController_FilterSubtitle" = "Sort transactions as you wish!";
+"hp_full_TransactionFiltersViewController_TransactionDateLabel" = "TRANSACTION DATE";
+"hp_full_TransactionFiltersViewController_TransactionDateInit" = "Start";
+"hp_full_TransactionFiltersViewController_TransactionDateEnd" = "End";
+"hp_full_TransactionFiltersViewController_TransactionTypeLabel" = "TRANSACTION TYPE";
+"hp_full_TransactionFiltersViewController_TransactionTypeIncome" = "Income";
+"hp_full_TransactionFiltersViewController_TransactionTypeExpense" = "Expenses";
+"hp_full_TransactionFiltersViewController_TransactionAmount" = "TRANSACTION AMOUNT";
+"hp_full_TransactionFiltersViewController_TransactionAmountMin" = "Min";
+"hp_full_TransactionFiltersViewController_TransactionAmountTo" = "to";
+"hp_full_TransactionFiltersViewController_TransactionAmountMax" = "Max";
+"hp_full_TransactionHPFullViewController_EmptyText" = "No transactions";
+"hp_full_TransactionHPFullViewController_EmptySubtitle" = "Get started with hugoPay!";
+"hp_full_TransactionHPFullViewController_EmptyTextFilter" = "There are no transactions for the selected filter";
+
+//CleverTap AppInbox
+"ct_notification_title" = "Notifications";
+"ct_promos_tag" = "Promotions";
+"ct_prizes_tag" = "Prizes";
+
+// HP Full Send Money
+"hp_full_send_money_success_title" = "¡Payment Sent!";
+"hp_full_send_money_success_details_button_title" = "TRANSACTION DETAILS";
+"hp_full_send_money_success_new_transaction_button_title" = "CLOSE";
+"hp_full_send_money_failure_close_button_title" = "CLOSE";
+"hp_full_send_money_enter_email_placeholder" = "Or enter your email";
+
+// HP Full Request Money
+"hp_full_request_money_success_title" = "¡Request Sent!";
+"hp_full_request_money_note_placeholder" = "Add una note (required)";
+
+// HP Full P2P error messages
+"hp_full_invalid_phone" = "Invalid Phone";
+"hp_full_invalid_email" = "Invalid email";
+"hp_full_invalid_amount" = "Invalid amount";
+"hp_full_invalid_fields" = "Use either phone number or email address";
+

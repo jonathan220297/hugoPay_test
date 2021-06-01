@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "hp_dismiss_alert.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

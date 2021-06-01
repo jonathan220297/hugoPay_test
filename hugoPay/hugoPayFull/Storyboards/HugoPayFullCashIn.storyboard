@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamHTF-Black.otf">
+            <string>GothamHTF-Black</string>
+        </array>
+        <array key="GothamHTF-Bold.otf">
+            <string>GothamHTF-Bold</string>
+        </array>
+        <array key="GothamHTF-Book.otf">
+            <string>GothamHTF-Book</string>
+        </array>
+        <array key="GothamHTF-Light.otf">
+            <string>GothamHTF-Light</string>
+        </array>
+        <array key="GothamHTF-Medium.otf">
+            <string>GothamHTF-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cashin Sucess View Controller-->
+        <scene sceneID="DBw-tS-1Ml">
+            <objects>
+                <viewController storyboardIdentifier="CashinSucessViewController" id="Xt7-rk-Ua1" customClass="CashinSucessViewController" customModule="Hugo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="29a-yf-M7a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olc-xt-aDI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stoke_hpfull_cashin_2" translatesAutoresizingMaskIntoConstraints="NO" id="8BR-mB-pXx">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="M17-Fd-wjN"/>
+                                            <constraint firstAttribute="height" constant="125" id="XGp-W1-nbx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stoke_hpfull_cashin" translatesAutoresizingMaskIntoConstraints="NO" id="da7-al-5sA">
+                                        <rect key="frame" x="0.0" y="141" width="414" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="EGU-kc-QnX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8BR-mB-pXx" firstAttribute="top" secondItem="Olc-xt-aDI" secondAttribute="top" id="KDp-tm-Krb"/>
+                                    <constraint firstItem="da7-al-5sA" firstAttribute="leading" secondItem="Olc-xt-aDI" secondAttribute="leading" id="XQn-aQ-ppF"/>
+                                    <constraint firstItem="da7-al-5sA" firstAttribute="top" secondItem="8BR-mB-pXx" secondAttribute="bottom" constant="16" id="a7t-dc-SdC"/>
+                                    <constraint firstAttribute="trailing" secondItem="da7-al-5sA" secondAttribute="trailing" id="jce-yw-gcd"/>
+                                    <constraint firstItem="8BR-mB-pXx" firstAttribute="leading" secondItem="Olc-xt-aDI" secondAttribute="leading" id="o2E-6I-AGV"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_hugopayfull" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-lF-KeL">
+                                <rect key="frame" x="169.5" y="60" width="75" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="4y8-a7-w6m"/>
+                                    <constraint firstAttribute="width" secondItem="9xh-lF-KeL" secondAttribute="height" multiplier="15:8" id="XDZ-wu-h37"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_image_cashin" translatesAutoresizingMaskIntoConstraints="NO" id="fzf-bv-vl4">
+                                <rect key="frame" x="117.5" y="200" width="179" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fzf-bv-vl4" secondAttribute="height" multiplier="1:1" id="pDb-xg-bL8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarjeta abonada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5L-OO-KT9" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="419" width="382" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Jk0-vr-4OC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Black" family="Gotham HTF" pointSize="20"/>
+                                <color key="textColor" name="DeepPurple"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinSucessViewController_Title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu nuevo balance ha sido actualizado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-Kb-YJ3" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                <rect key="frame" x="124" y="450.5" width="166" height="30.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="o2r-QT-DTk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                <color key="textColor" name="DeepPurple"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinSucessViewController_subtitle"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gracias por usar hugoPay!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tca-zV-1u9">
+                                <rect key="frame" x="32" y="510.5" width="350" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="R2t-GO-0q7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NPj-Wz-bcH">
+                                <rect key="frame" x="32" y="563.5" width="350" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl3-ml-ZjK" customClass="LocalizableButton" customModule="Hugo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                        <color key="backgroundColor" name="StrongPurple1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tz6-mi-rqA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="15"/>
+                                        <state key="normal" title="VER DETALLE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinSucessViewController_seeDetail"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDetailTapped:" destination="Xt7-rk-Ua1" eventType="touchUpInside" id="uNA-6o-cjj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-gS-uDa" customClass="LocalizableButton" customModule="Hugo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="350" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dmP-30-nhd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="15"/>
+                                        <state key="normal" title="REGRESAR AL INICIO">
+                                            <color key="titleColor" name="StrongPurple1"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinSucessViewController_BackToHome"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonDismissTapped:" destination="Xt7-rk-Ua1" eventType="touchUpInside" id="VsG-Hy-P1q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LQ2-93-CTw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tca-zV-1u9" firstAttribute="top" secondItem="2nU-Kb-YJ3" secondAttribute="bottom" constant="29.5" id="0t6-Td-V7q"/>
+                            <constraint firstItem="Olc-xt-aDI" firstAttribute="leading" secondItem="29a-yf-M7a" secondAttribute="leading" id="1SS-2d-znO"/>
+                            <constraint firstItem="NPj-Wz-bcH" firstAttribute="top" secondItem="tca-zV-1u9" secondAttribute="bottom" constant="32" id="1Wh-Jg-XbV"/>
+                            <constraint firstItem="Olc-xt-aDI" firstAttribute="top" secondItem="29a-yf-M7a" secondAttribute="top" id="5CQ-F3-dWa"/>
+                            <constraint firstItem="fzf-bv-vl4" firstAttribute="centerX" secondItem="29a-yf-M7a" secondAttribute="centerX" id="6Ba-vl-Cad"/>
+                            <constraint firstItem="2nU-Kb-YJ3" firstAttribute="top" secondItem="B5L-OO-KT9" secondAttribute="bottom" constant="8" id="6fk-5M-CRJ"/>
+                            <constraint firstItem="B5L-OO-KT9" firstAttribute="leading" secondItem="LQ2-93-CTw" secondAttribute="leading" constant="16" id="OaK-R8-yJA"/>
+                            <constraint firstAttribute="trailing" secondItem="Olc-xt-aDI" secondAttribute="trailing" id="P6P-u7-fUg"/>
+                            <constraint firstItem="2nU-Kb-YJ3" firstAttribute="centerX" secondItem="29a-yf-M7a" secondAttribute="centerX" id="aS9-mW-Hyq"/>
+                            <constraint firstItem="LQ2-93-CTw" firstAttribute="trailing" secondItem="tca-zV-1u9" secondAttribute="trailing" constant="32" id="dsb-uc-C9h"/>
+                            <constraint firstItem="fzf-bv-vl4" firstAttribute="top" secondItem="9xh-lF-KeL" secondAttribute="bottom" constant="100" id="evU-Ac-991"/>
+                            <constraint firstItem="2nU-Kb-YJ3" firstAttribute="width" secondItem="29a-yf-M7a" secondAttribute="width" multiplier="0.4" id="fFm-ib-3jc"/>
+                            <constraint firstItem="B5L-OO-KT9" firstAttribute="top" secondItem="fzf-bv-vl4" secondAttribute="bottom" constant="40" id="hZq-F4-ImJ"/>
+                            <constraint firstItem="9xh-lF-KeL" firstAttribute="centerX" secondItem="29a-yf-M7a" secondAttribute="centerX" id="kqG-cf-UUs"/>
+                            <constraint firstItem="9xh-lF-KeL" firstAttribute="top" secondItem="LQ2-93-CTw" secondAttribute="top" constant="16" id="nde-wg-BGP"/>
+                            <constraint firstItem="LQ2-93-CTw" firstAttribute="trailing" secondItem="NPj-Wz-bcH" secondAttribute="trailing" constant="32" id="o7Y-jw-7al"/>
+                            <constraint firstAttribute="bottom" secondItem="Olc-xt-aDI" secondAttribute="bottom" id="qsB-4h-Zhc"/>
+                            <constraint firstItem="fzf-bv-vl4" firstAttribute="height" secondItem="29a-yf-M7a" secondAttribute="height" multiplier="0.2" id="ruK-DB-Ig6"/>
+                            <constraint firstItem="tca-zV-1u9" firstAttribute="leading" secondItem="LQ2-93-CTw" secondAttribute="leading" constant="32" id="tvc-sY-oSr"/>
+                            <constraint firstItem="LQ2-93-CTw" firstAttribute="trailing" secondItem="B5L-OO-KT9" secondAttribute="trailing" constant="16" id="v5v-6o-Ska"/>
+                            <constraint firstItem="NPj-Wz-bcH" firstAttribute="leading" secondItem="LQ2-93-CTw" secondAttribute="leading" constant="32" id="vEd-mG-DTY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDismiss" destination="Tn8-gS-uDa" id="ugr-cW-M7K"/>
+                        <outlet property="labelHugoThanks" destination="tca-zV-1u9" id="ggc-zL-40t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mR7-1o-ryf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--Failure Cashin View Controller-->
+        <scene sceneID="dir-7V-ok4">
+            <objects>
+                <viewController storyboardIdentifier="FailureCashinViewController" id="uor-YW-8jD" customClass="FailureCashinViewController" customModule="Hugo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b6h-XR-S6j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cu-f8-bQv">
+                                <rect key="frame" x="20" y="52" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4o3-f0-ceE"/>
+                                    <constraint firstAttribute="width" secondItem="2cu-f8-bQv" secondAttribute="height" multiplier="1:1" id="fTD-Fn-X9k"/>
+                                </constraints>
+                                <state key="normal" image="hp_full_arrow_back_white"/>
+                                <connections>
+                                    <action selector="buttonBackTapped:" destination="uor-YW-8jD" eventType="touchUpInside" id="Rhh-BH-tgi"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_hugopayfull_blanco" translatesAutoresizingMaskIntoConstraints="NO" id="8K1-Di-H4M">
+                                <rect key="frame" x="169.5" y="52" width="75" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8K1-Di-H4M" secondAttribute="height" multiplier="16:8" id="Gg9-Zm-Xvg"/>
+                                    <constraint firstAttribute="width" constant="75" id="xqh-qZ-cxN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ilu-somethingwentwrongHP" translatesAutoresizingMaskIntoConstraints="NO" id="NUf-ho-cch">
+                                <rect key="frame" x="83" y="121.5" width="248" height="248.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NUf-ho-cch" secondAttribute="height" multiplier="1:1" id="oOb-Cw-0Ja"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-zc-AQr">
+                                <rect key="frame" x="31" y="402" width="352" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Fqs-fV-fhh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-3W-BS6">
+                                <rect key="frame" x="41.5" y="455" width="331" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="s4F-i6-6g2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="15"/>
+                                <state key="normal" title="ACEPTAR">
+                                    <color key="titleColor" name="StrongPurple1"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonBackTapped:" destination="uor-YW-8jD" eventType="touchUpInside" id="rRm-nu-M2A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qkc-iw-7p1"/>
+                        <color key="backgroundColor" name="StrongPurple1"/>
+                        <constraints>
+                            <constraint firstItem="2cu-f8-bQv" firstAttribute="leading" secondItem="qkc-iw-7p1" secondAttribute="leading" constant="20" id="Db9-hw-KSD"/>
+                            <constraint firstItem="NUf-ho-cch" firstAttribute="width" secondItem="b6h-XR-S6j" secondAttribute="width" multiplier="0.6" id="LLq-sX-imN"/>
+                            <constraint firstItem="cKI-3W-BS6" firstAttribute="top" secondItem="0JL-zc-AQr" secondAttribute="bottom" constant="32" id="NQ5-cD-gDr"/>
+                            <constraint firstItem="NUf-ho-cch" firstAttribute="top" secondItem="8K1-Di-H4M" secondAttribute="bottom" constant="32" id="PFJ-BT-D12"/>
+                            <constraint firstItem="0JL-zc-AQr" firstAttribute="top" secondItem="NUf-ho-cch" secondAttribute="bottom" constant="32" id="VBS-HS-UBs"/>
+                            <constraint firstItem="8K1-Di-H4M" firstAttribute="centerX" secondItem="b6h-XR-S6j" secondAttribute="centerX" id="VCN-cG-0bQ"/>
+                            <constraint firstItem="2cu-f8-bQv" firstAttribute="top" secondItem="qkc-iw-7p1" secondAttribute="top" constant="8" id="Y2B-g9-eb4"/>
+                            <constraint firstItem="NUf-ho-cch" firstAttribute="centerX" secondItem="b6h-XR-S6j" secondAttribute="centerX" id="b2l-OO-cae"/>
+                            <constraint firstItem="0JL-zc-AQr" firstAttribute="centerX" secondItem="b6h-XR-S6j" secondAttribute="centerX" id="fLL-8g-3RH"/>
+                            <constraint firstItem="8K1-Di-H4M" firstAttribute="top" secondItem="qkc-iw-7p1" secondAttribute="top" constant="8" id="udw-iN-aC0"/>
+                            <constraint firstItem="cKI-3W-BS6" firstAttribute="width" secondItem="b6h-XR-S6j" secondAttribute="width" multiplier="0.8" id="v6o-FB-pWr"/>
+                            <constraint firstItem="0JL-zc-AQr" firstAttribute="width" secondItem="b6h-XR-S6j" secondAttribute="width" multiplier="0.85" id="vDo-oV-MHH"/>
+                            <constraint firstItem="cKI-3W-BS6" firstAttribute="centerX" secondItem="b6h-XR-S6j" secondAttribute="centerX" id="vs3-z7-L8l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelMessageFailure" destination="0JL-zc-AQr" id="9iH-Q5-0Xd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFe-mr-kqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="119"/>
+        </scene>
+        <!--Cashin Transaction Detail View Controller-->
+        <scene sceneID="Q1p-2N-cwM">
+            <objects>
+                <viewController storyboardIdentifier="CashinTransactionDetailViewController" id="59O-iE-f5S" customClass="CashinTransactionDetailViewController" customModule="Hugo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fuc-Ho-OeC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAb-Qz-hdL">
+                                <rect key="frame" x="0.0" y="493" width="414" height="403"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESUMEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b4-vA-Rgp" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                <rect key="frame" x="92" y="54.5" width="230" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Nac-jv-JaH"/>
+                                    <constraint firstAttribute="height" constant="20" id="cPP-Ib-BSt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Bold" family="Gotham HTF" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_Title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnu-FR-sPF">
+                                <rect key="frame" x="23" y="52" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="MEd-Fr-egz"/>
+                                    <constraint firstAttribute="height" constant="25" id="df1-Yd-usO"/>
+                                </constraints>
+                                <state key="normal" image="back_white_hp"/>
+                                <connections>
+                                    <action selector="buttonBackTapped:" destination="59O-iE-f5S" eventType="touchUpInside" id="N0s-BQ-w1M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has abonado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-Gv-Jn5" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                <rect key="frame" x="127" y="96.5" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3bR-mf-3hU"/>
+                                    <constraint firstAttribute="width" constant="160" id="chl-jE-eOx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_ChargedLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNP-5r-ijN">
+                                <rect key="frame" x="30" y="132.5" width="354" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="zVP-e2-Cnv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Book" family="Gotham HTF" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a tu tarjeta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txv-xM-zFy" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                <rect key="frame" x="157" y="202.5" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YOv-gP-Yty"/>
+                                    <constraint firstAttribute="height" constant="21" id="xig-D7-iJ8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_CardLabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fud-HU-niz">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiq-wO-dii">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="615"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-bh-mM6">
+                                                <rect key="frame" x="15" y="0.0" width="384" height="70"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="h5C-CQ-6jp"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cut_ticket" translatesAutoresizingMaskIntoConstraints="NO" id="XI6-Hi-75H">
+                                                <rect key="frame" x="15" y="70" width="384" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="f8b-v7-cin"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVt-45-xi5">
+                                                <rect key="frame" x="15" y="100" width="384" height="495"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="495" id="gF5-zl-GXo"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="pkU-xD-afB">
+                                                <rect key="frame" x="47" y="16" width="320" height="183.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DETALLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-uY-uZs" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                                        <color key="textColor" name="DeepPurple"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_Detail"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o2s-Qi-DhL">
+                                                        <rect key="frame" x="0.0" y="47.5" width="320" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha y hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVx-uI-F6T" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Light" family="Gotham HTF" pointSize="15"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_Datetime"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR3-Ze-vUI">
+                                                                <rect key="frame" x="160" y="0.0" width="160" height="21"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                                                <color key="textColor" name="StrongPurple1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="Zn9-rw-paY"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lRb-6J-L5W">
+                                                        <rect key="frame" x="0.0" y="100.5" width="320" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarjeta debitada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pix-vy-81W" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Light" family="Gotham HTF" pointSize="15"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_MoneySource"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSC-W3-8fn">
+                                                                <rect key="frame" x="160" y="0.0" width="160" height="30"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa_logo" translatesAutoresizingMaskIntoConstraints="NO" id="czO-AD-b4f">
+                                                                        <rect key="frame" x="16" y="0.0" width="60" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="czO-AD-b4f" secondAttribute="height" multiplier="2:1" id="jgg-2S-4We"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="** 0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-Uh-evh">
+                                                                        <rect key="frame" x="84" y="0.0" width="76" height="30"/>
+                                                                        <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="15"/>
+                                                                        <color key="textColor" name="StrongPurple1"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="aQf-Uh-evh" firstAttribute="top" secondItem="eSC-W3-8fn" secondAttribute="top" id="8C7-RB-qwt"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="aQf-Uh-evh" secondAttribute="trailing" id="8UV-1u-2nc"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="aQf-Uh-evh" secondAttribute="bottom" id="LQ2-9A-wY6"/>
+                                                                    <constraint firstItem="aQf-Uh-evh" firstAttribute="leading" secondItem="czO-AD-b4f" secondAttribute="trailing" constant="8" id="X7E-Wl-rtZ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="czO-AD-b4f" secondAttribute="bottom" id="XJE-su-H9g"/>
+                                                                    <constraint firstItem="czO-AD-b4f" firstAttribute="top" secondItem="eSC-W3-8fn" secondAttribute="top" id="khg-YO-HBd"/>
+                                                                    <constraint firstItem="czO-AD-b4f" firstAttribute="leading" secondItem="eSC-W3-8fn" secondAttribute="leading" constant="16" id="uLV-an-HOB"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="d97-gV-HpX"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hac-xC-cod">
+                                                        <rect key="frame" x="0.0" y="162.5" width="320" height="21"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHV-kx-C4n" customClass="LocalizableLabel" customModule="Hugo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="160" height="21"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Light" family="Gotham HTF" pointSize="15"/>
+                                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="translationKey" value="hp_CashinTransactionDetailViewController_Amount"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOt-4f-37L">
+                                                                <rect key="frame" x="160" y="0.0" width="160" height="21"/>
+                                                                <fontDescription key="fontDescription" name="GothamHTF-Medium" family="Gotham HTF" pointSize="13"/>
+                                                                <color key="textColor" name="StrongPurple1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="vIP-GA-TBJ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="z8E-bh-mM6" firstAttribute="top" secondItem="iiq-wO-dii" secondAttribute="top" id="2Ek-aX-K5Q"/>
+                                            <constraint firstItem="XI6-Hi-75H" firstAttribute="leading" secondItem="iiq-wO-dii" secondAttribute="leading" constant="15" id="420-H6-oOG"/>
+                                            <constraint firstItem="RVt-45-xi5" firstAttribute="leading" secondItem="iiq-wO-dii" secondAttribute="leading" constant="15" id="4Em-0d-ITm"/>
+                                            <constraint firstItem="pkU-xD-afB" firstAttribute="trailing" secondItem="z8E-bh-mM6" secondAttribute="trailing" constant="-32" id="4IL-1N-Uhs"/>
+                                            <constraint firstItem="z8E-bh-mM6" firstAttribute="leading" secondItem="iiq-wO-dii" secondAttribute="leading" constant="15" id="Cww-B0-dbm"/>
+                                            <constraint firstItem="XI6-Hi-75H" firstAttribute="top" secondItem="z8E-bh-mM6" secondAttribute="bottom" id="DKp-Pq-MYa"/>
+                                            <constraint firstAttribute="trailing" secondItem="z8E-bh-mM6" secondAttribute="trailing" constant="15" id="Zsg-Zw-3WE"/>
+                                            <constraint firstAttribute="trailing" secondItem="XI6-Hi-75H" secondAttribute="trailing" constant="15" id="cZ3-q2-vOy"/>
+                                            <constraint firstAttribute="bottom" secondItem="RVt-45-xi5" secondAttribute="bottom" constant="20" id="f4p-eV-eWO"/>
+                                            <constraint firstItem="pkU-xD-afB" firstAttribute="top" secondItem="z8E-bh-mM6" secondAttribute="top" constant="16" id="hcU-BG-v2v"/>
+                                            <constraint firstAttribute="trailing" secondItem="RVt-45-xi5" secondAttribute="trailing" constant="15" id="i0p-E6-EB3"/>
+                                            <constraint firstItem="RVt-45-xi5" firstAttribute="top" secondItem="XI6-Hi-75H" secondAttribute="bottom" id="kWn-my-Gv6"/>
+                                            <constraint firstItem="pkU-xD-afB" firstAttribute="leading" secondItem="z8E-bh-mM6" secondAttribute="leading" constant="32" id="wLk-sk-FSz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iiq-wO-dii" firstAttribute="leading" secondItem="fud-HU-niz" secondAttribute="leading" id="JEV-4z-sZB"/>
+                                    <constraint firstAttribute="trailing" secondItem="iiq-wO-dii" secondAttribute="trailing" id="N4x-lK-Hm8"/>
+                                    <constraint firstItem="iiq-wO-dii" firstAttribute="centerY" secondItem="fud-HU-niz" secondAttribute="centerY" priority="250" id="PLg-cb-fnL"/>
+                                    <constraint firstItem="iiq-wO-dii" firstAttribute="centerX" secondItem="fud-HU-niz" secondAttribute="centerX" id="TRA-cw-UdG"/>
+                                    <constraint firstAttribute="bottom" secondItem="iiq-wO-dii" secondAttribute="bottom" priority="250" id="gMo-Bk-iks"/>
+                                    <constraint firstItem="iiq-wO-dii" firstAttribute="top" secondItem="fud-HU-niz" secondAttribute="top" id="jbP-1G-b1g"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Npp-5n-66J"/>
+                        <color key="backgroundColor" red="0.74117647060000003" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fud-HU-niz" firstAttribute="top" secondItem="txv-xM-zFy" secondAttribute="bottom" constant="25" id="7Pa-tk-oDa"/>
+                            <constraint firstItem="jnu-FR-sPF" firstAttribute="leading" secondItem="Npp-5n-66J" secondAttribute="leading" constant="23" id="8vw-bc-VbA"/>
+                            <constraint firstItem="Npp-5n-66J" firstAttribute="bottom" secondItem="fud-HU-niz" secondAttribute="bottom" id="EYQ-TP-UEf"/>
+                            <constraint firstItem="Npp-5n-66J" firstAttribute="trailing" secondItem="fud-HU-niz" secondAttribute="trailing" id="HS5-Nh-ltV"/>
+                            <constraint firstItem="txv-xM-zFy" firstAttribute="centerX" secondItem="Npp-5n-66J" secondAttribute="centerX" id="ITZ-Lh-7HD"/>
+                            <constraint firstItem="txv-xM-zFy" firstAttribute="top" secondItem="uNP-5r-ijN" secondAttribute="bottom" constant="15" id="Lg0-SV-ybS"/>
+                            <constraint firstItem="jnu-FR-sPF" firstAttribute="top" secondItem="Npp-5n-66J" secondAttribute="top" constant="8" id="MyU-pz-Vfs"/>
+                            <constraint firstItem="Npp-5n-66J" firstAttribute="trailing" secondItem="uNP-5r-ijN" secondAttribute="trailing" constant="30" id="Scr-f3-ndJ"/>
+                            <constraint firstItem="JJl-Gv-Jn5" firstAttribute="top" secondItem="0b4-vA-Rgp" secondAttribute="bottom" constant="22" id="Uu3-ce-LKz"/>
+                            <constraint firstItem="uNP-5r-ijN" firstAttribute="top" secondItem="JJl-Gv-Jn5" secondAttribute="bottom" constant="15" id="d5A-IJ-rIc"/>
+                            <constraint firstItem="uNP-5r-ijN" firstAttribute="leading" secondItem="Npp-5n-66J" secondAttribute="leading" constant="30" id="f5I-YW-2Wk"/>
+                            <constraint firstItem="TAb-Qz-hdL" firstAttribute="height" secondItem="fuc-Ho-OeC" secondAttribute="height" multiplier="0.45" id="fxF-qj-dgb"/>
+                            <constraint firstItem="TAb-Qz-hdL" firstAttribute="leading" secondItem="Npp-5n-66J" secondAttribute="leading" id="gKC-1x-gD4"/>
+                            <constraint firstItem="0b4-vA-Rgp" firstAttribute="centerX" secondItem="Npp-5n-66J" secondAttribute="centerX" id="gfg-m1-w6x"/>
+                            <constraint firstAttribute="bottom" secondItem="TAb-Qz-hdL" secondAttribute="bottom" id="lk6-Qo-F7z"/>
+                            <constraint firstItem="TAb-Qz-hdL" firstAttribute="trailing" secondItem="Npp-5n-66J" secondAttribute="trailing" id="n6h-qN-Y0h"/>
+                            <constraint firstItem="fud-HU-niz" firstAttribute="leading" secondItem="Npp-5n-66J" secondAttribute="leading" id="nIJ-DG-xOu"/>
+                            <constraint firstItem="0b4-vA-Rgp" firstAttribute="centerY" secondItem="jnu-FR-sPF" secondAttribute="centerY" id="wNn-e8-L6T"/>
+                            <constraint firstItem="JJl-Gv-Jn5" firstAttribute="centerX" secondItem="Npp-5n-66J" secondAttribute="centerX" id="xgU-mf-3YM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewCardType" destination="czO-AD-b4f" id="xyE-Ig-KOA"/>
+                        <outlet property="labelAmountTransaction" destination="uNP-5r-ijN" id="2J2-4L-KZh"/>
+                        <outlet property="labelAmountTransactionDetail" destination="lOt-4f-37L" id="wj1-bU-LTp"/>
+                        <outlet property="labelCardEnd" destination="aQf-Uh-evh" id="abj-4l-EGw"/>
+                        <outlet property="labelTransactionDate" destination="vR3-Ze-vUI" id="wUD-bn-CtR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U2-Jf-fj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5942028985507" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_white_hp" width="8" height="14"/>
+        <image name="cut_ticket" width="173.5" height="18.5"/>
+        <image name="empty_image_cashin" width="88" height="91"/>
+        <image name="hp_full_arrow_back_white" width="25" height="25"/>
+        <image name="ilu-somethingwentwrongHP" width="150" height="150"/>
+        <image name="logo_hugopayfull" width="51" height="12"/>
+        <image name="logo_hugopayfull_blanco" width="51" height="12"/>
+        <image name="stoke_hpfull_cashin" width="187.5" height="197"/>
+        <image name="stoke_hpfull_cashin_2" width="37" height="59"/>
+        <image name="visa_logo" width="50" height="35"/>
+        <namedColor name="DeepPurple">
+            <color red="0.17647058823529413" green="0.062745098039215685" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="StrongPurple1">
+            <color red="0.34901960784313724" green="0.10196078431372549" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

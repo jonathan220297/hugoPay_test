@@ -1,0 +1,460 @@
+//
+//  TransactionsHPFullViewModel.swift
+//  Hugo
+//
+//  Created by Jose Francisco Rosales Hernandez on 31/01/21.
+//  Copyright © 2021 Clever Mobile Apps. All rights reserved.
+//
+
+import UIKit
+import RxSwift
+import RxRelay
+
+protocol TransactionsHPFullDelegate {
+    func reloadTransactionData(with transactionViewMore: TransactionViewMore?)
+}
+
+class TransactionsHPFullViewModel: NSObject {
+
+    private let apiClient: APIClient = APIClient()
+    var userManager = UserManager.shared
+    var hugoPayData = HugoPayFullData.shared
+    
+    var selectedRequest = false
+
+    var allTransactions = [DataTransactionsHPFull]()
+    var allRequests     = [DataRequestHPFull]()
+    var setRequest  : RequestHPFull?
+    var getBadge  : RequestNotReadResponseData?
+    var hideLoading: (()->())?
+    var showLoading: (()->())?
+    var emptyResult: ((Bool)->())?
+    var deleteRequest: (()->())?
+    var loadBadge: (()->())?
+    var showTransferConfirm: ((RequestHPFull)->())?
+    var showTransferRequest: ((RequestHPFull)->())?
+    var showHPFullTransaction: ((UIViewController)->())?
+    
+<<<<<<< HEAD
+    var transactionViewMore: TransactionViewMore?
+    
+    var delegate: TransactionsHPFullDelegate!
+=======
+    var transactionID = 0
+>>>>>>> feature/hugo-pf-HU28
+
+    func getTransactions() -> [DataTransactionsHPFull]{
+        return allTransactions
+    }
+    
+
+    func setRealTransactions(_ transactions: [DataTransactionsHPFull]){
+        for transaction in transactions {
+            if let t = transaction.transactions, t.count > 0{
+                allTransactions.append(transaction)
+            }
+        }
+    }
+<<<<<<< HEAD
+
+    func getTransactionsHugoPay(with today: Bool?, _ month: Bool?, previous: Bool?) -> BehaviorRelay<LatestTransactionsResponse?> {
+=======
+    
+    func getRequests() -> [DataRequestHPFull]{
+        return allRequests
+    }
+    func setRealRequests(_ transactions: [DataRequestHPFull]){
+        for transaction in transactions {
+            if let t = transaction.requests, t.count > 0{
+                allRequests.append(transaction)
+            }
+        }
+    }
+    
+    func getTransactionsHugoPay() -> BehaviorRelay<LatestTransactionsResponse?> {
+>>>>>>> feature/hugo-pf-HU28
+         let apiResponse: BehaviorRelay<LatestTransactionsResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendGetHPFull(TransactionsListRequest(
+            client_id: userManager.client_id ?? "",
+            today: today,
+            this_month: month,
+            previous_transactions: previous
+        )) { response in
+            DispatchQueue.main.async {
+                self.hideLoading?()
+                switch response {
+                case .success(let transactionhp):
+                    if let data = transactionhp.data{
+                        self.allTransactions = [DataTransactionsHPFull]()
+                        self.setRealTransactions(data)
+                    }
+                    apiResponse.accept(transactionhp)
+                case .failure(let error):
+                    showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        return apiResponse
+    }
+    
+    func getFilteredTransactionsHugoPay() -> BehaviorRelay<LatestTransactionsResponse?> {
+        let apiResponse: BehaviorRelay<LatestTransactionsResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendGetHPFull(FilteredTransactionRequest(
+            client_id: userManager.client_id ?? "",
+            start_date: hugoPayData.startDateHPFFilter,
+            end_date: hugoPayData.endDateHPFFilter,
+            movement_type: hugoPayData.movementTypeHPFFilter,
+            payment_type: hugoPayData.paymentTypeHPFFilter,
+            start_amount: hugoPayData.startAmountHPFFilter,
+            end_amount: hugoPayData.endAmountHPFFilter
+        )) { response in
+            DispatchQueue.main.async {
+                self.hideLoading?()
+                switch response {
+                case .success(let transactionhp):
+                    if let data = transactionhp.data{
+                        self.allTransactions = [DataTransactionsHPFull]()
+                        self.setRealTransactions(data)
+                    }
+                    apiResponse.accept(transactionhp)
+                case .failure(let error):
+                    showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        return apiResponse
+    }
+
+<<<<<<< HEAD
+    func getRequestHP() -> BehaviorRelay<LatestTransactionsResponse?> {
+         let apiResponse: BehaviorRelay<LatestTransactionsResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendGetHPFull(TransactionsListRequest(
+            client_id: userManager.client_id ?? "",
+            today: nil,
+            this_month: nil,
+            previous_transactions: nil
+=======
+    func getRequestHP() -> BehaviorRelay<RequestListResponse?> {
+         let apiResponse: BehaviorRelay<RequestListResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendGetHPFull(RequestListRequest(
+            client_id: userManager.client_id ?? ""
+>>>>>>> feature/hugo-pf-HU28
+        )) { response in
+            DispatchQueue.main.async {
+                self.hideLoading?()
+                switch response {
+                case .success(let transactionhp):
+                    if let data = transactionhp.data{
+                        self.allRequests = [DataRequestHPFull]()
+                        self.setRealRequests(data)
+                    }
+                    apiResponse.accept(transactionhp)
+                case .failure(let error):
+                    showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        return apiResponse
+    }
+    
+    func getTransactionDetail() -> BehaviorRelay<RequestListResponse?> {
+         let apiResponse: BehaviorRelay<RequestListResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendGetHPFull(RequestListRequest(
+            client_id: userManager.client_id ?? ""
+        )) { response in
+            DispatchQueue.main.async {
+                self.hideLoading?()
+                switch response {
+                case .success(let transactionhp):
+                    if let data = transactionhp.data{
+                        self.allRequests = [DataRequestHPFull]()
+                        self.setRealRequests(data)
+                    }
+                    apiResponse.accept(transactionhp)
+                case .failure(let error):
+                    showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        return apiResponse
+    }
+    
+    func rejectTransaction(text : String) -> BehaviorRelay<TransactionRejectResponse?> {
+            let apiResponse: BehaviorRelay<TransactionRejectResponse?> = BehaviorRelay(value: nil)
+           apiClient.sendPutHPFull(TransactionRejectRequest(
+               request_id: transactionID,
+                reason: text
+            
+           )) { response in
+               DispatchQueue.main.async {
+                   self.hideLoading?()
+                   switch response {
+                   case .success(let transactionhp):
+                       apiResponse.accept(transactionhp)
+                   case .failure(let error):
+                       showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                       print(error.localizedDescription)
+                   }
+               }
+           }
+           return apiResponse
+       }
+    
+    func getTotalNotRead() -> BehaviorRelay<RequestNotReadResponse?> {
+            let apiResponse: BehaviorRelay<RequestNotReadResponse?> = BehaviorRelay(value: nil)
+           apiClient.sendGetHPFull(RequestNotReadRequest(
+            client_id: userManager.client_id ?? ""
+           )) { response in
+               DispatchQueue.main.async {
+                   self.hideLoading?()
+                   switch response {
+                   case .success(let data):
+                       apiResponse.accept(data)
+                   case .failure(let error):
+                       showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                       print(error.localizedDescription)
+                   }
+               }
+           }
+           return apiResponse
+       }
+    
+    
+    func acceptTransaction(text : String) -> BehaviorRelay<TransactionAcceptResponse?> {
+         let apiResponse: BehaviorRelay<TransactionAcceptResponse?> = BehaviorRelay(value: nil)
+        apiClient.sendPutHPFull(TransactionAcceptRequest(
+            request_id: transactionID,
+             note: text
+         
+        )) { response in
+            DispatchQueue.main.async {
+                self.hideLoading?()
+                switch response {
+                case .success(let transactionhp):
+                    apiResponse.accept(transactionhp)
+                case .failure(let error):
+                    showGeneralErrorCustom(ErrorCodes.HugoPay.Login.RegisterPinFail)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        return apiResponse
+    }
+
+    func getTransactionsCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionHPFullCell", for: indexPath) as! TransactionHPFullCell
+        cell.selectedBackgroundView?.backgroundColor = .clear
+        cell.contentView.backgroundColor = .clear
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        if selectedRequest{
+            if  indexPath.section < allRequests.count,
+                let requests = allRequests[indexPath.section].requests,
+                indexPath.row < requests.count {
+                cell.config(requests[indexPath.row])
+            }
+        }else{
+            if  indexPath.section < allTransactions.count,
+                let transactions = allTransactions[indexPath.section].transactions,
+                indexPath.row < transactions.count {
+                cell.config(transactions[indexPath.row])
+            }
+        }
+        
+
+        return cell
+    }
+    
+}
+
+//MARK: - TableViewDeleate
+
+extension TransactionsHPFullViewModel: UITableViewDelegate {
+
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if selectedRequest{
+            if  indexPath.section < allRequests.count, let requests = allRequests[indexPath.section].requests,
+            indexPath.row < allRequests.count {
+                
+                let request = requests[indexPath.row]
+                
+                
+                if allRequests[indexPath.section].section == "pending_approval" {
+                    self.transactionID  = request.id!
+                    self.setRequest     = request
+                    self.showTransferRequest?(request)
+                }else{
+                    
+                    let vc = RequestMoneyTransactionDetailViewController.instantiate(fromAppStoryboard: .RequestMoney)
+                    vc.modalPresentationStyle = .fullScreen
+                    vc.modalTransitionStyle = .crossDissolve
+                    vc.fromRequestView = true
+                    vc.viewModel.transactionHugoId = String(request.id ?? 0)
+                    self.showHPFullTransaction?(vc)
+                }
+                
+            }
+        }else{
+            
+        if  indexPath.section < allTransactions.count, let transactions = allTransactions[indexPath.section].transactions,
+            indexPath.row < transactions.count {
+            let transaction = transactions[indexPath.row]
+<<<<<<< HEAD
+
+if let movementTypeString = transaction.type,
+let movementType: VerifyHPFullTypeLayout = VerifyHPFullTypeLayout(rawValue: movementTypeString) {
+switch movementType {
+case .cash :
+if let vc = R.storyboard.hugoPayFullCashIn.cashinTransactionDetailViewController() {
+vc.modalPresentationStyle = .overFullScreen
+vc.assingTransactionID(with: transaction.hugoID ?? "")
+self.showHPFullTransaction?(vc)
+}
+break
+case .env:
+let vc = SendMoneyTransactionDetailViewController.instantiate(fromAppStoryboard: .SendMoney)
+vc.modalPresentationStyle = .overFullScreen
+vc.viewModel.transactionHugoId = transaction.hugoID ?? ""
+vc.comesFromTransactionList = true
+self.showHPFullTransaction?(vc)
+break
+case .req:
+let vc = RequestMoneyTransactionDetailViewController.instantiate(fromAppStoryboard: .RequestMoney)
+vc.modalPresentationStyle = .overFullScreen
+vc.comesFromTransactionList = true
+vc.viewModel.transactionHugoId = transaction.hugoID ?? ""
+self.showHPFullTransaction?(vc)
+break
+default:
+if let vc = R.storyboard.hugoPayFull.detailTransactionHPFullViewController() {
+vc.modalPresentationStyle = .overFullScreen
+vc.assignTransactionDetailID(hugoId: transaction.hugoID ?? "")
+self.showHPFullTransaction?(vc)
+}
+break
+}
+}
+=======
+            
+            if transaction.movement_type == "INC"{
+                if let vc = R.storyboard.hugoPayFull.requestMoneyDetailViewController() {
+                    vc.modalPresentationStyle = .overFullScreen
+                    vc.viewModel.transactionHugoId = transaction.hugo_id ?? ""
+                    self.showHPFullTransaction?(vc)
+                }
+            }else{
+                if let vc = R.storyboard.hugoPayFull.detailTransactionHPFullViewController() {
+                    vc.modalPresentationStyle = .overFullScreen
+                    vc.assignTransactionDetailID(hugoId: transaction.hugo_id ?? "")
+                    self.showHPFullTransaction?(vc)
+                }
+            }
+            
+               
+            }
+>>>>>>> feature/hugo-pf-HU28
+        }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+
+}
+
+//MARK: - TableViewDataSource
+extension TransactionsHPFullViewModel: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if selectedRequest{
+            return allRequests.count
+        }else{
+            return allTransactions.count
+        }
+        
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionHeader = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 35.0))
+        sectionHeader.backgroundColor = .white
+        var titleString = ""
+        if selectedRequest{
+             titleString = allRequests[section].label ?? ""
+        }else{
+             titleString = allTransactions[section].label ?? ""
+        }
+
+       
+        let sectionName = UILabel(frame: CGRect(x: 22, y: 0, width: sectionHeader.bounds.width - 44, height: sectionHeader.bounds.height))
+        sectionName.text = titleString.uppercased()
+        sectionName.textColor = .purpleTitle
+        sectionName.font = UIFont.init(name: Fonts.Bold.rawValue, size: 13)
+
+        sectionHeader.addSubview(sectionName)
+        return sectionHeader
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if let viewMore = allTransactions[section].viewMore {
+            if viewMore {
+                let footerCell = tableView.dequeueReusableCell(withIdentifier: "cellTransactionFooter") as! TransactionFooterTableViewCell
+                footerCell.buttonViewMore.addTarget(self, action: #selector(buttonViewMoreTapped(_:)), for: .touchUpInside)
+                footerCell.buttonViewMore.tag = section
+                return footerCell
+            }
+        }
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if let viewMore = allTransactions[section].viewMore {
+            if viewMore {
+                return 35.0
+            }
+        }
+        return 0.0
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if selectedRequest{
+            if section < allRequests.count {
+                return allRequests[section].requests?.count ?? 0
+            }
+        }else{
+            if section < allTransactions.count {
+                return allTransactions[section].transactions?.count ?? 0
+            }
+        }
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return self.getTransactionsCell(tableView, cellForRowAt: indexPath)
+    }
+    
+    @objc func buttonViewMoreTapped(_ sender: UIButton) {
+        if let section = allTransactions[sender.tag].section {
+            if section == "today" {
+                transactionViewMore = .today
+            } else if section == "month" {
+                transactionViewMore = .month
+            } else if section == "previous_transactions" {
+                transactionViewMore = .previous
+            } else {
+                transactionViewMore = nil
+            }
+        }
+        delegate.reloadTransactionData(with: transactionViewMore)
+    }
+}
